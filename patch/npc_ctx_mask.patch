@@ -12,13 +12,15 @@
 # Interface : NPC_VIS_BLOCKS=<path to json>   ; {"<scope>": [[blk_start, blk_end), ...]}
 #             request_id = "scope=<name>|<anything>"
 #             Listed blocks are HIDDEN (deny list). Everything else is visible.
+#             The json is re-read when its mtime changes: switching a block
+#             visible mid-flight needs no restart.
 #
 # Apply     : patch -p1 -d <site-packages> < npc_ctx_mask.patch
-# Verified  : patch -p1 --dry-run applies clean from pristine 0.30.0 files;
-#             result is byte-identical to the build used for all reported runs.
+# Verified  : --dry-run applies clean from pristine 0.30.0; result is
+#             byte-identical to the build used for every reported run.
 # Test      : python scripts/canary_test.py 4
 #             expected -> masked: leak 0/4, visible-read 4/4
-#                         visible: leak 4/4, visible-read 4/4
+#             A/B: scripts/ab_scope.py -> scope=open reads, scope=deny doesn't
 # License   : MIT
 # =============================================================================
 --- a/vllm/v1/attention/backend.py
