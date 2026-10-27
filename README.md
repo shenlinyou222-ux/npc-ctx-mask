@@ -73,6 +73,28 @@ pad with U+200C (zero-width non-joiner, exactly 1 token in Qwen) to a multiple o
 b = current_tokens / 16
 ```
 
+## Verification (how to check the patch yourself)
+
+The patch ships with a metadata header stating its base and expected result. Two checks:
+
+```bash
+# 1. does it apply to a pristine tree?
+patch -p1 --dry-run < patch/npc_ctx_mask.patch     # expect: no hunks ignored
+
+# 2. does the masked block actually become unreadable?
+bash scripts/../run_canary.sh                      # or run the server yourself, then:
+python scripts/canary_test.py 4
+# expect: masked -> leak 0/4, visible-read 4/4
+#         visible -> leak 4/4, visible-read 4/4
+```
+
+On our build: forward apply succeeds, the patched files are byte-identical to the build used for every number in this repo, and a fresh canary run on 2026-10-27 reproduced `0/4` vs `4/4`.
+
+## For engine maintainers
+
+We wrote up the design question separately — **should a request be able to mask blocks it may not read?** — in [docs/VLLM_RFC.md](docs/VLLM_RFC.md). The short version: we are not sure this belongs in the engine at all, and would rather hear that from the maintainers than assume it.
+
+
 ## Known limitations
 
 - Position budget (~32K) is model-specific and was measured on one model only.
