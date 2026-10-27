@@ -1,0 +1,281 @@
+# =============================================================================
+# Context-Mask: per-request KV block visibility for vLLM
+# =============================================================================
+# Base      : vLLM 0.30.0 (pip wheel), FlexAttention backend
+# Files     : 5 changed, 211 insertions(+)
+#   new     : vllm/_npc_vis.py
+#   modified: vllm/v1/attention/backend.py
+#             vllm/v1/worker/gpu/attn_utils.py
+#             vllm/v1/worker/gpu/model_states/default.py
+#             vllm/v1/attention/backends/flex_attention.py
+#
+# Interface : NPC_VIS_BLOCKS=<path to json>   ; {"<scope>": [[blk_start, blk_end), ...]}
+#             request_id = "scope=<name>|<anything>"
+#             Listed blocks are HIDDEN (deny list). Everything else is visible.
+#
+# Apply     : patch -p1 -d <site-packages> < npc_ctx_mask.patch
+# Verified  : patch -p1 --dry-run applies clean from pristine 0.30.0 files;
+#             result is byte-identical to the build used for all reported runs.
+# Test      : python scripts/canary_test.py 4
+#             expected -> masked: leak 0/4, visible-read 4/4
+#                         visible: leak 4/4, visible-read 4/4
+# License   : MIT
+# =============================================================================
+--- a/vllm/v1/attention/backend.py
++++ b/vllm/v1/attention/backend.py
+@@ -451,6 +451,11 @@
+     table. Rows of one request are adjacent, so equal neighbours are PCP
+     chunks sharing one KV context."""
+ 
++    npc_req_ids: list[str] | None = None
++    """PER-REQUEST NPC visibility (demo hook, see vllm/_npc_vis.py):
++    request ids in batch order. When set, FlexAttention turns it into a
++    per-request KV block bitmap and prunes invisible blocks."""
++
+     mm_req_doc_ranges: dict[int, list[tuple[int, int]]] | None = None
+     """PrefixLM bidirectional ranges for multimodal tokens. Maps
+     request index to list of (start, end) token position ranges
+--- a/vllm/v1/worker/gpu/attn_utils.py
++++ b/vllm/v1/worker/gpu/attn_utils.py
+@@ -407,6 +407,7 @@
+     positions: torch.Tensor | None = None,
+     is_prefilling: torch.Tensor | None = None,
+     mm_req_doc_ranges: dict[int, list[tuple[int, int]]] | None = None,
++    npc_req_ids: list[str] | None = None,
+     model_specific_attn_metadata: ModelSpecificAttnMetadata | None = None,
+     for_cudagraph_capture: bool = False,
+     causal: bool | torch.Tensor | Mapping[int, bool] = True,
+@@ -472,6 +473,7 @@
+             mm_req_doc_ranges=mm_req_doc_ranges,
+             rswa_prefix_lens=rswa_prefix_lens,
+             req_idx=req_idx,
++            npc_req_ids=npc_req_ids,
+             **common_attn_metadata_extra_kwargs,
+         )
+ 
+--- a/vllm/v1/worker/gpu/model_states/default.py
++++ b/vllm/v1/worker/gpu/model_states/default.py
+@@ -2,6 +2,8 @@
+ # SPDX-FileCopyrightText: Copyright contributors to the vLLM project
+ from typing import Any
+ 
++import os
++
+ import torch
+ import torch.nn as nn
+ 
+@@ -229,5 +231,10 @@
+             req_idx=input_batch.idx_mapping_np,
+             ubatch_idx=ubatch_idx,
+             fast_prefill=input_batch.fast_prefill,
++            npc_req_ids=(
++                list(input_batch.req_ids[:num_reqs])
++                if os.environ.get("NPC_VIS_BLOCKS")
++                else None
++            ),
+         )
+         return attn_metadata
+--- a/vllm/v1/attention/backends/flex_attention.py
++++ b/vllm/v1/attention/backends/flex_attention.py
+@@ -1156,6 +1156,24 @@
+             rswa_window=self.rswa_window,
+         )
+ 
++        # --- NPC per-request visibility (env NPC_VIS_BLOCKS) ---
++        npc_ids = getattr(common_attn_metadata, "npc_req_ids", None)
++        if npc_ids is not None:
++            from vllm import _npc_vis
++
++            _vis = _npc_vis.bitmap(
++                list(npc_ids)[:num_reqs],
++                cdiv(out.max_seq_len, out.block_size),
++                out.block_table.device,
++            )
++            out.block_sparsity_hint = BlockSparsityHint(
++                hint_fn=_npc_vis.make_hint(
++                    out.doc_ids, _vis,
++                    self_only_mode=_npc_vis.self_only(list(npc_ids)[:num_reqs]),
++                )
++            )
++        # --- end NPC ---
++
+         # Pre-build block_mask so it is ready before CUDA graph capture.
+         # Without this, the lazy build in forward() would run non-graph-safe
+         # ops (e.g. torch.nonzero) inside capture.
+--- a/vllm/_npc_vis.py
++++ b/vllm/_npc_vis.py
+@@ -0,0 +1,174 @@
++# -*- coding: utf-8 -*-
++"""Per-request NPC visibility bitmap -> FlexAttention block pruning.
++
++The older plugin ``_npc_mask.py`` attaches one ``logical_mask_mod`` to every
++layer, which is a process-global property: every request in a batch sees the
++same visibility set.  This module derives visibility from the *request id*, so
++one engine process can serve several characters/scopes in the same batch.
++
++Env (default OFF):
++
++    NPC_VIS_BLOCKS = '{"<scope>": [[start_block, end_block], ...], ...}'
++                   | /path/to/blocks.json      (re-read when mtime changes)
++
++    request id must contain ``scope=<scope>``; the OpenAI layer prefixes
++    ``chatcmpl-`` and may append ``|...`` -- both are tolerated.
++
++Semantics: ``bitmap[r, b] is True`` => request r may read logical KV block b.
++``NPC_VIS_BLOCKS`` is a **deny list**: blocks listed are invisible, everything
++else (including KV generated after the prompt) stays visible.  That keeps a
++request able to attend to its own new tokens while it decodes.
++The bitmap is expanded to token rows with ``doc_ids`` and handed to
++``BlockSparsityHint``, which drops the whole block from ``kv_indices`` before
++the flex kernel runs.  Tokens and cache content are untouched.
++"""
++
++import json
++import os
++
++import torch
++
++_CACHE = {"key": None, "cfg": {}}
++_LOG = "/tmp/npc_vis.log"
++_LOGGED = {"n": 0}
++
++
++def enabled() -> bool:
++    return bool(os.environ.get("NPC_VIS_BLOCKS"))
++
++
++def _log(msg: str, limit: int | None = None) -> None:
++    if limit is not None:
++        if _LOGGED["n"] >= limit:
++            return
++        _LOGGED["n"] += 1
++    try:
++        with open(_LOG, "a") as f:
++            f.write(msg + "\n")
++            f.flush()
++    except Exception:
++        pass
++
++
++def _load_cfg() -> dict:
++    raw = os.environ.get("NPC_VIS_BLOCKS", "").strip()
++    if not raw:
++        return {}
++    if raw.startswith("{"):
++        key = ("inline", raw)
++        if _CACHE["key"] != key:
++            _CACHE["key"] = key
++            _CACHE["cfg"] = json.loads(raw)
++        return _CACHE["cfg"]
++    try:
++        mtime = os.path.getmtime(raw)
++    except OSError:
++        return {}
++    key = (raw, mtime)
++    if _CACHE["key"] != key:
++        with open(raw, "r", encoding="utf-8") as f:
++            _CACHE["cfg"] = json.load(f)
++        _CACHE["key"] = key
++    return _CACHE["cfg"]
++
++
++def scope_of(req_id: str) -> str | None:
++    if not req_id:
++        return None
++    i = req_id.find("scope=")
++    if i < 0:
++        return None
++    return req_id[i + 6:].split("|", 1)[0].strip() or None
++
++
++def bitmap(req_ids, width: int, device) -> torch.Tensor:
++    cfg = _load_cfg()
++    width = int(width)
++    vis = torch.ones((len(req_ids), width), dtype=torch.bool, device=device)
++    for i, rid in enumerate(req_ids):
++        scope = scope_of(rid)
++        ranges = cfg.get(scope) if scope not in (None, "all") else None
++        if not ranges:
++            continue                      # unscoped / empty deny list: all visible
++        for a, z in ranges:
++            vis[i, int(a):min(int(z), width)] = False
++    # multi-request batches are the interesting case -> always log them
++    _log("[bitmap] n=%d width=%d ids=%s scopes=%s visible=%s"
++         % (len(req_ids), width,
++            [str(r)[:48] for r in req_ids],
++            [scope_of(r) for r in req_ids],
++            vis.sum(dim=1).tolist()),
++         limit=None if len(req_ids) > 1
++         else int(os.environ.get("NPC_VIS_LOG_LIMIT", "12")))
++    return vis
++
++
++def self_only(req_ids) -> bool:
++    """True when every request in the batch asks for block-diagonal attention."""
++    return bool(req_ids) and all(scope_of(r) == "self" for r in req_ids)
++
++
++def make_hint(doc_ids: torch.Tensor, vis: torch.Tensor, self_only_mode: bool = False):
++    """Expand [num_reqs, num_blocks] to per-token rows for BlockSparsityHint.
++
++    ``self_only_mode`` gives block-diagonal attention: every query token may only
++    read its own KV block.  Used to build a *scope-independent* block store --
++    each block's K/V then depends on nothing but itself.
++    """
++    if self_only_mode:
++        table = os.environ.get("NPC_VIS_SCENE_TABLE")
++        _log("[mode] self_only=True table=%r exists=%s"
++             % (table, bool(table) and os.path.exists(table)))
++        if table and os.path.exists(table):
++            # 场景级隔离：同一场景内的块互相可见，跨场景零注意力
++            tbl = json.load(open(table, encoding="utf-8"))
++            # 预留足够大：解码时 kv 块数会随序列增长超过场景表
++            n_blocks = max(1024, max(s["blocks"][1] for s in tbl["scenes"]) + 1)
++            sid = torch.full((n_blocks,), -1, dtype=torch.long, device=doc_ids.device)
++            for k, s in enumerate(tbl["scenes"]):
++                sid[s["blocks"][0]:s["blocks"][1]] = k
++
++            def scene_fn(q_block_idx, kv_block_idx, block_size):
++                qb = q_block_idx.reshape(-1)
++                kb = kv_block_idx.reshape(-1)
++                ok = (qb >= 0).reshape(-1, 1) & (kb >= 0).reshape(1, -1)
++                sq = sid[qb.clamp(min=0, max=n_blocks - 1)]
++                sk = sid[kb.clamp(min=0, max=n_blocks - 1)]
++                # 场景内互相可见；另外公共前缀（sid < 0，系统提示词等）对所有场景可见
++                out = ((sk.reshape(1, -1) == sq.reshape(-1, 1))
++                       | (sk < 0).reshape(1, -1)) & ok
++                _log("[hint:scene] rows=%d cols=%d keep=%d"
++                     % (out.shape[0], out.shape[1], int(out.sum())),
++                     limit=int(os.environ.get("NPC_VIS_HINT_LOG_LIMIT", "6")))
++                return out
++
++            return scene_fn
++
++        def diag_fn(q_block_idx, kv_block_idx, block_size):
++            qb = q_block_idx.reshape(-1)
++            kb = kv_block_idx.reshape(-1)
++            out = kb.reshape(1, -1) == qb.reshape(-1, 1)
++            _log("[hint:self] rows=%d cols=%d diag=%d"
++                 % (out.shape[0], out.shape[1], int(out.sum())),
++                 limit=int(os.environ.get("NPC_VIS_HINT_LOG_LIMIT", "6")))
++            return out
++
++        return diag_fn
++
++    need = int(doc_ids.max().item()) + 1 if doc_ids.numel() else vis.shape[0]
++    if vis.shape[0] < need:                      # padded/cudagraph rows
++        pad = torch.zeros((need - vis.shape[0], vis.shape[1]),
++                          dtype=vis.dtype, device=vis.device)
++        vis = torch.cat([vis, pad], dim=0)
++    per_token = vis[doc_ids]                     # [num_tokens, num_blocks]
++
++    def hint_fn(q_block_idx, kv_block_idx, block_size):
++        # rows are tokens; kv_block_idx is arange(n_blocks_used)
++        n = kv_block_idx.reshape(-1).numel()
++        out = per_token[:, :n]
++        _log("[hint] rows=%d cols=%d keep=%s"
++             % (out.shape[0], out.shape[1], out.sum(dim=1).tolist()[:8]),
++             limit=int(os.environ.get("NPC_VIS_HINT_LOG_LIMIT", "6")))
++        return out
++
++    return hint_fn
