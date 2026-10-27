@@ -1,0 +1,821 @@
+[
+ {
+  "q": "Were Scott Derrickson and Ed Wood of the same nationality?",
+  "gold": "yes",
+  "answerable": true,
+  "coverage": 0.38271604938271603,
+  "A": {
+   "hit": true,
+   "ans": "Yes.",
+   "ttft": 0.5469764519984892
+  },
+  "M": {
+   "hit": true,
+   "ans": "Yes.",
+   "ttft": 0.20323320600073203
+  },
+  "D": {
+   "hit": true,
+   "ans": "Yes.",
+   "ttft": 0.11171938000006776
+  }
+ },
+ {
+  "q": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+  "gold": "Chief of Protocol",
+  "answerable": false,
+  "coverage": 0.2222222222222222,
+  "A": {
+   "hit": false,
+   "ans": "Secretary of State for Constitutional Af",
+   "ttft": 0.18276220400002785
+  },
+  "M": {
+   "hit": false,
+   "ans": "Secretary of State for Constitutional Af",
+   "ttft": 0.051327250999747775
+  },
+  "D": {
+   "hit": false,
+   "ans": "Village accountant.",
+   "ttft": 0.1234026170004654
+  }
+ },
+ {
+  "q": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+  "gold": "Animorphs",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": true,
+   "ans": "Animorphs.",
+   "ttft": 0.21276190299977316
+  },
+  "M": {
+   "hit": true,
+   "ans": "Animorphs.",
+   "ttft": 0.04970800600131042
+  },
+  "D": {
+   "hit": true,
+   "ans": "Animorphs.",
+   "ttft": 0.18690699800026778
+  }
+ },
+ {
+  "q": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+  "gold": "no",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": true,
+   "ans": "No.",
+   "ttft": 0.14238017800016678
+  },
+  "M": {
+   "hit": true,
+   "ans": "No.",
+   "ttft": 0.049182148000909365
+  },
+  "D": {
+   "hit": true,
+   "ans": "No.",
+   "ttft": 0.128133546000754
+  }
+ },
+ {
+  "q": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+  "gold": "Greenwich Village, New York City",
+  "answerable": false,
+  "coverage": 0.32608695652173914,
+  "A": {
+   "hit": false,
+   "ans": "New York city.",
+   "ttft": 0.18641332700099156
+  },
+  "M": {
+   "hit": true,
+   "ans": "Greenwich Village, New York City.",
+   "ttft": 0.05546156499985955
+  },
+  "D": {
+   "hit": false,
+   "ans": "New York city.",
+   "ttft": 0.12045359300100245
+  }
+ },
+ {
+  "q": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+  "gold": "YG Entertainment",
+  "answerable": false,
+  "coverage": 0.05434782608695652,
+  "A": {
+   "hit": true,
+   "ans": "YG Entertainment.",
+   "ttft": 0.19528032100060955
+  },
+  "M": {
+   "hit": true,
+   "ans": "YG Entertainment.",
+   "ttft": 0.043208601000515046
+  },
+  "D": {
+   "hit": false,
+   "ans": "Pledis Entertainment.",
+   "ttft": 0.1449244909999834
+  }
+ },
+ {
+  "q": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+  "gold": "Eenasul Fateh",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": true,
+   "ans": "Eenasul Fateh.",
+   "ttft": 0.25956366899845307
+  },
+  "M": {
+   "hit": true,
+   "ans": "Eenasul Fateh.",
+   "ttft": 0.04382203800014395
+  },
+  "D": {
+   "hit": true,
+   "ans": "Eenasul Fateh.",
+   "ttft": 0.20744720500078984
+  }
+ },
+ {
+  "q": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+  "gold": "3,677 seated",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "The arena where the Lewiston Maineiacs p",
+   "ttft": 0.4372889460009901
+  },
+  "M": {
+   "hit": false,
+   "ans": "The arena where the Lewiston Maineiacs p",
+   "ttft": 0.04812076599955617
+  },
+  "D": {
+   "hit": false,
+   "ans": "The arena where the Lewiston Maineiacs p",
+   "ttft": 0.41718857399973786
+  }
+ },
+ {
+  "q": "Who is older, Annie Morton or Terry Richardson?",
+  "gold": "Terry Richardson",
+  "answerable": true,
+  "coverage": 0.23333333333333334,
+  "A": {
+   "hit": true,
+   "ans": "Annie Morton is older than Terry Richard",
+   "ttft": 0.18045407200042973
+  },
+  "M": {
+   "hit": true,
+   "ans": "Annie Morton is older than Terry Richard",
+   "ttft": 0.06177814199872955
+  },
+  "D": {
+   "hit": true,
+   "ans": "Annie Morton is older than Terry Richard",
+   "ttft": 0.12495239300005778
+  }
+ },
+ {
+  "q": "Are Local H and For Against both from the United States?",
+  "gold": "yes",
+  "answerable": true,
+  "coverage": 0.08695652173913043,
+  "A": {
+   "hit": true,
+   "ans": "Yes.",
+   "ttft": 0.19781982200038328
+  },
+  "M": {
+   "hit": true,
+   "ans": "Yes.",
+   "ttft": 0.044083995000619325
+  },
+  "D": {
+   "hit": true,
+   "ans": "Yes.",
+   "ttft": 0.15399475100093696
+  }
+ },
+ {
+  "q": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+  "gold": "Kansas Song",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "University of Kansas.",
+   "ttft": 0.2334896740012482
+  },
+  "M": {
+   "hit": false,
+   "ans": "University of Kansas.",
+   "ttft": 0.04582943300010811
+  },
+  "D": {
+   "hit": false,
+   "ans": "University of Kansas.",
+   "ttft": 0.2124520940014918
+  }
+ },
+ {
+  "q": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and Téa Leoni?",
+  "gold": "David Weissman",
+  "answerable": false,
+  "coverage": 0.9418604651162791,
+  "A": {
+   "hit": true,
+   "ans": "David Weissman.",
+   "ttft": 0.17468950200054678
+  },
+  "M": {
+   "hit": true,
+   "ans": "David Weissman.",
+   "ttft": 0.05303374200047983
+  },
+  "D": {
+   "hit": true,
+   "ans": "David Weissman.",
+   "ttft": 0.21410575499976403
+  }
+ },
+ {
+  "q": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+  "gold": "1999",
+  "answerable": false,
+  "coverage": 0.32673267326732675,
+  "A": {
+   "hit": true,
+   "ans": "1999.",
+   "ttft": 0.21368339200125774
+  },
+  "M": {
+   "hit": false,
+   "ans": "2017.",
+   "ttft": 0.04591821800022444
+  },
+  "D": {
+   "hit": false,
+   "ans": "1987.",
+   "ttft": 0.1274428810011159
+  }
+ },
+ {
+  "q": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+  "gold": "no",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "Yes.",
+   "ttft": 0.39374356099870056
+  },
+  "M": {
+   "hit": false,
+   "ans": "Yes.",
+   "ttft": 0.06438623099893448
+  },
+  "D": {
+   "hit": false,
+   "ans": "Yes.",
+   "ttft": 0.3727998419999494
+  }
+ },
+ {
+  "q": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+  "gold": "from 1986 to 2013",
+  "answerable": true,
+  "coverage": 0.08571428571428572,
+  "A": {
+   "hit": false,
+   "ans": "1992–1996.",
+   "ttft": 0.14952835999974923
+  },
+  "M": {
+   "hit": false,
+   "ans": "1903–1912 and 1912–1924.",
+   "ttft": 0.04338001500036626
+  },
+  "D": {
+   "hit": false,
+   "ans": "1912–1924.",
+   "ttft": 0.12129737999930512
+  }
+ },
+ {
+  "q": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+  "gold": "9,984",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "The answer is not provided in the passag",
+   "ttft": 0.22546829200109642
+  },
+  "M": {
+   "hit": false,
+   "ans": "The answer is not provided in the passag",
+   "ttft": 0.04837489100100356
+  },
+  "D": {
+   "hit": false,
+   "ans": "10,000.",
+   "ttft": 0.2023143419992266
+  }
+ },
+ {
+  "q": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+  "gold": "the North Atlantic Conference",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "North Atlantic Conference.",
+   "ttft": 0.1943181979986548
+  },
+  "M": {
+   "hit": false,
+   "ans": "North Atlantic Conference.",
+   "ttft": 0.050959015999978874
+  },
+  "D": {
+   "hit": false,
+   "ans": "North Atlantic Conference.",
+   "ttft": 0.157448125000883
+  }
+ },
+ {
+  "q": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+  "gold": "yes",
+  "answerable": true,
+  "coverage": 0.17204301075268819,
+  "A": {
+   "hit": true,
+   "ans": "Yes.",
+   "ttft": 0.19377638600053615
+  },
+  "M": {
+   "hit": true,
+   "ans": "Yes.",
+   "ttft": 0.05614851300015289
+  },
+  "D": {
+   "hit": true,
+   "ans": "Yes.",
+   "ttft": 0.1232063110001036
+  }
+ },
+ {
+  "q": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+  "gold": "1969 until 1974",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "1977–79.",
+   "ttft": 0.23726081599852478
+  },
+  "M": {
+   "hit": false,
+   "ans": "1977–79.",
+   "ttft": 0.050506536001194036
+  },
+  "D": {
+   "hit": false,
+   "ans": "1977–1979.",
+   "ttft": 0.21504790099970705
+  }
+ },
+ {
+  "q": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+  "gold": "Robert Erskine Childers DSC",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "Henry Roth.",
+   "ttft": 0.14657464300034917
+  },
+  "M": {
+   "hit": false,
+   "ans": "Henry Roth.",
+   "ttft": 0.04185960399991018
+  },
+  "D": {
+   "hit": false,
+   "ans": "Robert Erskine Childers.",
+   "ttft": 0.12403208299838298
+  }
+ },
+ {
+  "q": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+  "gold": "Pedro Rodríguez",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "Sergio Pérez.",
+   "ttft": 0.18162364499949035
+  },
+  "M": {
+   "hit": false,
+   "ans": "Sergio Pérez.",
+   "ttft": 0.04519226400043408
+  },
+  "D": {
+   "hit": false,
+   "ans": "Sergio Pérez.",
+   "ttft": 0.13327049799954693
+  }
+ },
+ {
+  "q": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+  "gold": "Sonic",
+  "answerable": true,
+  "coverage": 0.08653846153846154,
+  "A": {
+   "hit": false,
+   "ans": "Pete.",
+   "ttft": 0.18947835200015106
+  },
+  "M": {
+   "hit": false,
+   "ans": "Pete.",
+   "ttft": 0.044032937001247774
+  },
+  "D": {
+   "hit": false,
+   "ans": "Tigger.",
+   "ttft": 0.15597740599878307
+  }
+ },
+ {
+  "q": "Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?",
+  "gold": "keyboard function keys",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "A TV tuner expansion board.",
+   "ttft": 0.21135541400144575
+  },
+  "M": {
+   "hit": false,
+   "ans": "A TV tuner expansion board.",
+   "ttft": 0.040575928000180284
+  },
+  "D": {
+   "hit": false,
+   "ans": "The Apple Remote was originally designed",
+   "ttft": 0.19435299100041448
+  }
+ },
+ {
+  "q": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+  "gold": "Badly Drawn Boy",
+  "answerable": true,
+  "coverage": 0.6666666666666666,
+  "A": {
+   "hit": false,
+   "ans": "Wolf Alice.",
+   "ttft": 0.13413692799986165
+  },
+  "M": {
+   "hit": false,
+   "ans": "Wolf Alice.",
+   "ttft": 0.05527612900004897
+  },
+  "D": {
+   "hit": false,
+   "ans": "Wolf Alice",
+   "ttft": 0.05234421299974201
+  }
+ },
+ {
+  "q": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+  "gold": "World's Best Goalkeeper",
+  "answerable": true,
+  "coverage": 0.09523809523809523,
+  "A": {
+   "hit": false,
+   "ans": "The father of Kasper Schmeichel, Peter S",
+   "ttft": 0.15460792799967749
+  },
+  "M": {
+   "hit": false,
+   "ans": "Goalkeeper of the Year.",
+   "ttft": 0.04456186700008402
+  },
+  "D": {
+   "hit": false,
+   "ans": "The father of Kasper Schmeichel, Peter S",
+   "ttft": 0.1188997820008808
+  }
+ },
+ {
+  "q": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+  "gold": "Barton Lee Hazlewood",
+  "answerable": true,
+  "coverage": 0.30666666666666664,
+  "A": {
+   "hit": false,
+   "ans": "Lee Hazlewood and James A. Shoulders.",
+   "ttft": 0.13816894099909405
+  },
+  "M": {
+   "hit": false,
+   "ans": "Lee Hazlewood and James A. Shoulders.",
+   "ttft": 0.04686199400020996
+  },
+  "D": {
+   "hit": false,
+   "ans": "Lee Hazlewood and Jim Shoulders.",
+   "ttft": 0.09124789700035763
+  }
+ },
+ {
+  "q": "The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+  "gold": "1838",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": true,
+   "ans": "1838.",
+   "ttft": 0.2277249609996943
+  },
+  "M": {
+   "hit": true,
+   "ans": "1838.",
+   "ttft": 0.04611439399923256
+  },
+  "D": {
+   "hit": true,
+   "ans": "1838.",
+   "ttft": 0.19698885199977667
+  }
+ },
+ {
+  "q": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+  "gold": "Henry J. Kaiser",
+  "answerable": true,
+  "coverage": 0.060240963855421686,
+  "A": {
+   "hit": false,
+   "ans": "Yes.",
+   "ttft": 0.15351186900079483
+  },
+  "M": {
+   "hit": false,
+   "ans": "Yes.",
+   "ttft": 0.03860064899890858
+  },
+  "D": {
+   "hit": false,
+   "ans": "Yes.",
+   "ttft": 0.12359777599886002
+  }
+ },
+ {
+  "q": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+  "gold": "Arena of Khazan",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "Tunnels & Trolls: Crusaders of Khazan.",
+   "ttft": 0.14751794899893866
+  },
+  "M": {
+   "hit": false,
+   "ans": "Tunnels & Trolls: Crusaders of Khazan.",
+   "ttft": 0.04346534800060908
+  },
+  "D": {
+   "hit": false,
+   "ans": "Tunnels & Trolls: Crusaders of Khazan",
+   "ttft": 0.13452102299925173
+  }
+ },
+ {
+  "q": "When was Poison's album \"Shut Up, Make Love\" released?",
+  "gold": "2000",
+  "answerable": true,
+  "coverage": 0.4842105263157895,
+  "A": {
+   "hit": true,
+   "ans": "March 14, 2000.",
+   "ttft": 0.17050890700011223
+  },
+  "M": {
+   "hit": true,
+   "ans": "March 14, 2000.",
+   "ttft": 0.04201847099830047
+  },
+  "D": {
+   "hit": true,
+   "ans": "Poison's album \"Shut Up, Make Love\" was ",
+   "ttft": 0.08340673000020615
+  }
+ },
+ {
+  "q": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+  "gold": "Fujioka, Gunma",
+  "answerable": true,
+  "coverage": 0.10126582278481013,
+  "A": {
+   "hit": true,
+   "ans": "Buck-Tick hails from Fujioka, Gunma.",
+   "ttft": 0.14455068200004462
+  },
+  "M": {
+   "hit": true,
+   "ans": "Buck-Tick hails from Fujioka, Gunma.",
+   "ttft": 0.040063944999928935
+  },
+  "D": {
+   "hit": true,
+   "ans": "Fujioka, Gunma.",
+   "ttft": 0.11311041399858368
+  }
+ },
+ {
+  "q": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+  "gold": "Charles Eugène",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "Charles Nungesser.",
+   "ttft": 0.16138773400052742
+  },
+  "M": {
+   "hit": false,
+   "ans": "Charles Nungesser.",
+   "ttft": 0.05009127800076385
+  },
+  "D": {
+   "hit": false,
+   "ans": "Charles Nungesser.",
+   "ttft": 0.14683615500143787
+  }
+ },
+ {
+  "q": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+  "gold": "no",
+  "answerable": false,
+  "coverage": 0.16964285714285715,
+  "A": {
+   "hit": false,
+   "ans": "Yes.",
+   "ttft": 0.21244353300062357
+  },
+  "M": {
+   "hit": false,
+   "ans": "Yes.",
+   "ttft": 0.03935416799868108
+  },
+  "D": {
+   "hit": false,
+   "ans": "Yes.",
+   "ttft": 0.1601885600011883
+  }
+ },
+ {
+  "q": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+  "gold": "Letters to Cleo",
+  "answerable": false,
+  "coverage": 0.3617021276595745,
+  "A": {
+   "hit": true,
+   "ans": "Letters to Cleo had one member, while Sc",
+   "ttft": 0.17380862600111868
+  },
+  "M": {
+   "hit": true,
+   "ans": "Letters to Cleo had one member, while Sc",
+   "ttft": 0.03854443599993829
+  },
+  "D": {
+   "hit": false,
+   "ans": "Screaming Trees had more members.",
+   "ttft": 0.10657524300040677
+  }
+ },
+ {
+  "q": "Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?",
+  "gold": "October 1922",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "in 1923.",
+   "ttft": 0.24276287899920135
+  },
+  "M": {
+   "hit": false,
+   "ans": "in 1923.",
+   "ttft": 0.04209632500169391
+  },
+  "D": {
+   "hit": false,
+   "ans": "in 1923.",
+   "ttft": 0.20773709700006293
+  }
+ },
+ {
+  "q": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+  "gold": "2000",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": true,
+   "ans": "2000.",
+   "ttft": 0.16897092399995017
+  },
+  "M": {
+   "hit": true,
+   "ans": "2000.",
+   "ttft": 0.04028940600073838
+  },
+  "D": {
+   "hit": true,
+   "ans": "2000.",
+   "ttft": 0.15338796399919374
+  }
+ },
+ {
+  "q": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
+  "gold": "World War II",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": false,
+   "ans": "World War I.",
+   "ttft": 0.12631727900043188
+  },
+  "M": {
+   "hit": false,
+   "ans": "World War I.",
+   "ttft": 0.06002245299896458
+  },
+  "D": {
+   "hit": false,
+   "ans": "World War I.",
+   "ttft": 0.12334421100058535
+  }
+ },
+ {
+  "q": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+  "gold": "no",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": true,
+   "ans": "No.",
+   "ttft": 0.1753768590006075
+  },
+  "M": {
+   "hit": true,
+   "ans": "No.",
+   "ttft": 0.03949746400030563
+  },
+  "D": {
+   "hit": true,
+   "ans": "No.",
+   "ttft": 0.15596201600055792
+  }
+ },
+ {
+  "q": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+  "gold": "New York City",
+  "answerable": true,
+  "coverage": 0.0,
+  "A": {
+   "hit": true,
+   "ans": "New York City.",
+   "ttft": 0.1668926479997026
+  },
+  "M": {
+   "hit": true,
+   "ans": "New York City.",
+   "ttft": 0.0604551039996295
+  },
+  "D": {
+   "hit": true,
+   "ans": "New York City.",
+   "ttft": 0.14762308500030485
+  }
+ }
+]

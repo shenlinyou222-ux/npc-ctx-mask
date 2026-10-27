@@ -1,0 +1,122 @@
+[
+ {
+  "q": "How tall is Alice Thymefield?",
+  "gold": "163 cm (5'4\", ears included)",
+  "1": {
+   "hit": true,
+   "gen": " Alice Thymefield is 163 cm tall.\nThe answer is: 1"
+  },
+  "2": {
+   "hit": true,
+   "gen": " Alice Thymefield is 163 cm tall.\nThe answer is: 1"
+  },
+  "4": {
+   "hit": false,
+   "gen": "  1  2  3  4  5  6  7  8"
+  },
+  "8": {
+   "hit": false,
+   "gen": " : : : : : : : : : : : : : : : : : : : : : : : :"
+  }
+ },
+ {
+  "q": "When is Alice Thymefield's birthday?",
+  "gold": "August 30th",
+  "1": {
+   "hit": true,
+   "gen": " August 30th\nThe answer is correct.\nThe answer is "
+  },
+  "2": {
+   "hit": true,
+   "gen": " Alice Thymefield's birthday is August 30th.\nThe a"
+  },
+  "4": {
+   "hit": false,
+   "gen": "  1111111111111111111111"
+  },
+  "8": {
+   "hit": false,
+   "gen": ": : : : : : : : : : : : : : : : : : : : : : : :"
+  }
+ },
+ {
+  "q": "How tall is Aria?",
+  "gold": "150cm (4'11\")",
+  "1": {
+   "hit": true,
+   "gen": " Aria is 150cm (4'11\") tall.\nThe answer is: 150"
+  },
+  "2": {
+   "hit": false,
+   "gen": " Aria is 1501 cm tall.\nThe answer is: 1501 cm.\nThe"
+  },
+  "4": {
+   "hit": false,
+   "gen": " ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ("
+  },
+  "8": {
+   "hit": false,
+   "gen": ": : : : : : : : : : : : : : : : : : : : : : : :"
+  }
+ },
+ {
+  "q": "When is Aria's birthday?",
+  "gold": "June 7th",
+  "1": {
+   "hit": true,
+   "gen": " June 7th\nThe answer is correct.\nThe answer is cor"
+  },
+  "2": {
+   "hit": true,
+   "gen": " Aria's birthday is June 7th.\nThe answer is correc"
+  },
+  "4": {
+   "hit": false,
+   "gen": " ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ("
+  },
+  "8": {
+   "hit": false,
+   "gen": ": : : : : : : : : : : : : : : : : : : : : : : :"
+  }
+ },
+ {
+  "q": "How tall is Banyue?",
+  "gold": "200cm (6'7\")",
+  "1": {
+   "hit": true,
+   "gen": " 200cm (6'7\")\nThe answer is correct.\nThe answer is"
+  },
+  "2": {
+   "hit": false,
+   "gen": " Banyue is 2000cm tall.\nThe answer is correct.\nThe"
+  },
+  "4": {
+   "hit": false,
+   "gen": " : : : : : : : : : : : : : : : : : : : : : : : :"
+  },
+  "8": {
+   "hit": false,
+   "gen": " : : : : : : : : : : : : : : : : : : : : : : : :"
+  }
+ },
+ {
+  "q": "When is Banyue's birthday?",
+  "gold": "July 24th",
+  "1": {
+   "hit": true,
+   "gen": " July 24th\nThe answer is correct.\nThe answer is co"
+  },
+  "2": {
+   "hit": true,
+   "gen": " Banyue's birthday is July 24th.\nThe answer is cor"
+  },
+  "4": {
+   "hit": false,
+   "gen": "  1  2  3  4  5  6  7  8"
+  },
+  "8": {
+   "hit": false,
+   "gen": " : : : : : : : : : : : : : : : : : : : : : : : :"
+  }
+ }
+]

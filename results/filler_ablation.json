@@ -1,0 +1,818 @@
+[
+ {
+  "q": "How tall is Alice Thymefield?",
+  "gold": "163 cm (5'4\", ears included)",
+  "real_visible": {
+   "hit": true,
+   "pt": 7594,
+   "ttft": 1.192908673000602,
+   "ans": "163 cm (5'4\", ears included)"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7594,
+   "ttft": 0.052277540000432055,
+   "ans": "163 cm (5'4\", ears included)"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7530,
+   "ttft": 0.9796755979996306,
+   "ans": "163 cm (5'4\", ears included)"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7530,
+   "ttft": 0.07019368799956283,
+   "ans": "163 cm (5'4\", ears included)"
+  },
+  "short": {
+   "hit": true,
+   "pt": 285,
+   "ttft": 0.06289074500000424,
+   "ans": "163 cm (5'4\", ears included)"
+  }
+ },
+ {
+  "q": "When is Alice Thymefield's birthday?",
+  "gold": "August 30th",
+  "real_visible": {
+   "hit": true,
+   "pt": 7595,
+   "ttft": 0.06938177199936035,
+   "ans": "August 30th"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7595,
+   "ttft": 0.05643932800012408,
+   "ans": "August 30th"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7531,
+   "ttft": 0.07640229499975248,
+   "ans": "August 30th"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7531,
+   "ttft": 0.06985305299986067,
+   "ans": "August 30th"
+  },
+  "short": {
+   "hit": true,
+   "pt": 286,
+   "ttft": 0.05181754500063107,
+   "ans": "August 30th"
+  }
+ },
+ {
+  "q": "How tall is Aria?",
+  "gold": "150cm (4'11\")",
+  "real_visible": {
+   "hit": true,
+   "pt": 7591,
+   "ttft": 1.0004045710002174,
+   "ans": "150cm (4'11\")"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7591,
+   "ttft": 0.054295116000503185,
+   "ans": "150cm (4'11\")"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7543,
+   "ttft": 0.9994779359994936,
+   "ans": "150cm (4'11\")"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7543,
+   "ttft": 0.06333730000005744,
+   "ans": "150cm (4'11\")"
+  },
+  "short": {
+   "hit": true,
+   "pt": 278,
+   "ttft": 0.052537340000526456,
+   "ans": "150cm (4'11\")"
+  }
+ },
+ {
+  "q": "When is Aria's birthday?",
+  "gold": "June 7th",
+  "real_visible": {
+   "hit": true,
+   "pt": 7592,
+   "ttft": 0.06431559700013167,
+   "ans": "June 7th"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7592,
+   "ttft": 0.060896340999534004,
+   "ans": "Aria's birthday is June 7th."
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7544,
+   "ttft": 0.07565043399972637,
+   "ans": "June 7th"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7544,
+   "ttft": 0.06919968599959248,
+   "ans": "June 7th"
+  },
+  "short": {
+   "hit": true,
+   "pt": 279,
+   "ttft": 0.04808621900065191,
+   "ans": "June 7th"
+  }
+ },
+ {
+  "q": "How tall is Banyue?",
+  "gold": "200cm (6'7\")",
+  "real_visible": {
+   "hit": true,
+   "pt": 7592,
+   "ttft": 0.9888694710007258,
+   "ans": "200cm (6'7\")"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7592,
+   "ttft": 0.05466087900003913,
+   "ans": "200cm (6'7\")"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7544,
+   "ttft": 0.99992885499978,
+   "ans": "200cm (6'7\")"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7544,
+   "ttft": 0.07868448899989744,
+   "ans": "200cm (6'7\")"
+  },
+  "short": {
+   "hit": true,
+   "pt": 280,
+   "ttft": 0.051231576999271056,
+   "ans": "200cm (6'7\")"
+  }
+ },
+ {
+  "q": "When is Banyue's birthday?",
+  "gold": "July 24th",
+  "real_visible": {
+   "hit": false,
+   "pt": 7593,
+   "ttft": 0.06516078899949207,
+   "ans": "May 24th"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7593,
+   "ttft": 0.09169548499994562,
+   "ans": "July 24th"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7545,
+   "ttft": 0.07691161399998236,
+   "ans": "July 24th"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7545,
+   "ttft": 0.06985871999950177,
+   "ans": "July 24th"
+  },
+  "short": {
+   "hit": true,
+   "pt": 281,
+   "ttft": 0.05078627599959873,
+   "ans": "July 24th"
+  }
+ },
+ {
+  "q": "When is Cissia's birthday?",
+  "gold": "January 10th",
+  "real_visible": {
+   "hit": false,
+   "pt": 7593,
+   "ttft": 1.0139038960005564,
+   "ans": "April 15, 2026"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7593,
+   "ttft": 0.05662331599978643,
+   "ans": "January 10th"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.9857206260003295,
+   "ans": "January 10th"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.06345465000049444,
+   "ans": "January 10th"
+  },
+  "short": {
+   "hit": true,
+   "pt": 281,
+   "ttft": 0.050886932000139495,
+   "ans": "January 10th"
+  }
+ },
+ {
+  "q": "How tall is Claret Flint?",
+  "gold": "166cm (5'5\")",
+  "real_visible": {
+   "hit": true,
+   "pt": 7592,
+   "ttft": 0.9841389060002257,
+   "ans": "166 cm (5'5\")"
+  },
+  "real_masked": {
+   "hit": false,
+   "pt": 7592,
+   "ttft": 0.062420916000519355,
+   "ans": "166cm"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7528,
+   "ttft": 0.9882398159998047,
+   "ans": "166cm (5'5\")"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7528,
+   "ttft": 0.09045973899992532,
+   "ans": "166cm (5'5\")"
+  },
+  "short": {
+   "hit": true,
+   "pt": 281,
+   "ttft": 0.056170449999626726,
+   "ans": "166cm (5'5\")"
+  }
+ },
+ {
+  "q": "When is Claret Flint's birthday?",
+  "gold": "July 23rd",
+  "real_visible": {
+   "hit": true,
+   "pt": 7593,
+   "ttft": 0.06579338399933476,
+   "ans": "July 23rd"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7593,
+   "ttft": 0.06900743099959072,
+   "ans": "July 23rd"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.0816916180001499,
+   "ans": "July 23rd"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.08854673099995125,
+   "ans": "July 23rd"
+  },
+  "short": {
+   "hit": true,
+   "pt": 282,
+   "ttft": 0.050106718000279216,
+   "ans": "July 23rd"
+  }
+ },
+ {
+  "q": "How tall is Dialyn?",
+  "gold": "145cm (4'9\")",
+  "real_visible": {
+   "hit": true,
+   "pt": 7591,
+   "ttft": 1.0129220839999107,
+   "ans": "145cm (4'9\")"
+  },
+  "real_masked": {
+   "hit": false,
+   "pt": 7591,
+   "ttft": 0.05561479999960284,
+   "ans": "145cm"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7527,
+   "ttft": 1.0010186219997195,
+   "ans": "145cm (4'9\")"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7527,
+   "ttft": 0.06274192999990191,
+   "ans": "145cm (4'9\")"
+  },
+  "short": {
+   "hit": true,
+   "pt": 279,
+   "ttft": 0.05718742699991708,
+   "ans": "145cm (4'9\")"
+  }
+ },
+ {
+  "q": "When is Dialyn's birthday?",
+  "gold": "May 28th",
+  "real_visible": {
+   "hit": true,
+   "pt": 7592,
+   "ttft": 0.07124359099998401,
+   "ans": "May 28th"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7592,
+   "ttft": 0.05737631700048951,
+   "ans": "May 28th"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7528,
+   "ttft": 0.08199349799997435,
+   "ans": "May 28th"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7528,
+   "ttft": 0.0605356269998083,
+   "ans": "May 28th"
+  },
+  "short": {
+   "hit": true,
+   "pt": 280,
+   "ttft": 0.06115792699984013,
+   "ans": "May 28th"
+  }
+ },
+ {
+  "q": "How tall is Ju Fufu?",
+  "gold": "142cm (4'8\")",
+  "real_visible": {
+   "hit": true,
+   "pt": 7593,
+   "ttft": 1.0032444660000692,
+   "ans": "142 cm (4'8\")"
+  },
+  "real_masked": {
+   "hit": false,
+   "pt": 7593,
+   "ttft": 0.07166934999986552,
+   "ans": "142cm"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.995494363999569,
+   "ans": "142cm (4'8\")"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.06549081899993325,
+   "ans": "142cm (4'8\")"
+  },
+  "short": {
+   "hit": true,
+   "pt": 283,
+   "ttft": 0.05736331699972652,
+   "ans": "142cm (4'8\")"
+  }
+ },
+ {
+  "q": "When is Ju Fufu's birthday?",
+  "gold": "January 6th",
+  "real_visible": {
+   "hit": true,
+   "pt": 7594,
+   "ttft": 0.06652451099944301,
+   "ans": "January 6th"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7594,
+   "ttft": 0.05382690300029935,
+   "ans": "January 6th"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7530,
+   "ttft": 0.07507541900031356,
+   "ans": "January 6th"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7530,
+   "ttft": 0.06643865200021537,
+   "ans": "January 6th"
+  },
+  "short": {
+   "hit": true,
+   "pt": 284,
+   "ttft": 0.06252268600019306,
+   "ans": "January 6th"
+  }
+ },
+ {
+  "q": "How tall is Komano Manato?",
+  "gold": "198cm (6'6\")",
+  "real_visible": {
+   "hit": true,
+   "pt": 7593,
+   "ttft": 1.001544534000459,
+   "ans": "198 cm (6'6\")"
+  },
+  "real_masked": {
+   "hit": false,
+   "pt": 7593,
+   "ttft": 0.05359947499982809,
+   "ans": "198cm"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.9972073499993712,
+   "ans": "198cm (6'6\")"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.06844430399996781,
+   "ans": "198cm (6'6\")"
+  },
+  "short": {
+   "hit": true,
+   "pt": 283,
+   "ttft": 0.061590289999912784,
+   "ans": "198cm (6'6\")"
+  }
+ },
+ {
+  "q": "When is Komano Manato's birthday?",
+  "gold": "January 5th",
+  "real_visible": {
+   "hit": true,
+   "pt": 7594,
+   "ttft": 0.06430847399951745,
+   "ans": "January 5th"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7594,
+   "ttft": 0.06896789199981868,
+   "ans": "Komano Manato's birthday is Ja"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7530,
+   "ttft": 0.08053208999990602,
+   "ans": "January 5th"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7530,
+   "ttft": 0.06568737599991437,
+   "ans": "January 5th"
+  },
+  "short": {
+   "hit": true,
+   "pt": 284,
+   "ttft": 0.06412741900021501,
+   "ans": "January 5th"
+  }
+ },
+ {
+  "q": "How tall is Lucia Elowen?",
+  "gold": "160cm (5'3\")",
+  "real_visible": {
+   "hit": true,
+   "pt": 7593,
+   "ttft": 0.9794981840004766,
+   "ans": "160cm (5'3\")"
+  },
+  "real_masked": {
+   "hit": false,
+   "pt": 7593,
+   "ttft": 0.06053304699980799,
+   "ans": "160cm"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 1.013905288999922,
+   "ans": "160cm (5'3\")"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.06681101899994246,
+   "ans": "160cm (5'3\")"
+  },
+  "short": {
+   "hit": true,
+   "pt": 284,
+   "ttft": 0.06271668399949704,
+   "ans": "160cm (5'3\")"
+  }
+ },
+ {
+  "q": "When is Lucia Elowen's birthday?",
+  "gold": "March 17th",
+  "real_visible": {
+   "hit": true,
+   "pt": 7594,
+   "ttft": 0.07304885899975488,
+   "ans": "March 17th"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7594,
+   "ttft": 0.05165823700008332,
+   "ans": "March 17th"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7530,
+   "ttft": 0.08048282799973094,
+   "ans": "March 17th"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7530,
+   "ttft": 0.06652896200012037,
+   "ans": "March 17th"
+  },
+  "short": {
+   "hit": true,
+   "pt": 285,
+   "ttft": 0.06300314399959461,
+   "ans": "March 17th"
+  }
+ },
+ {
+  "q": "When is Nangong Yu's birthday?",
+  "gold": "September 29th",
+  "real_visible": {
+   "hit": true,
+   "pt": 7594,
+   "ttft": 1.011679644000651,
+   "ans": "September 29th"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7594,
+   "ttft": 0.07281800400050997,
+   "ans": "September 29th"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7530,
+   "ttft": 1.0142621530003453,
+   "ans": "September 29th"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7530,
+   "ttft": 0.07184651399984432,
+   "ans": "September 29th"
+  },
+  "short": {
+   "hit": true,
+   "pt": 283,
+   "ttft": 0.05647280899938778,
+   "ans": "September 29th"
+  }
+ },
+ {
+  "q": "How tall is Norma Hollowell?",
+  "gold": "150cm (5'0\")",
+  "real_visible": {
+   "hit": true,
+   "pt": 7593,
+   "ttft": 0.9834317480008394,
+   "ans": "150cm (5'0\")"
+  },
+  "real_masked": {
+   "hit": false,
+   "pt": 7593,
+   "ttft": 0.05060152099940751,
+   "ans": "150cm"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.9961786419999044,
+   "ans": "150cm (5'0\")"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.06442659699951037,
+   "ans": "150cm (5'0\")"
+  },
+  "short": {
+   "hit": true,
+   "pt": 283,
+   "ttft": 0.054697743999895465,
+   "ans": "150cm (5'0\")"
+  }
+ },
+ {
+  "q": "When is Norma Hollowell's birthday?",
+  "gold": "July 26th",
+  "real_visible": {
+   "hit": true,
+   "pt": 7594,
+   "ttft": 0.0669467160005297,
+   "ans": "July 26th"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7594,
+   "ttft": 0.0687064570001894,
+   "ans": "July 26th"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7530,
+   "ttft": 0.0767821859999458,
+   "ans": "July 26th"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7530,
+   "ttft": 0.07362393899984454,
+   "ans": "July 26th"
+  },
+  "short": {
+   "hit": true,
+   "pt": 284,
+   "ttft": 0.06260265499986417,
+   "ans": "July 26th"
+  }
+ },
+ {
+  "q": "How tall is Orphie Magnusson & Magus?",
+  "gold": "158cm (5'2\")",
+  "real_visible": {
+   "hit": true,
+   "pt": 7597,
+   "ttft": 0.9752610079995065,
+   "ans": "158cm (5'2\")"
+  },
+  "real_masked": {
+   "hit": false,
+   "pt": 7597,
+   "ttft": 0.05404155299947888,
+   "ans": "158cm"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7533,
+   "ttft": 0.9902936130001763,
+   "ans": "158cm (5'2\")"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7533,
+   "ttft": 0.0752542979998907,
+   "ans": "158cm (5'2\")"
+  },
+  "short": {
+   "hit": true,
+   "pt": 291,
+   "ttft": 0.05715221999980713,
+   "ans": "158cm (5'2\")"
+  }
+ },
+ {
+  "q": "When is Orphie Magnusson & Magus's birthday?",
+  "gold": "November 3rd",
+  "real_visible": {
+   "hit": true,
+   "pt": 7598,
+   "ttft": 0.0762999230000787,
+   "ans": "November 3rd"
+  },
+  "real_masked": {
+   "hit": false,
+   "pt": 7598,
+   "ttft": 0.0610453380004401,
+   "ans": "September 3rd"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7534,
+   "ttft": 0.08031490300072619,
+   "ans": "November 3rd"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7534,
+   "ttft": 0.0671667910000906,
+   "ans": "November 3rd"
+  },
+  "short": {
+   "hit": true,
+   "pt": 292,
+   "ttft": 0.05966075400010595,
+   "ans": "November 3rd"
+  }
+ },
+ {
+  "q": "How tall is Pan Yinhu?",
+  "gold": "192cm (6’4\")",
+  "real_visible": {
+   "hit": true,
+   "pt": 7592,
+   "ttft": 1.0059179279996897,
+   "ans": "192 cm (6'4\")"
+  },
+  "real_masked": {
+   "hit": false,
+   "pt": 7592,
+   "ttft": 0.05980276100035553,
+   "ans": "192cm"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7528,
+   "ttft": 1.0054910510007176,
+   "ans": "192cm (6'4\")"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7528,
+   "ttft": 0.06469739599924651,
+   "ans": "192cm (6'4\")"
+  },
+  "short": {
+   "hit": true,
+   "pt": 281,
+   "ttft": 0.052721527999892714,
+   "ans": "192cm (6’4\")"
+  }
+ },
+ {
+  "q": "When is Pan Yinhu's birthday?",
+  "gold": "May 10th",
+  "real_visible": {
+   "hit": true,
+   "pt": 7593,
+   "ttft": 0.07032876100038266,
+   "ans": "May 10th"
+  },
+  "real_masked": {
+   "hit": true,
+   "pt": 7593,
+   "ttft": 0.0643306809997739,
+   "ans": "May 10th"
+  },
+  "neutral_visible": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.076231206000557,
+   "ans": "May 10th"
+  },
+  "neutral_masked": {
+   "hit": true,
+   "pt": 7529,
+   "ttft": 0.08539759200084518,
+   "ans": "May 10th"
+  },
+  "short": {
+   "hit": true,
+   "pt": 282,
+   "ttft": 0.050422374999470776,
+   "ans": "May 10th"
+  }
+ }
+]

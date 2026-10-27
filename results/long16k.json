@@ -1,0 +1,178 @@
+[
+ {
+  "q": "How tall is Alice Thymefield?",
+  "gold": "163 cm (5'4\", ears included)",
+  "0": {
+   "hit": true,
+   "pt": 15826,
+   "sec": 6.05,
+   "ans": "163 cm (5'4\", ears included)"
+  },
+  "7900": {
+   "hit": true,
+   "pt": 15826,
+   "sec": 4.24,
+   "ans": "163 cm (5'4\", ears included)"
+  },
+  "15500": {
+   "hit": true,
+   "pt": 15826,
+   "sec": 4.22,
+   "ans": "163 cm (5'4\", ears included)"
+  }
+ },
+ {
+  "q": "When is Alice Thymefield's birthday?",
+  "gold": "August 30th",
+  "0": {
+   "hit": true,
+   "pt": 15827,
+   "sec": 5.2,
+   "ans": "August 30th"
+  },
+  "7900": {
+   "hit": true,
+   "pt": 15827,
+   "sec": 3.88,
+   "ans": "August 30th"
+  },
+  "15500": {
+   "hit": true,
+   "pt": 15827,
+   "sec": 3.91,
+   "ans": "August 30th"
+  }
+ },
+ {
+  "q": "How tall is Aria?",
+  "gold": "150cm (4'11\")",
+  "0": {
+   "hit": true,
+   "pt": 15823,
+   "sec": 5.79,
+   "ans": "150cm (4'11\")"
+  },
+  "7900": {
+   "hit": true,
+   "pt": 15823,
+   "sec": 4.15,
+   "ans": "150cm (4'11\")"
+  },
+  "15500": {
+   "hit": true,
+   "pt": 15823,
+   "sec": 4.16,
+   "ans": "150cm (4'11\")"
+  }
+ },
+ {
+  "q": "When is Aria's birthday?",
+  "gold": "June 7th",
+  "0": {
+   "hit": true,
+   "pt": 15824,
+   "sec": 5.05,
+   "ans": "June 7th"
+  },
+  "7900": {
+   "hit": true,
+   "pt": 15824,
+   "sec": 3.86,
+   "ans": "June 7th"
+  },
+  "15500": {
+   "hit": true,
+   "pt": 15824,
+   "sec": 3.86,
+   "ans": "June 7th"
+  }
+ },
+ {
+  "q": "How tall is Banyue?",
+  "gold": "200cm (6'7\")",
+  "0": {
+   "hit": true,
+   "pt": 15824,
+   "sec": 5.83,
+   "ans": "200cm (6'7\")"
+  },
+  "7900": {
+   "hit": true,
+   "pt": 15824,
+   "sec": 4.08,
+   "ans": "200cm (6'7\")"
+  },
+  "15500": {
+   "hit": true,
+   "pt": 15824,
+   "sec": 4.05,
+   "ans": "200cm (6'7\")"
+  }
+ },
+ {
+  "q": "When is Banyue's birthday?",
+  "gold": "July 24th",
+  "0": {
+   "hit": true,
+   "pt": 15825,
+   "sec": 5.15,
+   "ans": "July 24th"
+  },
+  "7900": {
+   "hit": true,
+   "pt": 15825,
+   "sec": 3.95,
+   "ans": "July 24th"
+  },
+  "15500": {
+   "hit": true,
+   "pt": 15825,
+   "sec": 3.88,
+   "ans": "July 24th"
+  }
+ },
+ {
+  "q": "When is Cissia's birthday?",
+  "gold": "January 10th",
+  "0": {
+   "hit": true,
+   "pt": 15856,
+   "sec": 5.58,
+   "ans": "January 10th"
+  },
+  "7900": {
+   "hit": true,
+   "pt": 15856,
+   "sec": 3.95,
+   "ans": "January 10th"
+  },
+  "15500": {
+   "hit": true,
+   "pt": 15856,
+   "sec": 3.99,
+   "ans": "January 10th"
+  }
+ },
+ {
+  "q": "How tall is Claret Flint?",
+  "gold": "166cm (5'5\")",
+  "0": {
+   "hit": true,
+   "pt": 15855,
+   "sec": 5.73,
+   "ans": "166cm (5'5\")"
+  },
+  "7900": {
+   "hit": true,
+   "pt": 15855,
+   "sec": 4.16,
+   "ans": "166cm (5'5\")"
+  },
+  "15500": {
+   "hit": true,
+   "pt": 15855,
+   "sec": 4.12,
+   "ans": "166cm (5'5\")"
+  }
+ }
+]

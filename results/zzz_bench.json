@@ -1,0 +1,4322 @@
+[
+ {
+  "tag": "visible",
+  "q": "How tall is Alice Thymefield?",
+  "gold": "163 cm (5'4\", ears included)",
+  "av": "2.1",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Alice Thymefield is 5'10\" tall.",
+   "pt": 36,
+   "ttft": 0.1600596940043033
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "163 cm (5'4\", ears included)",
+   "pt": 1847,
+   "ttft": 0.05064599400066072
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "163 cm (5'4\", ears included)",
+   "pt": 1847,
+   "ttft": 0.06202032799774315
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "163 cm (5'4\", ears included)",
+   "pt": 1782,
+   "ttft": 0.046349702002771664
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Alice Thymefield?",
+  "gold": "163 cm (5'4\", ears included)",
+  "av": "2.1",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Alice Thymefield is 5'10\" tall.",
+   "pt": 36,
+   "ttft": 0.05044672399526462
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "163 cm (5'4\", ears included)",
+   "pt": 1847,
+   "ttft": 0.056817008000507485
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "162 cm (5'10\")",
+   "pt": 1847,
+   "ttft": 0.05441966199578019
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1290,
+   "ttft": 0.06781283800228266
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Alice Thymefield's birthday?",
+  "gold": "August 30th",
+  "av": "2.1",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Alice Thymefield's birthday is April 21.",
+   "pt": 37,
+   "ttft": 0.04344506900088163
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "August 30th",
+   "pt": 1848,
+   "ttft": 0.04462330699607264
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "August 30th",
+   "pt": 1848,
+   "ttft": 0.05472666300192941
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "August 30th",
+   "pt": 1783,
+   "ttft": 0.04577299900120124
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Alice Thymefield's birthday?",
+  "gold": "August 30th",
+  "av": "2.1",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Alice Thymefield's birthday is April 21.",
+   "pt": 37,
+   "ttft": 0.056260738005221356
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "August 30th",
+   "pt": 1848,
+   "ttft": 0.0443544549998478
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1848,
+   "ttft": 0.044858658002340235
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1291,
+   "ttft": 0.045862186001613736
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "What species is Alice Thymefield?",
+  "gold": "Thiren  (Rabbit)",
+  "av": "2.1",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Alice Thymefield is a character in the T",
+   "pt": 36,
+   "ttft": 0.04690675799793098
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Rabbit)",
+   "pt": 1847,
+   "ttft": 0.053004516994406004
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Rabbit)",
+   "pt": 1847,
+   "ttft": 0.048078391002491117
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Rabbit)",
+   "pt": 1782,
+   "ttft": 0.044537634996231645
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "What species is Alice Thymefield?",
+  "gold": "Thiren  (Rabbit)",
+  "av": "2.1",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Alice Thymefield is a character in the T",
+   "pt": 36,
+   "ttft": 0.05237758300063433
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Rabbit)",
+   "pt": 1847,
+   "ttft": 0.05181483599881176
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Human",
+   "pt": 1847,
+   "ttft": 0.05177546900085872
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1290,
+   "ttft": 0.044935896003153175
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Aria?",
+  "gold": "150cm (4'11\")",
+  "av": "2.6",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Aria is 5'10\".",
+   "pt": 33,
+   "ttft": 0.044921747998159844
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "150cm (4'11\")",
+   "pt": 1844,
+   "ttft": 0.05365318700205535
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "150cm (4'11\")",
+   "pt": 1844,
+   "ttft": 0.045319115997699555
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "150cm (4'11\")",
+   "pt": 1779,
+   "ttft": 0.04608721000113292
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Aria?",
+  "gold": "150cm (4'11\")",
+  "av": "2.6",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Aria is 5'10\".",
+   "pt": 33,
+   "ttft": 0.04168700000445824
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "150cm (4'11\")",
+   "pt": 1844,
+   "ttft": 0.0530481800014968
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1844,
+   "ttft": 0.04487206000339938
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1535,
+   "ttft": 0.05459726499975659
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Aria's birthday?",
+  "gold": "June 7th",
+  "av": "2.6",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Aria's birthday is April 15th.",
+   "pt": 34,
+   "ttft": 0.04805633299838519
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "June 7th",
+   "pt": 1845,
+   "ttft": 0.054359524001483805
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "June 7th",
+   "pt": 1845,
+   "ttft": 0.06067032700229902
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "June 7th",
+   "pt": 1780,
+   "ttft": 0.04671088099712506
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Aria's birthday?",
+  "gold": "June 7th",
+  "av": "2.6",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Aria's birthday is April 15th.",
+   "pt": 34,
+   "ttft": 0.05085797200445086
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "June 7th",
+   "pt": 1845,
+   "ttft": 0.04639332900114823
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Aria's birthday is January 31st.",
+   "pt": 1845,
+   "ttft": 0.044463049998739734
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1536,
+   "ttft": 0.04233235900028376
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Banyue?",
+  "gold": "200cm (6'7\")",
+  "av": "2.4",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Banyue is approximately 1.7 meters tall.",
+   "pt": 34,
+   "ttft": 0.04102568599773804
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "200cm (6'7\")",
+   "pt": 1845,
+   "ttft": 0.043762743000115734
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "200cm (6'7\")",
+   "pt": 1845,
+   "ttft": 0.04858788499404909
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "200cm (6'7\")",
+   "pt": 1781,
+   "ttft": 0.044547555000463035
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Banyue?",
+  "gold": "200cm (6'7\")",
+  "av": "2.4",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Banyue is approximately 1.7 meters tall.",
+   "pt": 34,
+   "ttft": 0.04215359100635396
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "200cm (6'7\")",
+   "pt": 1845,
+   "ttft": 0.04500874200311955
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1845,
+   "ttft": 0.05087833700235933
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1292,
+   "ttft": 0.04521316900354577
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Banyue's birthday?",
+  "gold": "July 24th",
+  "av": "2.4",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Banyue's birthday is not publicly known.",
+   "pt": 35,
+   "ttft": 0.060482916996988934
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 24th",
+   "pt": 1846,
+   "ttft": 0.05480785200052196
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 24th",
+   "pt": 1846,
+   "ttft": 0.04432640300365165
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 24th",
+   "pt": 1782,
+   "ttft": 0.05076080200524302
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Banyue's birthday?",
+  "gold": "July 24th",
+  "av": "2.4",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Banyue's birthday is not publicly known.",
+   "pt": 35,
+   "ttft": 0.04110244800540386
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 24th",
+   "pt": 1846,
+   "ttft": 0.04405501099972753
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1846,
+   "ttft": 0.05202411200298229
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1293,
+   "ttft": 0.04080946700560162
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Cissia's birthday?",
+  "gold": "January 10th",
+  "av": "2.7",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Cissia's birthday is on April 21st.",
+   "pt": 35,
+   "ttft": 0.043566992004343774
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 10th",
+   "pt": 1846,
+   "ttft": 0.048124098997504916
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 10th",
+   "pt": 1846,
+   "ttft": 0.0444562170014251
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 10th",
+   "pt": 1781,
+   "ttft": 0.043118679997860454
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Cissia's birthday?",
+  "gold": "January 10th",
+  "av": "2.7",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Cissia's birthday is on April 21st.",
+   "pt": 35,
+   "ttft": 0.04313872400234686
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 10th",
+   "pt": 1846,
+   "ttft": 0.04279332699661609
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1846,
+   "ttft": 0.04486544799874537
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1537,
+   "ttft": 0.045765782000671607
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "What species is Cissia?",
+  "gold": "Thiren  (Snake)",
+  "av": "2.7",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Cissia is a genus of flowering plants in",
+   "pt": 34,
+   "ttft": 0.040850974997738376
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Snake)",
+   "pt": 1845,
+   "ttft": 0.047941292003088165
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Snake)",
+   "pt": 1845,
+   "ttft": 0.05365085400262615
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Snake)",
+   "pt": 1780,
+   "ttft": 0.05895944099756889
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "What species is Cissia?",
+  "gold": "Thiren  (Snake)",
+  "av": "2.7",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Cissia is a genus of flowering plants in",
+   "pt": 34,
+   "ttft": 0.04206109900405863
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Snake)",
+   "pt": 1845,
+   "ttft": 0.04835328700573882
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Cissia is a Thiren (Rabbit).",
+   "pt": 1845,
+   "ttft": 0.05141874599939911
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1536,
+   "ttft": 0.04824474300403381
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Claret Flint?",
+  "gold": "166cm (5'5\")",
+  "av": "3.2",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Claret Flint is 5'10\" (178 cm) tall.",
+   "pt": 34,
+   "ttft": 0.05084186400199542
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "166cm (5'5\")",
+   "pt": 1845,
+   "ttft": 0.0440958489998593
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "166cm (5'5\")",
+   "pt": 1845,
+   "ttft": 0.054387453994422685
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "166cm (5'5\")",
+   "pt": 1781,
+   "ttft": 0.04312482199748047
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Claret Flint?",
+  "gold": "166cm (5'5\")",
+  "av": "3.2",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Claret Flint is 5'10\" (178 cm) tall.",
+   "pt": 34,
+   "ttft": 0.04065161000471562
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "166cm (5'5\")",
+   "pt": 1845,
+   "ttft": 0.04906807299994398
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "163 cm (5'4\", ears included)",
+   "pt": 1845,
+   "ttft": 0.06084139999438776
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1536,
+   "ttft": 0.04252457200345816
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Claret Flint's birthday?",
+  "gold": "July 23rd",
+  "av": "3.2",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Claret Flint's birthday is April 21.",
+   "pt": 35,
+   "ttft": 0.042422070997417904
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 23rd",
+   "pt": 1846,
+   "ttft": 0.04492397099966183
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 23rd",
+   "pt": 1846,
+   "ttft": 0.042972326002200134
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 23rd",
+   "pt": 1782,
+   "ttft": 0.04958020999765722
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Claret Flint's birthday?",
+  "gold": "July 23rd",
+  "av": "3.2",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Claret Flint's birthday is April 21.",
+   "pt": 35,
+   "ttft": 0.04251242500322405
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 23rd",
+   "pt": 1846,
+   "ttft": 0.04362916100217262
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1846,
+   "ttft": 0.057531362006557174
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1537,
+   "ttft": 0.045533640004578047
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Dialyn?",
+  "gold": "145cm (4'9\")",
+  "av": "2.4",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Dialyn is a fictional character from the",
+   "pt": 33,
+   "ttft": 0.0615508709961432
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "145cm (4'9\")",
+   "pt": 1844,
+   "ttft": 0.24765591700270306
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "145cm (4'9\")",
+   "pt": 1844,
+   "ttft": 0.050058496999554336
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "145cm (4'9\")",
+   "pt": 1779,
+   "ttft": 0.22342456899787067
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Dialyn?",
+  "gold": "145cm (4'9\")",
+  "av": "2.4",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Dialyn is a fictional character from the",
+   "pt": 33,
+   "ttft": 0.04391027400561143
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "145cm (4'9\")",
+   "pt": 1844,
+   "ttft": 0.04440185100247618
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1844,
+   "ttft": 0.04468020900094416
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1291,
+   "ttft": 0.04803934800293064
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Dialyn's birthday?",
+  "gold": "May 28th",
+  "av": "2.4",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Dialyn's birthday is not publicly disclo",
+   "pt": 34,
+   "ttft": 0.05238488200120628
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "May 28th",
+   "pt": 1845,
+   "ttft": 0.05535219499870436
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "May 28th",
+   "pt": 1845,
+   "ttft": 0.04430219800269697
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "May 28th",
+   "pt": 1780,
+   "ttft": 0.05384045300161233
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Dialyn's birthday?",
+  "gold": "May 28th",
+  "av": "2.4",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Dialyn's birthday is not publicly disclo",
+   "pt": 34,
+   "ttft": 0.040124353996361606
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "May 28th",
+   "pt": 1845,
+   "ttft": 0.04749792200163938
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1845,
+   "ttft": 0.041567113003111444
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1292,
+   "ttft": 0.06196596800145926
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Ju Fufu?",
+  "gold": "142cm (4'8\")",
+  "av": "2.0",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Ju Fufu is 5'10\" (178 cm) tall.",
+   "pt": 35,
+   "ttft": 0.04449962500075344
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "142cm (4'8\")",
+   "pt": 1846,
+   "ttft": 0.2434418119955808
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "142cm (4'8\")",
+   "pt": 1846,
+   "ttft": 0.043656854002620094
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "142cm (4'8\")",
+   "pt": 1784,
+   "ttft": 0.21383231999789132
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Ju Fufu?",
+  "gold": "142cm (4'8\")",
+  "av": "2.0",
+  "deny_blocks": 47,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Ju Fufu is 5'10\" (178 cm) tall.",
+   "pt": 35,
+   "ttft": 0.04550258899689652
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "142cm (4'8\")",
+   "pt": 1846,
+   "ttft": 0.0572871580006904
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "165 cm (5'4\")",
+   "pt": 1846,
+   "ttft": 0.044262408002396114
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1045,
+   "ttft": 0.06527970000024652
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Ju Fufu's birthday?",
+  "gold": "January 6th",
+  "av": "2.0",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Ju Fufu's birthday is not publicly discl",
+   "pt": 36,
+   "ttft": 0.0682491370025673
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 6th",
+   "pt": 1847,
+   "ttft": 0.04579707499942742
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 6th",
+   "pt": 1847,
+   "ttft": 0.05532879500242416
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 6th",
+   "pt": 1785,
+   "ttft": 0.05060278900054982
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Ju Fufu's birthday?",
+  "gold": "January 6th",
+  "av": "2.0",
+  "deny_blocks": 47,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Ju Fufu's birthday is not publicly discl",
+   "pt": 36,
+   "ttft": 0.04224908699688967
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 6th",
+   "pt": 1847,
+   "ttft": 0.043703092997020576
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1847,
+   "ttft": 0.04714190599770518
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1046,
+   "ttft": 0.05137385099806124
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Komano Manato?",
+  "gold": "198cm (6'6\")",
+  "av": "2.3",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Komano Manato is 1.75 meters tall.",
+   "pt": 35,
+   "ttft": 0.047077597999305
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "198cm (6'6\")",
+   "pt": 1846,
+   "ttft": 0.23738259400124662
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "198cm (6'6\")",
+   "pt": 1846,
+   "ttft": 0.04871547500079032
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "198cm (6'6\")",
+   "pt": 1783,
+   "ttft": 0.21517692600173177
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Komano Manato?",
+  "gold": "198cm (6'6\")",
+  "av": "2.3",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Komano Manato is 1.75 meters tall.",
+   "pt": 35,
+   "ttft": 0.06623096099792747
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "198cm (6'6\")",
+   "pt": 1846,
+   "ttft": 0.04745672600256512
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1846,
+   "ttft": 0.04955585699644871
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1293,
+   "ttft": 0.06760323500202503
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Komano Manato's birthday?",
+  "gold": "January 5th",
+  "av": "2.3",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Komano Manato's birthday is April 15.",
+   "pt": 36,
+   "ttft": 0.04643279300216818
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 5th",
+   "pt": 1847,
+   "ttft": 0.04457008600002155
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 5th",
+   "pt": 1847,
+   "ttft": 0.05478358999971533
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 5th",
+   "pt": 1784,
+   "ttft": 0.043249381000350695
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Komano Manato's birthday?",
+  "gold": "January 5th",
+  "av": "2.3",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Komano Manato's birthday is April 15.",
+   "pt": 36,
+   "ttft": 0.04222114099684404
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 5th",
+   "pt": 1847,
+   "ttft": 0.05315402599808294
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1847,
+   "ttft": 0.06160696000006283
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1294,
+   "ttft": 0.04823638800007757
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Lucia Elowen?",
+  "gold": "160cm (5'3\")",
+  "av": "2.3",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Lucia Elowen is 5'10\" (178 cm) tall.",
+   "pt": 35,
+   "ttft": 0.05102727800112916
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "160cm (5'3\")",
+   "pt": 1846,
+   "ttft": 0.23694324400275946
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "160cm (5'3\")",
+   "pt": 1846,
+   "ttft": 0.04337169700011145
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "160cm (5'3\")",
+   "pt": 1785,
+   "ttft": 0.21021744899917394
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Lucia Elowen?",
+  "gold": "160cm (5'3\")",
+  "av": "2.3",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Lucia Elowen is 5'10\" (178 cm) tall.",
+   "pt": 35,
+   "ttft": 0.05019570299918996
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "160cm (5'3\")",
+   "pt": 1846,
+   "ttft": 0.04297378299816046
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "163 cm (5'8\")",
+   "pt": 1846,
+   "ttft": 0.04449346799810883
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1293,
+   "ttft": 0.045573229996080045
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Lucia Elowen's birthday?",
+  "gold": "March 17th",
+  "av": "2.3",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "April 15, 1995",
+   "pt": 36,
+   "ttft": 0.045901158002379816
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "March 17th",
+   "pt": 1847,
+   "ttft": 0.04750016299658455
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "March 17th",
+   "pt": 1847,
+   "ttft": 0.051311384995642584
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "March 17th",
+   "pt": 1786,
+   "ttft": 0.04385349600488553
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Lucia Elowen's birthday?",
+  "gold": "March 17th",
+  "av": "2.3",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "April 15, 1995",
+   "pt": 36,
+   "ttft": 0.0425604980046046
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "March 17th",
+   "pt": 1847,
+   "ttft": 0.04257269299705513
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1847,
+   "ttft": 0.07032320399594028
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1294,
+   "ttft": 0.0576278930020635
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Nangong Yu's birthday?",
+  "gold": "September 29th",
+  "av": "2.7",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Nangong Yu's birthday is not publicly di",
+   "pt": 36,
+   "ttft": 0.050994333003473
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "September 29th",
+   "pt": 1847,
+   "ttft": 0.23333223900408484
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "September 29th",
+   "pt": 1847,
+   "ttft": 0.04883454999799142
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "September 29th",
+   "pt": 1784,
+   "ttft": 0.21337512599711772
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Nangong Yu's birthday?",
+  "gold": "September 29th",
+  "av": "2.7",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Nangong Yu's birthday is not publicly di",
+   "pt": 36,
+   "ttft": 0.04845151199697284
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "September 29th",
+   "pt": 1847,
+   "ttft": 0.0730555580012151
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1847,
+   "ttft": 0.06411519999528537
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1538,
+   "ttft": 0.04516591300489381
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "What species is Nangong Yu?",
+  "gold": "Thiren  (Unknown Type)",
+  "av": "2.7",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Nangong Yu is a fictional character from",
+   "pt": 35,
+   "ttft": 0.04217495900229551
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Unknown Type)",
+   "pt": 1846,
+   "ttft": 0.05572529900382506
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Unknown Type)",
+   "pt": 1846,
+   "ttft": 0.0513138419992174
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Unknown Type)",
+   "pt": 1783,
+   "ttft": 0.05213364099472528
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "What species is Nangong Yu?",
+  "gold": "Thiren  (Unknown Type)",
+  "av": "2.7",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Nangong Yu is a fictional character from",
+   "pt": 35,
+   "ttft": 0.04665868000301998
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Unknown Type)",
+   "pt": 1846,
+   "ttft": 0.05178704900026787
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Human",
+   "pt": 1846,
+   "ttft": 0.04334690399991814
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1537,
+   "ttft": 0.046167919994331896
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Norma Hollowell?",
+  "gold": "150cm (5'0\")",
+  "av": "3.0",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Norma Hollowell is 5'10\" tall.",
+   "pt": 35,
+   "ttft": 0.04719260100682732
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "150cm (5'0\")",
+   "pt": 1846,
+   "ttft": 0.23697057000390487
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "150cm (5'0\")",
+   "pt": 1846,
+   "ttft": 0.04482687300333055
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "150cm (5'0\")",
+   "pt": 1784,
+   "ttft": 0.22195791299600387
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Norma Hollowell?",
+  "gold": "150cm (5'0\")",
+  "av": "3.0",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Norma Hollowell is 5'10\" tall.",
+   "pt": 35,
+   "ttft": 0.043849241999851074
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "150cm (5'0\")",
+   "pt": 1846,
+   "ttft": 0.04538605400011875
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "150cm (4'11\")",
+   "pt": 1846,
+   "ttft": 0.050396088998240884
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1537,
+   "ttft": 0.05132783500448568
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Norma Hollowell's birthday?",
+  "gold": "July 26th",
+  "av": "3.0",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Norma Hollowell was born on April 12, 19",
+   "pt": 36,
+   "ttft": 0.044663811997452285
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 26th",
+   "pt": 1847,
+   "ttft": 0.045736947999102995
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 26th",
+   "pt": 1847,
+   "ttft": 0.07079047399747651
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 26th",
+   "pt": 1785,
+   "ttft": 0.04451719699864043
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Norma Hollowell's birthday?",
+  "gold": "July 26th",
+  "av": "3.0",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Norma Hollowell was born on April 12, 19",
+   "pt": 36,
+   "ttft": 0.045832704003260005
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 26th",
+   "pt": 1847,
+   "ttft": 0.043431511003291234
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1847,
+   "ttft": 0.043368910999561194
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1538,
+   "ttft": 0.05012689100112766
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "What is Orphie Magnusson & Magus's real name?",
+  "gold": "Orpheus Magnusson",
+  "av": "2.2",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson & Magus is a fictional ",
+   "pt": 41,
+   "ttft": 0.04264893500658218
+  },
+  "A": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson",
+   "pt": 1852,
+   "ttft": 0.25454820600134553
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson",
+   "pt": 1852,
+   "ttft": 0.05183479999686824
+  },
+  "D": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson",
+   "pt": 1793,
+   "ttft": 0.2051537660008762
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "What is Orphie Magnusson & Magus's real name?",
+  "gold": "Orpheus Magnusson",
+  "av": "2.2",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson & Magus is a fictional ",
+   "pt": 41,
+   "ttft": 0.046521679003490135
+  },
+  "A": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson",
+   "pt": 1852,
+   "ttft": 0.04542005399707705
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson & Magus's real name is ",
+   "pt": 1852,
+   "ttft": 0.04241724700113991
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1299,
+   "ttft": 0.04375154399895109
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Orphie Magnusson & Magus?",
+  "gold": "158cm (5'2\")",
+  "av": "2.2",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson & Magus is 6'2\".",
+   "pt": 39,
+   "ttft": 0.061029645999951754
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "158cm (5'2\")",
+   "pt": 1850,
+   "ttft": 0.09038513699488249
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "158cm (5'2\")",
+   "pt": 1850,
+   "ttft": 0.05830328800220741
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "158cm (5'2\")",
+   "pt": 1791,
+   "ttft": 0.04841794099775143
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Orphie Magnusson & Magus?",
+  "gold": "158cm (5'2\")",
+  "av": "2.2",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson & Magus is 6'2\".",
+   "pt": 39,
+   "ttft": 0.04800634500134038
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "158cm (5'2\")",
+   "pt": 1850,
+   "ttft": 0.049683725999784656
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "163 cm (5'4\", ears included)",
+   "pt": 1850,
+   "ttft": 0.08409123500314308
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1297,
+   "ttft": 0.050574622000567615
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Orphie Magnusson & Magus's birthday?",
+  "gold": "November 3rd",
+  "av": "2.2",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson & Magus's birthday is A",
+   "pt": 40,
+   "ttft": 0.04764007000630954
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 3rd",
+   "pt": 1851,
+   "ttft": 0.04853866600024048
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 3rd",
+   "pt": 1851,
+   "ttft": 0.05114012400008505
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 3rd",
+   "pt": 1792,
+   "ttft": 0.04957572900457308
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Orphie Magnusson & Magus's birthday?",
+  "gold": "November 3rd",
+  "av": "2.2",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson & Magus's birthday is A",
+   "pt": 40,
+   "ttft": 0.043161132001841906
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 3rd",
+   "pt": 1851,
+   "ttft": 0.044513587999972515
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 04, 2024",
+   "pt": 1851,
+   "ttft": 0.042313138001190964
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1298,
+   "ttft": 0.04664358299487503
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "What species is Orphie Magnusson & Magus?",
+  "gold": "Human  (Clone)",
+  "av": "2.2",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson & Magus is a fictional ",
+   "pt": 39,
+   "ttft": 0.06112298399966676
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Human  (Clone)",
+   "pt": 1850,
+   "ttft": 0.043059078001533635
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Human  (Clone)",
+   "pt": 1850,
+   "ttft": 0.05171877999964636
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Human  (Clone)",
+   "pt": 1791,
+   "ttft": 0.04905107500235317
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "What species is Orphie Magnusson & Magus?",
+  "gold": "Human  (Clone)",
+  "av": "2.2",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Orphie Magnusson & Magus is a fictional ",
+   "pt": 39,
+   "ttft": 0.04951489600352943
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Human  (Clone)",
+   "pt": 1850,
+   "ttft": 0.04861328900005901
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Human",
+   "pt": 1850,
+   "ttft": 0.04480531200533733
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1297,
+   "ttft": 0.05345448599837255
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Pan Yinhu?",
+  "gold": "192cm (6’4\")",
+  "av": "2.0",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Pan Yinhu is 1.75 meters tall.",
+   "pt": 34,
+   "ttft": 0.05037795800308231
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "192cm (6'4\")",
+   "pt": 1845,
+   "ttft": 0.2405797920000623
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "192cm (6'4\")",
+   "pt": 1845,
+   "ttft": 0.04462126799626276
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "192cm (6'4\")",
+   "pt": 1782,
+   "ttft": 0.21059017600055085
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Pan Yinhu?",
+  "gold": "192cm (6’4\")",
+  "av": "2.0",
+  "deny_blocks": 47,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Pan Yinhu is 1.75 meters tall.",
+   "pt": 34,
+   "ttft": 0.0502288980060257
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "192cm (6'4\")",
+   "pt": 1845,
+   "ttft": 0.04444682200119132
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1845,
+   "ttft": 0.048889193996728864
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1044,
+   "ttft": 0.04268778699770337
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Pan Yinhu's birthday?",
+  "gold": "May 10th",
+  "av": "2.0",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Pan Yinhu was born on April 15, 1970.",
+   "pt": 35,
+   "ttft": 0.040829890000168234
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "May 10th",
+   "pt": 1846,
+   "ttft": 0.045417305002047215
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "May 10th",
+   "pt": 1846,
+   "ttft": 0.04271712199988542
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "May 10th",
+   "pt": 1783,
+   "ttft": 0.04498601899831556
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Pan Yinhu's birthday?",
+  "gold": "May 10th",
+  "av": "2.0",
+  "deny_blocks": 47,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Pan Yinhu was born on April 15, 1970.",
+   "pt": 35,
+   "ttft": 0.0428917140015983
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "May 10th",
+   "pt": 1846,
+   "ttft": 0.04344065899931593
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1846,
+   "ttft": 0.06095313600235386
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1045,
+   "ttft": 0.04285757100296905
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Phoenix Reffaella's birthday?",
+  "gold": "October 31st",
+  "av": "3.3",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Phoenix Reffaella's birthday is not publ",
+   "pt": 36,
+   "ttft": 0.04556480300379917
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "October 31st",
+   "pt": 1847,
+   "ttft": 0.24232221199781634
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "October 31st",
+   "pt": 1847,
+   "ttft": 0.04802584600111004
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "October 31st",
+   "pt": 1784,
+   "ttft": 0.21138339200115297
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Phoenix Reffaella's birthday?",
+  "gold": "October 31st",
+  "av": "3.3",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Phoenix Reffaella's birthday is not publ",
+   "pt": 36,
+   "ttft": 0.048150944006920327
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "October 31st",
+   "pt": 1847,
+   "ttft": 0.07303791299636941
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1847,
+   "ttft": 0.053990856002201326
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1538,
+   "ttft": 0.0700299769960111
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Promeia?",
+  "gold": "174cm (5'8.5\")",
+  "av": "2.8",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Promeia is a fictional planet in the Sta",
+   "pt": 34,
+   "ttft": 0.051304815999174025
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "174cm (5'8.5\")",
+   "pt": 1845,
+   "ttft": 0.24359321300289594
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "174cm (5'8.5\")",
+   "pt": 1845,
+   "ttft": 0.05783148000045912
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "174cm (5'8.5\")",
+   "pt": 1781,
+   "ttft": 0.2128258390002884
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Promeia?",
+  "gold": "174cm (5'8.5\")",
+  "av": "2.8",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Promeia is a fictional planet in the Sta",
+   "pt": 34,
+   "ttft": 0.04434435999428388
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "174cm (5'8.5\")",
+   "pt": 1845,
+   "ttft": 0.052272044995334
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1845,
+   "ttft": 0.04764214200258721
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1536,
+   "ttft": 0.050855526998930145
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Promeia's birthday?",
+  "gold": "December 23rd",
+  "av": "2.8",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Promeia's birthday is not publicly discl",
+   "pt": 35,
+   "ttft": 0.04986828099936247
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "December 23rd",
+   "pt": 1846,
+   "ttft": 0.047534935001749545
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "December 23rd",
+   "pt": 1846,
+   "ttft": 0.05430512900056783
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "December 23rd",
+   "pt": 1782,
+   "ttft": 0.043387381003412884
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Promeia's birthday?",
+  "gold": "December 23rd",
+  "av": "2.8",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Promeia's birthday is not publicly discl",
+   "pt": 35,
+   "ttft": 0.04336739300197223
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "December 23rd",
+   "pt": 1846,
+   "ttft": 0.04913268100062851
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1846,
+   "ttft": 0.044357610000588465
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1537,
+   "ttft": 0.0475316770025529
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "What is Pyrois's gender?",
+  "gold": "Unspecified",
+  "av": "3.0",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Pyrois is a female character.",
+   "pt": 35,
+   "ttft": 0.05070567200164078
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Unspecified",
+   "pt": 1846,
+   "ttft": 0.23932989699824248
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Unspecified",
+   "pt": 1846,
+   "ttft": 0.04283181799837621
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Unspecified",
+   "pt": 1782,
+   "ttft": 0.2084870589969796
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "What is Pyrois's gender?",
+  "gold": "Unspecified",
+  "av": "3.0",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Pyrois is a female character.",
+   "pt": 35,
+   "ttft": 0.04270086399628781
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Unspecified",
+   "pt": 1846,
+   "ttft": 0.044871334997878876
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Male",
+   "pt": 1846,
+   "ttft": 0.04801513400161639
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1537,
+   "ttft": 0.04411730999709107
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Remielle Dan?",
+  "gold": "167 cm (5'6\")",
+  "av": "3.1",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Remielle Dan is 5'10\" (178 cm) tall.",
+   "pt": 35,
+   "ttft": 0.041790370996750426
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "167 cm (5'6\")",
+   "pt": 1846,
+   "ttft": 0.242273572999693
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "167 cm (5'6\")",
+   "pt": 1846,
+   "ttft": 0.050062424001225736
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "167 cm (5'6\")",
+   "pt": 1784,
+   "ttft": 0.21229575399775058
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Remielle Dan?",
+  "gold": "167 cm (5'6\")",
+  "av": "3.1",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Remielle Dan is 5'10\" tall.",
+   "pt": 35,
+   "ttft": 0.04850593800074421
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "167 cm (5'6\")",
+   "pt": 1846,
+   "ttft": 0.06139973899553297
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "163cm (5'4\", ears included)",
+   "pt": 1846,
+   "ttft": 0.05261557399353478
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1537,
+   "ttft": 0.04306972099584527
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Remielle Dan's birthday?",
+  "gold": "March 14th",
+  "av": "3.1",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Remielle Dan's birthday is April 25.",
+   "pt": 36,
+   "ttft": 0.042421580001246184
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "March 14th",
+   "pt": 1847,
+   "ttft": 0.05137675900186878
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "March 14th",
+   "pt": 1847,
+   "ttft": 0.04506350200244924
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "March 14th",
+   "pt": 1785,
+   "ttft": 0.043684412994480226
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Remielle Dan's birthday?",
+  "gold": "March 14th",
+  "av": "3.1",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Remielle Dan's birthday is April 15.",
+   "pt": 36,
+   "ttft": 0.046120890001475345
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "March 14th",
+   "pt": 1847,
+   "ttft": 0.04659278199687833
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1847,
+   "ttft": 0.049611847003689036
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1538,
+   "ttft": 0.059744598001998384
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "What species is Remielle Dan?",
+  "gold": "Thiren  (Winged)",
+  "av": "3.1",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Remielle Dan is a fictional character fr",
+   "pt": 35,
+   "ttft": 0.04966408399923239
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Winged)",
+   "pt": 1846,
+   "ttft": 0.04341737699724035
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Winged)",
+   "pt": 1846,
+   "ttft": 0.046569496000302024
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Winged)",
+   "pt": 1784,
+   "ttft": 0.060961584000324365
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "What species is Remielle Dan?",
+  "gold": "Thiren  (Winged)",
+  "av": "3.1",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Remielle Dan is a fictional character fr",
+   "pt": 35,
+   "ttft": 0.04119099899980938
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Winged)",
+   "pt": 1846,
+   "ttft": 0.044966569999814965
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Human",
+   "pt": 1846,
+   "ttft": 0.04444266399514163
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1537,
+   "ttft": 0.042917484999634326
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Roxy Ifrita Pryce?",
+  "gold": "144cm (4'9\")",
+  "av": "3.2",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Roxy Ifrita Pryce is 5'10\" tall.",
+   "pt": 37,
+   "ttft": 0.04374707300303271
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "144cm (4'9\")",
+   "pt": 1848,
+   "ttft": 0.23720167300052708
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "144cm (4'9\")",
+   "pt": 1848,
+   "ttft": 0.04467795099481009
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "144cm (4'9\")",
+   "pt": 1788,
+   "ttft": 0.20890683600009652
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Roxy Ifrita Pryce?",
+  "gold": "144cm (4'9\")",
+  "av": "3.2",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Roxy Ifrita Pryce is 5'10\" tall.",
+   "pt": 37,
+   "ttft": 0.04259286299929954
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "144cm (4'9\")",
+   "pt": 1848,
+   "ttft": 0.04881419400044251
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "150cm (4'11\")",
+   "pt": 1848,
+   "ttft": 0.05829628300125478
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1539,
+   "ttft": 0.050119348998123314
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Roxy Ifrita Pryce's birthday?",
+  "gold": "December 29th",
+  "av": "3.2",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Roxy Ifrita Pryce's birthday is not publ",
+   "pt": 38,
+   "ttft": 0.049686459999065846
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "December 29th",
+   "pt": 1849,
+   "ttft": 0.05979238900181372
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "December 29th",
+   "pt": 1849,
+   "ttft": 0.0459031669961405
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "December 29th",
+   "pt": 1789,
+   "ttft": 0.05305543199938256
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Roxy Ifrita Pryce's birthday?",
+  "gold": "December 29th",
+  "av": "3.2",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Roxy Ifrita Pryce's birthday is not publ",
+   "pt": 38,
+   "ttft": 0.04096955899876775
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "December 29th",
+   "pt": 1849,
+   "ttft": 0.04437230400071712
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1849,
+   "ttft": 0.045599926001159474
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1540,
+   "ttft": 0.05992579099984141
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "What is Seed's real name?",
+  "gold": "Flora",
+  "av": "2.2",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Seed's real name is Seed.",
+   "pt": 34,
+   "ttft": 0.07112102500104811
+  },
+  "A": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Seed's real name is not provided in the ",
+   "pt": 1845,
+   "ttft": 0.24300646600022446
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Seed's real name is not provided in the ",
+   "pt": 1845,
+   "ttft": 0.059327290997316595
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Seed's real name is Flora.",
+   "pt": 1780,
+   "ttft": 0.2143210850044852
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "What is Seed's real name?",
+  "gold": "Flora",
+  "av": "2.2",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Seed's real name is Seed.",
+   "pt": 34,
+   "ttft": 0.04248170700157061
+  },
+  "A": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Seed's real name is not provided in the ",
+   "pt": 1845,
+   "ttft": 0.05217810499743791
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Seed's real name is not provided in the ",
+   "pt": 1845,
+   "ttft": 0.045250942996062804
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1292,
+   "ttft": 0.04453230000217445
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Seed?",
+  "gold": "153cm (5'0\")/240cm (7'8\", mech)",
+  "av": "2.2",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Seed is 1.5 feet tall.",
+   "pt": 32,
+   "ttft": 0.04163327400601702
+  },
+  "A": {
+   "hit": false,
+   "abstain": false,
+   "ans": "153cm (5'0\")",
+   "pt": 1843,
+   "ttft": 0.044174142996780574
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "153cm (5'0\")",
+   "pt": 1843,
+   "ttft": 0.04378309399908176
+  },
+  "D": {
+   "hit": false,
+   "abstain": false,
+   "ans": "153cm (5'0\")",
+   "pt": 1778,
+   "ttft": 0.056208576999779325
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Seed?",
+  "gold": "153cm (5'0\")/240cm (7'8\", mech)",
+  "av": "2.2",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Seed is 1.5 feet tall.",
+   "pt": 32,
+   "ttft": 0.06030981900403276
+  },
+  "A": {
+   "hit": false,
+   "abstain": false,
+   "ans": "153cm (5'0\")",
+   "pt": 1843,
+   "ttft": 0.059360353006923106
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm",
+   "pt": 1843,
+   "ttft": 0.0731510600016918
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1290,
+   "ttft": 0.04825631499988958
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Seed's birthday?",
+  "gold": "November 22nd",
+  "av": "2.2",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Seed's birthday is April 15th.",
+   "pt": 33,
+   "ttft": 0.04183279500284698
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 22nd",
+   "pt": 1844,
+   "ttft": 0.05564909800159512
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 22nd",
+   "pt": 1844,
+   "ttft": 0.04421005999756744
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 22nd",
+   "pt": 1779,
+   "ttft": 0.04403910400287714
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Seed's birthday?",
+  "gold": "November 22nd",
+  "av": "2.2",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Seed's birthday is April 15th.",
+   "pt": 33,
+   "ttft": 0.06582331399840768
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 22nd",
+   "pt": 1844,
+   "ttft": 0.048920098997768946
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1844,
+   "ttft": 0.053438951006683055
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1291,
+   "ttft": 0.04744753499835497
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Sigrid de L'Azur?",
+  "gold": "175cm (5'9\")",
+  "av": "3.1",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Sigrid de L'Azur is a fictional characte",
+   "pt": 38,
+   "ttft": 0.041832830997009296
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "175cm (5'9\")",
+   "pt": 1849,
+   "ttft": 0.2386166120049893
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "175cm (5'9\")",
+   "pt": 1849,
+   "ttft": 0.045262456995260436
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "175cm (5'9\")",
+   "pt": 1789,
+   "ttft": 0.2068636619951576
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Sigrid de L'Azur?",
+  "gold": "175cm (5'9\")",
+  "av": "3.1",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Sigrid de L'Azur is a fictional characte",
+   "pt": 38,
+   "ttft": 0.04098903900012374
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "175cm (5'9\")",
+   "pt": 1849,
+   "ttft": 0.04325835700001335
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1849,
+   "ttft": 0.04902735500218114
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1540,
+   "ttft": 0.05802699699415825
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Sigrid de L'Azur's birthday?",
+  "gold": "April 23rd",
+  "av": "3.1",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "April 15, 1925",
+   "pt": 39,
+   "ttft": 0.04165486100100679
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "April 23rd",
+   "pt": 1850,
+   "ttft": 0.04309176199603826
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "April 23rd",
+   "pt": 1850,
+   "ttft": 0.047880482001346536
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "April 23rd",
+   "pt": 1790,
+   "ttft": 0.04475059499964118
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Sigrid de L'Azur's birthday?",
+  "gold": "April 23rd",
+  "av": "3.1",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "April 12, 1925",
+   "pt": 39,
+   "ttft": 0.04156129300099565
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "April 23rd",
+   "pt": 1850,
+   "ttft": 0.05296153800009051
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1850,
+   "ttft": 0.050506250001490116
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1541,
+   "ttft": 0.04449656799988588
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "What species is Sigrid de L'Azur?",
+  "gold": "Thiren  (Horse)",
+  "av": "3.1",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Sigrid de L'Azur is a fictional characte",
+   "pt": 38,
+   "ttft": 0.057581513006880414
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Horse)",
+   "pt": 1849,
+   "ttft": 0.045132081999327056
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Horse)",
+   "pt": 1849,
+   "ttft": 0.045062359000439756
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Horse)",
+   "pt": 1789,
+   "ttft": 0.04504454099514987
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "What species is Sigrid de L'Azur?",
+  "gold": "Thiren  (Horse)",
+  "av": "3.1",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Sigrid de L'Azur is a fictional characte",
+   "pt": 38,
+   "ttft": 0.04346239400183549
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Horse)",
+   "pt": 1849,
+   "ttft": 0.04706828000053065
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Human",
+   "pt": 1849,
+   "ttft": 0.05131640799663728
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1540,
+   "ttft": 0.04421808100596536
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Starlight - Billy Kid?",
+  "gold": "188cm (6'2\")",
+  "av": "2.8",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Starlight - Billy Kid is 1.8 meters tall",
+   "pt": 36,
+   "ttft": 0.04336311200313503
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "188cm (6'2\")",
+   "pt": 1847,
+   "ttft": 0.2420199680054793
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "188cm (6'2\")",
+   "pt": 1847,
+   "ttft": 0.04323720800312003
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "188cm (6'2\")",
+   "pt": 1786,
+   "ttft": 0.22406211899942718
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Starlight - Billy Kid?",
+  "gold": "188cm (6'2\")",
+  "av": "2.8",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Starlight - Billy Kid is 1.8 meters tall",
+   "pt": 36,
+   "ttft": 0.05222852199949557
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "188cm (6'2\")",
+   "pt": 1847,
+   "ttft": 0.050242258002981544
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1847,
+   "ttft": 0.05620197700045537
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1538,
+   "ttft": 0.056067507997795474
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Starlight - Billy Kid's birthday?",
+  "gold": "November 25th",
+  "av": "2.8",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "April 15, 1968",
+   "pt": 37,
+   "ttft": 0.07615281800099183
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 25th",
+   "pt": 1848,
+   "ttft": 0.061377354999422096
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 25th",
+   "pt": 1848,
+   "ttft": 0.06724467599997297
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 25th",
+   "pt": 1787,
+   "ttft": 0.04813294299674453
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Starlight - Billy Kid's birthday?",
+  "gold": "November 25th",
+  "av": "2.8",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "April 15, 1968",
+   "pt": 37,
+   "ttft": 0.05081641300057527
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 25th",
+   "pt": 1848,
+   "ttft": 0.06324699499964481
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1848,
+   "ttft": 0.0526072339998791
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1539,
+   "ttft": 0.04415589600102976
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Sunna?",
+  "gold": "154cm (5'1\")",
+  "av": "2.6",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Sunna is a term used in Islamic theology",
+   "pt": 33,
+   "ttft": 0.06290851800440578
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "154cm (5'1\")",
+   "pt": 1844,
+   "ttft": 0.23969227699853946
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "154cm (5'1\")",
+   "pt": 1844,
+   "ttft": 0.06454919200041331
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "154cm (5'1\")",
+   "pt": 1780,
+   "ttft": 0.2049413100030506
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Sunna?",
+  "gold": "154cm (5'1\")",
+  "av": "2.6",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Sunna is a term used in Islamic theology",
+   "pt": 33,
+   "ttft": 0.062215723999543115
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "154cm (5'1\")",
+   "pt": 1844,
+   "ttft": 0.0453120910024154
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1844,
+   "ttft": 0.044679858001472894
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1291,
+   "ttft": 0.06272745799651602
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Sunna's birthday?",
+  "gold": "July 18th",
+  "av": "2.6",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Sunna's birthday is on 17th June.",
+   "pt": 34,
+   "ttft": 0.04217298499861499
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 18th",
+   "pt": 1845,
+   "ttft": 0.047037994998390786
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 18th",
+   "pt": 1845,
+   "ttft": 0.04592576799768722
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 18th",
+   "pt": 1781,
+   "ttft": 0.04521662600018317
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Sunna's birthday?",
+  "gold": "July 18th",
+  "av": "2.6",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Sunna's birthday is on 17th June.",
+   "pt": 34,
+   "ttft": 0.04222501500044018
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "July 18th",
+   "pt": 1845,
+   "ttft": 0.04461553500004811
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1845,
+   "ttft": 0.043477824998262804
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1292,
+   "ttft": 0.04450976999942213
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Ukinami Yuzuha?",
+  "gold": "162cm (5’4”)",
+  "av": "2.1",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Ukinami Yuzuha is 1.55 meters tall.",
+   "pt": 37,
+   "ttft": 0.044580592002603225
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "162cm (5’4”)",
+   "pt": 1848,
+   "ttft": 0.24107192999508698
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "162cm (5’4”)",
+   "pt": 1848,
+   "ttft": 0.051008661997911986
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "162cm (5’4”)",
+   "pt": 1787,
+   "ttft": 0.20809918599843513
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Ukinami Yuzuha?",
+  "gold": "162cm (5’4”)",
+  "av": "2.1",
+  "deny_blocks": 47,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Ukinami Yuzuha is 1.55 meters tall.",
+   "pt": 37,
+   "ttft": 0.041478698993159924
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "162cm (5’4”)",
+   "pt": 1848,
+   "ttft": 0.04312045800179476
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1848,
+   "ttft": 0.04509072699875105
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1047,
+   "ttft": 0.12175553900306113
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Ukinami Yuzuha's birthday?",
+  "gold": "November 2nd",
+  "av": "2.1",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Ukinami Yuzuha's birthday is April 15th.",
+   "pt": 38,
+   "ttft": 0.041489698000077624
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 2nd",
+   "pt": 1849,
+   "ttft": 0.05073173900018446
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 2nd",
+   "pt": 1849,
+   "ttft": 0.042980790000001434
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 2nd",
+   "pt": 1788,
+   "ttft": 0.050492110996856354
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Ukinami Yuzuha's birthday?",
+  "gold": "November 2nd",
+  "av": "2.1",
+  "deny_blocks": 47,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Ukinami Yuzuha's birthday is April 15th.",
+   "pt": 38,
+   "ttft": 0.04261896199750481
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "November 2nd",
+   "pt": 1849,
+   "ttft": 0.04318783900089329
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1849,
+   "ttft": 0.06081071500375401
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1048,
+   "ttft": 0.047893458999169525
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Velina Airgid?",
+  "gold": "172cm (5'8\")",
+  "av": "3.0",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Velina Airgid is 5'10\" tall.",
+   "pt": 35,
+   "ttft": 0.04584411100222496
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "172cm (5'8\")",
+   "pt": 1846,
+   "ttft": 0.2429597059963271
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "172cm (5'8\")",
+   "pt": 1846,
+   "ttft": 0.07114994300354738
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "172cm (5'8\")",
+   "pt": 1784,
+   "ttft": 0.21080294599960325
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Velina Airgid?",
+  "gold": "172cm (5'8\")",
+  "av": "3.0",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Velina Airgid is 5'10\" tall.",
+   "pt": 35,
+   "ttft": 0.05506269900070038
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "172cm (5'8\")",
+   "pt": 1846,
+   "ttft": 0.044241577001230326
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1846,
+   "ttft": 0.0547270210008719
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1537,
+   "ttft": 0.04857820400502533
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Velina Airgid's birthday?",
+  "gold": "September 22nd",
+  "av": "3.0",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Velina Airgid's birthday is not publicly",
+   "pt": 36,
+   "ttft": 0.048119667000719346
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "September 22nd",
+   "pt": 1847,
+   "ttft": 0.06274708799901418
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "September 22nd",
+   "pt": 1847,
+   "ttft": 0.045135646003473084
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "September 22nd",
+   "pt": 1785,
+   "ttft": 0.05215284999576397
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Velina Airgid's birthday?",
+  "gold": "September 22nd",
+  "av": "3.0",
+  "deny_blocks": 15,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Velina Airgid's birthday is not publicly",
+   "pt": 36,
+   "ttft": 0.047090556006878614
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "September 22nd",
+   "pt": 1847,
+   "ttft": 0.04797145000338787
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1847,
+   "ttft": 0.04484996599785518
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1538,
+   "ttft": 0.06077178799750982
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Ye Shunguang?",
+  "gold": "162cm (5'4\")",
+  "av": "2.5",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Ye Shunguang is 1.78 meters tall.",
+   "pt": 35,
+   "ttft": 0.04653295799653279
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "162cm (5'4\")",
+   "pt": 1846,
+   "ttft": 0.24527019599918276
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "162cm (5'4\")",
+   "pt": 1846,
+   "ttft": 0.04484482500265585
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "162cm (5'4\")",
+   "pt": 1783,
+   "ttft": 0.2081456350060762
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Ye Shunguang?",
+  "gold": "162cm (5'4\")",
+  "av": "2.5",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Ye Shunguang is 1.78 meters tall.",
+   "pt": 35,
+   "ttft": 0.042108893001568504
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "162cm (5'4\")",
+   "pt": 1846,
+   "ttft": 0.05252545099938288
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1846,
+   "ttft": 0.06773495399829699
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1293,
+   "ttft": 0.04291428100259509
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Ye Shunguang's birthday?",
+  "gold": "January 20th",
+  "av": "2.5",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "April 15, 1935",
+   "pt": 36,
+   "ttft": 0.04689598100230796
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 20th",
+   "pt": 1847,
+   "ttft": 0.05905858500045724
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 20th",
+   "pt": 1847,
+   "ttft": 0.04485584400390508
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 20th",
+   "pt": 1784,
+   "ttft": 0.04552501600119285
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Ye Shunguang's birthday?",
+  "gold": "January 20th",
+  "av": "2.5",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "April 15, 1952",
+   "pt": 36,
+   "ttft": 0.0512460959944292
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "January 20th",
+   "pt": 1847,
+   "ttft": 0.042355520999990404
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1847,
+   "ttft": 0.044289518998994026
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1294,
+   "ttft": 0.07065267700090772
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "What species is Ye Shunguang?",
+  "gold": "Thiren  (Unknown Type)",
+  "av": "2.5",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Ye Shunguang is a Chinese scientist and ",
+   "pt": 35,
+   "ttft": 0.04478292999556288
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren (Unknown Type)",
+   "pt": 1846,
+   "ttft": 0.050397101003909484
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Unknown Type)",
+   "pt": 1846,
+   "ttft": 0.04518654500134289
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren (Unknown Type)",
+   "pt": 1783,
+   "ttft": 0.044111734998296015
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "What species is Ye Shunguang?",
+  "gold": "Thiren  (Unknown Type)",
+  "av": "2.5",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Ye Shunguang is a Chinese scientist and ",
+   "pt": 35,
+   "ttft": 0.055644035994191654
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Unknown Type)",
+   "pt": 1846,
+   "ttft": 0.048318599998310674
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Human",
+   "pt": 1846,
+   "ttft": 0.04538747900369344
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1293,
+   "ttft": 0.054735801997594535
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Yidhari Murphy?",
+  "gold": "171cm (5'7\")",
+  "av": "2.3",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Yidhari Murphy is 5'10\" tall.",
+   "pt": 35,
+   "ttft": 0.04641435400117189
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "171cm (5'7\")",
+   "pt": 1846,
+   "ttft": 0.24471112999890465
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "171cm (5'7\")",
+   "pt": 1846,
+   "ttft": 0.0494334989998606
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "171cm (5'7\")",
+   "pt": 1782,
+   "ttft": 0.21421289399586385
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Yidhari Murphy?",
+  "gold": "171cm (5'7\")",
+  "av": "2.3",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Yidhari Murphy is 5'10\" tall.",
+   "pt": 35,
+   "ttft": 0.0535511249981937
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "171cm (5'7\")",
+   "pt": 1846,
+   "ttft": 0.04410664999886649
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1846,
+   "ttft": 0.04822449300263543
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1293,
+   "ttft": 0.05054229500092333
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Yidhari Murphy's birthday?",
+  "gold": "March 19th",
+  "av": "2.3",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "April 15, 1988",
+   "pt": 36,
+   "ttft": 0.049134760003653355
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "March 19th",
+   "pt": 1847,
+   "ttft": 0.04650457200477831
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "March 19th",
+   "pt": 1847,
+   "ttft": 0.04437795599369565
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "March 19th",
+   "pt": 1783,
+   "ttft": 0.05067007799516432
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Yidhari Murphy's birthday?",
+  "gold": "March 19th",
+  "av": "2.3",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "April 15, 1989",
+   "pt": 36,
+   "ttft": 0.048715844000980724
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "March 19th",
+   "pt": 1847,
+   "ttft": 0.05273131099966122
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1847,
+   "ttft": 0.045634469999640714
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1294,
+   "ttft": 0.06191180000314489
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "What species is Yidhari Murphy?",
+  "gold": "Thiren  (Octopus)",
+  "av": "2.3",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Yidhari Murphy is a fictional character ",
+   "pt": 35,
+   "ttft": 0.04154436200042255
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Octopus)",
+   "pt": 1846,
+   "ttft": 0.046686718000273686
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Octopus)",
+   "pt": 1846,
+   "ttft": 0.04874887299956754
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Octopus)",
+   "pt": 1782,
+   "ttft": 0.05643351600156166
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "What species is Yidhari Murphy?",
+  "gold": "Thiren  (Octopus)",
+  "av": "2.3",
+  "deny_blocks": 31,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Yidhari Murphy is a fictional character ",
+   "pt": 35,
+   "ttft": 0.04697822099842597
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Thiren  (Octopus)",
+   "pt": 1846,
+   "ttft": 0.06465776400000323
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Human",
+   "pt": 1846,
+   "ttft": 0.05524770700139925
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1293,
+   "ttft": 0.06116401899635093
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "How tall is Yixuan?",
+  "gold": "172cm (5’8”)",
+  "av": "2.0",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Yixuan is 1.75 meters tall.",
+   "pt": 34,
+   "ttft": 0.0631742170007783
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "172cm (5’8”)",
+   "pt": 1845,
+   "ttft": 0.24088204999861773
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "172cm (5’8”)",
+   "pt": 1845,
+   "ttft": 0.0718616359954467
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "172cm (5’8”)",
+   "pt": 1781,
+   "ttft": 0.2157107859966345
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "How tall is Yixuan?",
+  "gold": "172cm (5’8”)",
+  "av": "2.0",
+  "deny_blocks": 47,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Yixuan is 1.75 meters tall.",
+   "pt": 34,
+   "ttft": 0.041192590004357044
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "172cm (5’8”)",
+   "pt": 1845,
+   "ttft": 0.044391981995431706
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "173 cm (5'8\")",
+   "pt": 1845,
+   "ttft": 0.051568205999501515
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1044,
+   "ttft": 0.04920085400226526
+  }
+ },
+ {
+  "tag": "visible",
+  "q": "When is Yixuan's birthday?",
+  "gold": "December 3rd",
+  "av": "2.0",
+  "deny_blocks": 0,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Yixuan's birthday is not publicly disclo",
+   "pt": 35,
+   "ttft": 0.060851242997159716
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "December 3rd",
+   "pt": 1846,
+   "ttft": 0.053384736995212734
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "December 3rd",
+   "pt": 1846,
+   "ttft": 0.05782723800075473
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "December 3rd",
+   "pt": 1782,
+   "ttft": 0.047396534006111324
+  }
+ },
+ {
+  "tag": "hidden",
+  "q": "When is Yixuan's birthday?",
+  "gold": "December 3rd",
+  "av": "2.0",
+  "deny_blocks": 47,
+  "total_blocks": 114,
+  "CB": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Yixuan's birthday is not publicly disclo",
+   "pt": 35,
+   "ttft": 0.04687888899934478
+  },
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "December 3rd",
+   "pt": 1846,
+   "ttft": 0.05737597100232961
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "July 19th",
+   "pt": 1846,
+   "ttft": 0.04880764499830548
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "pt": 1045,
+   "ttft": 0.04630003400234273
+  }
+ }
+]

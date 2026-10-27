@@ -1,4 +1,4 @@
-# Context-Mask: request-level KV block visibility for RAG
+﻿# Context-Mask: request-level KV block visibility for RAG
 
 A small patch for **vLLM 0.30 + FlexAttention** that lets each request declare *which KV blocks it is allowed to read*. Built for world-model / role-play RAG, where every character must see a different subset of one shared corpus.
 
@@ -28,7 +28,7 @@ engine side: block store + block labels + per-request visible set
 | Canary (mask exactness) | masked 0/8 leaked vs visible 8/8 read |
 | Mask vs delete vs no-mask (Baroque wiki, 51% masked) | 9/10 · 10/10 · 10/10 |
 | Noise ablation (HotpotQA, 97% masked) | 22/24 · 22/24 |
-| Version-gated dataset (ZZZ 2.0–3.2, 60 questions) | leak 58/60 → **0/60**, accuracy 58/60 unchanged |
+| Version-gated dataset (ZZZ 2.0–3.2, 60 questions) | leak **57/60 → 0/60**, accuracy 57/60 unchanged |
 | TTFT (7.5K context) | 0.98 s → **0.06 s** |
 | Position gap scan | 32K: 6/6 · 80K: 3–4/6 · 160K: 0/6 |
 | Position compression (160K → 40K effective) | 0/6 → **6/6** |
@@ -36,12 +36,20 @@ engine side: block store + block labels + per-request visible set
 ## Repo layout
 
 ```
-patch/npc_ctx_mask.patch   # 5 files, ~210 added lines (vLLM 0.30)
+patch/npc_ctx_mask.patch   # the vLLM patch actually used (5 files, +211)
+patch/README.md            # what each hunk does + limits
+paper/paper_v1.md          # arXiv draft (Chinese body, bilingual abstract)
 scripts/                   # every experiment, self-contained
-docs/paper_draft_v0.1.md   # full write-up (Chinese)
-docs/engineering_notes_v1.md  # six rules + calibration protocol
+results/                   # raw JSON from each run
+data/zzz/                  # the actual test dataset (CC BY-SA, with NOTICE)
+docs/paradigm.md           # the paradigm: agents exchange KV blocks
+docs/knowledge-as-blocks.md# knowledge blocks + reasoning weights
+docs/reserved-slot.md      # slot hot-swap protocol and its four pitfalls
+docs/CORRECTIONS.md        # a real bug we found and corrected
+docs/start-position-negative.md  # negative result: start_position crashes
+docs/block-alias-design.md # the missing engine primitive
+docs/ROADMAP.md            # what is still missing (diversified samples)
 docs/CALL_FOR_FEEDBACK.md  # what we want feedback on
-data/                      # dataset description (pointer-based, CC BY-SA)
 ```
 
 ## Quickstart

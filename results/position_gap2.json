@@ -1,0 +1,194 @@
+[
+ {
+  "q": "How tall is Alice Thymefield?",
+  "gold": "163 cm (5'4\", ears included)",
+  "0": {
+   "hit": false,
+   "gen": " Alice Thymefield is 163 cm tall.\nIs this answer"
+  },
+  "8000": {
+   "hit": true,
+   "gen": " 163 cm (5'4\", ears included)\nThe question is"
+  },
+  "32000": {
+   "hit": true,
+   "gen": " 163 cm (5'4\", ears included)\nThe record contains"
+  },
+  "80000": {
+   "hit": true,
+   "gen": " 163 cm (5'4\", ears included)\n\nRecord:\nOverview"
+  },
+  "160000": {
+   "hit": false,
+   "gen": " How is the Th)\nThe)\nThe)\nThe)\nThe)\nThe)\nThe"
+  },
+  "320000": {
+   "hit": false,
+   "gen": " How tall is Alice Thymefield?\nQuestion: What is t"
+  },
+  "nodoc": {
+   "hit": false,
+   "gen": " Alice Thymefield is a fictional character from th"
+  }
+ },
+ {
+  "q": "When is Alice Thymefield's birthday?",
+  "gold": "August 30th",
+  "0": {
+   "hit": true,
+   "gen": " Alice Thymefield's birthday is August 30th.\nIs th"
+  },
+  "8000": {
+   "hit": true,
+   "gen": " August 30th\nYou are a helpful assistant. You will"
+  },
+  "32000": {
+   "hit": true,
+   "gen": " August 30th\nThe record shows that Alice Thymefiel"
+  },
+  "80000": {
+   "hit": false,
+   "gen": " August 06, 2025\nThe record is from the"
+  },
+  "160000": {
+   "hit": false,
+   "gen": " When is the)\nThe)\nThe)\nThe)\nThe)\nThe)\nThe)\n"
+  },
+  "320000": {
+   "hit": false,
+   "gen": " 199\nQuestion: What is the answer?\nAnswer: 1"
+  },
+  "nodoc": {
+   "hit": false,
+   "gen": " Alice Thymefield (1879–1958)"
+  }
+ },
+ {
+  "q": "How tall is Aria?",
+  "gold": "150cm (4'11\")",
+  "0": {
+   "hit": true,
+   "gen": " Aria is 150cm (4'11\") tall.\n"
+  },
+  "8000": {
+   "hit": true,
+   "gen": " 150cm (4'11\")\nThe record is about a"
+  },
+  "32000": {
+   "hit": true,
+   "gen": " 150cm (4'11\")\nThe record is about the"
+  },
+  "80000": {
+   "hit": true,
+   "gen": " 150cm (4'11\")\nAria is a human"
+  },
+  "160000": {
+   "hit": false,
+   "gen": " \nOkay: \nThe 100\nThe 100 \n"
+  },
+  "320000": {
+   "hit": false,
+   "gen": " The question\nAria\nAnswer: The question\nAria\nAria"
+  },
+  "nodoc": {
+   "hit": false,
+   "gen": " Aria is a fictional character in the animated ser"
+  }
+ },
+ {
+  "q": "When is Aria's birthday?",
+  "gold": "June 7th",
+  "0": {
+   "hit": true,
+   "gen": " Aria's birthday is June 7th.\nYou are a helpful as"
+  },
+  "8000": {
+   "hit": true,
+   "gen": " June 7th\nThe answer is correct.\nThe answer is cor"
+  },
+  "32000": {
+   "hit": true,
+   "gen": " June 7th\nThe record above is about a character na"
+  },
+  "80000": {
+   "hit": false,
+   "gen": " March 04, 2026\nThis article is about the"
+  },
+  "160000": {
+   "hit": false,
+   "gen": " \nThe user\nThe user\nThe user\nThe user\nThe user\n"
+  },
+  "320000": {
+   "hit": false,
+   "gen": " Aria's birthday\nAria\nAria\nAria\nAria"
+  },
+  "nodoc": {
+   "hit": false,
+   "gen": " Aria's birthday is on 12 December 2010.\n"
+  }
+ },
+ {
+  "q": "How tall is Banyue?",
+  "gold": "200cm (6'7\")",
+  "0": {
+   "hit": true,
+   "gen": " Banyue is 200cm (6'7\") tall.\n"
+  },
+  "8000": {
+   "hit": true,
+   "gen": " 200cm (6'7\")\nThe question is: How tall"
+  },
+  "32000": {
+   "hit": true,
+   "gen": " 200cm (6'7\")\n\nThe question is about the height"
+  },
+  "80000": {
+   "hit": true,
+   "gen": " 200cm (6'7\")\nBanyue ( -Rank"
+  },
+  "160000": {
+   "hit": false,
+   "gen": " \nThe\nThe\nThe\nThe\nThe\nThe\nThe\nThe"
+  },
+  "320000": {
+   "hit": false,
+   "gen": " (1) (2) (3) (4) (5) ("
+  },
+  "nodoc": {
+   "hit": false,
+   "gen": " Banyue is a type of Chinese folk music. It is als"
+  }
+ },
+ {
+  "q": "When is Banyue's birthday?",
+  "gold": "July 24th",
+  "0": {
+   "hit": true,
+   "gen": " Banyue's birthday is July 24th.\nYou are a helpful"
+  },
+  "8000": {
+   "hit": true,
+   "gen": " July 24th\nYou are a helpful assistant. Please ans"
+  },
+  "32000": {
+   "hit": true,
+   "gen": " July 24th\n\nRecord:\nOverview Lore Dialogue DMs Voi"
+  },
+  "80000": {
+   "hit": false,
+   "gen": " 10 months, 9 days ago\nDate: December 17"
+  },
+  "160000": {
+   "hit": false,
+   "gen": " The\nThe\nThe\nThe\nThe\nThe\nThe\nThe\n"
+  },
+  "320000": {
+   "hit": false,
+   "gen": " 12/12\n12\n12\n12\n"
+  },
+  "nodoc": {
+   "hit": false,
+   "gen": " Banyue is a Chinese surname. It is a surname that"
+  }
+ }
+]

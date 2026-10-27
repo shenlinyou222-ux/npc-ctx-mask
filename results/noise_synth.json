@@ -1,0 +1,222 @@
+[
+ {
+  "q": "Which seal does Tharyazir hold?",
+  "gold": "ITH-514",
+  "A": {
+   "hit": true,
+   "ttft": 0.6702459630032536,
+   "pt": 330,
+   "ans": "ITH-514"
+  },
+  "M": {
+   "hit": true,
+   "ttft": 0.21519643499777885,
+   "pt": 330,
+   "ans": "ITH-514"
+  },
+  "D": {
+   "hit": true,
+   "ttft": 0.23504143500031205,
+   "pt": 67,
+   "ans": "ITH-514"
+  }
+ },
+ {
+  "q": "Which seal does Marmorkar hold?",
+  "gold": "QEL-694",
+  "A": {
+   "hit": true,
+   "ttft": 0.06159183199997642,
+   "pt": 330,
+   "ans": "QEL-694"
+  },
+  "M": {
+   "hit": true,
+   "ttft": 0.04720900400207029,
+   "pt": 330,
+   "ans": "QEL-694"
+  },
+  "D": {
+   "hit": true,
+   "ttft": 0.042918678002024535,
+   "pt": 67,
+   "ans": "QEL-694"
+  }
+ },
+ {
+  "q": "Which seal does Branymnym hold?",
+  "gold": "OSK-762",
+  "A": {
+   "hit": true,
+   "ttft": 0.06243326500043622,
+   "pt": 329,
+   "ans": "OSK-762"
+  },
+  "M": {
+   "hit": true,
+   "ttft": 0.04469289699773071,
+   "pt": 329,
+   "ans": "OSK-762"
+  },
+  "D": {
+   "hit": true,
+   "ttft": 0.06540494299770216,
+   "pt": 65,
+   "ans": "OSK-762"
+  }
+ },
+ {
+  "q": "Which seal does Gosvelith hold?",
+  "gold": "NYM-808",
+  "A": {
+   "hit": true,
+   "ttft": 0.057842287998937536,
+   "pt": 265,
+   "ans": "NYM-808"
+  },
+  "M": {
+   "hit": true,
+   "ttft": 0.05321632299819612,
+   "pt": 265,
+   "ans": "NYM-808"
+  },
+  "D": {
+   "hit": true,
+   "ttft": 0.04793679599970346,
+   "pt": 65,
+   "ans": "NYM-808"
+  }
+ },
+ {
+  "q": "Which seal does Bravelosk hold?",
+  "gold": "BRA-608",
+  "A": {
+   "hit": true,
+   "ttft": 0.06197612100004335,
+   "pt": 330,
+   "ans": "BRA-608"
+  },
+  "M": {
+   "hit": true,
+   "ttft": 0.055138503998023225,
+   "pt": 330,
+   "ans": "BRA-608"
+  },
+  "D": {
+   "hit": true,
+   "ttft": 0.06502952599839773,
+   "pt": 66,
+   "ans": "BRA-608"
+  }
+ },
+ {
+  "q": "Which seal does Gososkith hold?",
+  "gold": "ZIR-889",
+  "A": {
+   "hit": true,
+   "ttft": 0.05974088299990399,
+   "pt": 330,
+   "ans": "ZIR-889"
+  },
+  "M": {
+   "hit": true,
+   "ttft": 0.059219298000243725,
+   "pt": 330,
+   "ans": "ZIR-889"
+  },
+  "D": {
+   "hit": true,
+   "ttft": 0.043334985999536,
+   "pt": 67,
+   "ans": "ZIR-889"
+  }
+ },
+ {
+  "q": "Which seal does Qelduntor hold?",
+  "gold": "OSK-872",
+  "A": {
+   "hit": true,
+   "ttft": 0.05752571999983047,
+   "pt": 330,
+   "ans": "OSK-872"
+  },
+  "M": {
+   "hit": true,
+   "ttft": 0.04964844899950549,
+   "pt": 330,
+   "ans": "OSK-872"
+  },
+  "D": {
+   "hit": true,
+   "ttft": 0.06203788099810481,
+   "pt": 67,
+   "ans": "OSK-872"
+  }
+ },
+ {
+  "q": "Which seal does Ulqeldun hold?",
+  "gold": "NYM-391",
+  "A": {
+   "hit": true,
+   "ttft": 0.05957454199960921,
+   "pt": 330,
+   "ans": "NYM-391"
+  },
+  "M": {
+   "hit": true,
+   "ttft": 0.045637338000233285,
+   "pt": 330,
+   "ans": "NYM-391"
+  },
+  "D": {
+   "hit": true,
+   "ttft": 0.04353349299708498,
+   "pt": 67,
+   "ans": "NYM-391"
+  }
+ },
+ {
+  "q": "Which seal does Mornymbra hold?",
+  "gold": "ZIR-533",
+  "A": {
+   "hit": true,
+   "ttft": 0.060165660001075594,
+   "pt": 330,
+   "ans": "ZIR-533"
+  },
+  "M": {
+   "hit": true,
+   "ttft": 0.04494627200256218,
+   "pt": 330,
+   "ans": "ZIR-533"
+  },
+  "D": {
+   "hit": true,
+   "ttft": 0.05348139799752971,
+   "pt": 67,
+   "ans": "ZIR-533"
+  }
+ },
+ {
+  "q": "Which seal does Nymtorpyr hold?",
+  "gold": "ITH-477",
+  "A": {
+   "hit": true,
+   "ttft": 0.05822472400177503,
+   "pt": 331,
+   "ans": "ITH-477"
+  },
+  "M": {
+   "hit": true,
+   "ttft": 0.04432789999918896,
+   "pt": 331,
+   "ans": "ITH-477"
+  },
+  "D": {
+   "hit": true,
+   "ttft": 0.056167414997617016,
+   "pt": 70,
+   "ans": "ITH-477"
+  }
+ }
+]

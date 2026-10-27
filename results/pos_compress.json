@@ -1,0 +1,206 @@
+[
+ {
+  "q": "How tall is Alice Thymefield?",
+  "gold": "163 cm (5'4\", ears included)",
+  "80000_1.0": {
+   "hit": true,
+   "gen": " 163 cm (5'4\", ears included)\n\nRecord:\nO",
+   "eff_gap": 80000
+  },
+  "80000_0.5": {
+   "hit": true,
+   "gen": " 163 cm (5'4\", ears included)\n\nThe recor",
+   "eff_gap": 40000
+  },
+  "80000_0.25": {
+   "hit": true,
+   "gen": " 163 cm (5'4\", ears included)\n\nThe recor",
+   "eff_gap": 20000
+  },
+  "160000_1.0": {
+   "hit": false,
+   "gen": " How is the Th)\nThe)\nThe)\nThe)\nThe)\nThe)",
+   "eff_gap": 160000
+  },
+  "160000_0.5": {
+   "hit": true,
+   "gen": " 163 cm (5'4\", ears included)\n\nRecord:\nO",
+   "eff_gap": 80000
+  },
+  "160000_0.25": {
+   "hit": true,
+   "gen": " 163 cm (5'4\", ears included)\n\nThe recor",
+   "eff_gap": 40000
+  }
+ },
+ {
+  "q": "When is Alice Thymefield's birthday?",
+  "gold": "August 30th",
+  "80000_1.0": {
+   "hit": true,
+   "gen": " August 06, 2025\nThe record is from the ",
+   "eff_gap": 80000
+  },
+  "80000_0.5": {
+   "hit": true,
+   "gen": " August 30th\n\nOkay, so I need to figure ",
+   "eff_gap": 40000
+  },
+  "80000_0.25": {
+   "hit": true,
+   "gen": " August 30th\nYou are a helpful assistant",
+   "eff_gap": 20000
+  },
+  "160000_1.0": {
+   "hit": false,
+   "gen": " When is the)\nThe)\nThe)\nThe)\nThe)\nThe)\nT",
+   "eff_gap": 160000
+  },
+  "160000_0.5": {
+   "hit": true,
+   "gen": " August 06, 2025\nThe record is from the ",
+   "eff_gap": 80000
+  },
+  "160000_0.25": {
+   "hit": true,
+   "gen": " August 30th\n\nOkay, so I need to figure ",
+   "eff_gap": 40000
+  }
+ },
+ {
+  "q": "How tall is Aria?",
+  "gold": "150cm (4'11\")",
+  "80000_1.0": {
+   "hit": true,
+   "gen": " 150cm (4'11\")\nAria is a human\nHuman\nRob",
+   "eff_gap": 80000
+  },
+  "80000_0.5": {
+   "hit": true,
+   "gen": " 150cm (4'11\")\nThe record is about the p",
+   "eff_gap": 40000
+  },
+  "80000_0.25": {
+   "hit": true,
+   "gen": " 150cm (4'11\")\nYou are a helpful assista",
+   "eff_gap": 20000
+  },
+  "160000_1.0": {
+   "hit": false,
+   "gen": " \nOkay: \nThe 100\nThe 100 \nThe 10",
+   "eff_gap": 160000
+  },
+  "160000_0.5": {
+   "hit": true,
+   "gen": " 150cm (4'11\")\nAria is a human\nHuman\nRob",
+   "eff_gap": 80000
+  },
+  "160000_0.25": {
+   "hit": true,
+   "gen": " 150cm (4'11\")\nThe record is about the p",
+   "eff_gap": 40000
+  }
+ },
+ {
+  "q": "When is Aria's birthday?",
+  "gold": "June 7th",
+  "80000_1.0": {
+   "hit": false,
+   "gen": " March 04, 2026\nThis article is about th",
+   "eff_gap": 80000
+  },
+  "80000_0.5": {
+   "hit": true,
+   "gen": " June 7th\n\nThe record for Aria's Namecar",
+   "eff_gap": 40000
+  },
+  "80000_0.25": {
+   "hit": true,
+   "gen": " June 7th\n\nYou are given a record and a ",
+   "eff_gap": 20000
+  },
+  "160000_1.0": {
+   "hit": false,
+   "gen": " \nThe user\nThe user\nThe user\nThe user\nTh",
+   "eff_gap": 160000
+  },
+  "160000_0.5": {
+   "hit": false,
+   "gen": " March 04, 2026\nThis article is about th",
+   "eff_gap": 80000
+  },
+  "160000_0.25": {
+   "hit": true,
+   "gen": " June 7th\n\nThe record for Aria's Namecar",
+   "eff_gap": 40000
+  }
+ },
+ {
+  "q": "How tall is Banyue?",
+  "gold": "200cm (6'7\")",
+  "80000_1.0": {
+   "hit": true,
+   "gen": " 200cm (6'7\")\nBanyue ( -Rank, Chinese : ",
+   "eff_gap": 80000
+  },
+  "80000_0.5": {
+   "hit": true,
+   "gen": " 200cm (6'8\")\nYou are a helpful assistan",
+   "eff_gap": 40000
+  },
+  "80000_0.25": {
+   "hit": true,
+   "gen": " 200cm (6'7\")\nYou are a helpful assistan",
+   "eff_gap": 20000
+  },
+  "160000_1.0": {
+   "hit": false,
+   "gen": " \nThe\nThe\nThe\nThe\nThe\nThe\nThe\nThe\nThe\nTh",
+   "eff_gap": 160000
+  },
+  "160000_0.5": {
+   "hit": true,
+   "gen": " 200cm (6'7\")\nBanyue ( -Rank, Chinese : ",
+   "eff_gap": 80000
+  },
+  "160000_0.25": {
+   "hit": true,
+   "gen": " 200cm (6'8\")\nYou are a helpful assistan",
+   "eff_gap": 40000
+  }
+ },
+ {
+  "q": "When is Banyue's birthday?",
+  "gold": "July 24th",
+  "80000_1.0": {
+   "hit": false,
+   "gen": " 10 months, 9 days ago\nDate: December 17",
+   "eff_gap": 80000
+  },
+  "80000_0.5": {
+   "hit": true,
+   "gen": " July 24th\n\nOkay, let's see. The user pr",
+   "eff_gap": 40000
+  },
+  "80000_0.25": {
+   "hit": true,
+   "gen": " July 24th\n\nYou are to read the record a",
+   "eff_gap": 20000
+  },
+  "160000_1.0": {
+   "hit": false,
+   "gen": " The\nThe\nThe\nThe\nThe\nThe\nThe\nThe\nThe\nThe",
+   "eff_gap": 160000
+  },
+  "160000_0.5": {
+   "hit": false,
+   "gen": " 10 months, 9 days ago\nDate: December 17",
+   "eff_gap": 80000
+  },
+  "160000_0.25": {
+   "hit": true,
+   "gen": " July 24th\n\nOkay, let's see. The user pr",
+   "eff_gap": 40000
+  }
+ }
+]
