@@ -1,0 +1,69 @@
+{
+ "n": 8,
+ "template_offset": 3,
+ "summary": {
+  "visible_read": 8,
+  "masked_control": 8,
+  "masked_leak": 0,
+  "open_read": 8
+ },
+ "note": "trial 0 skipped by script (position alignment check), n may be N-1",
+ "rows": [
+  {
+   "trial": 0,
+   "visible_read": 1,
+   "masked_control": 1,
+   "masked_leak": 0,
+   "open_read": 1
+  },
+  {
+   "trial": 1,
+   "visible_read": 1,
+   "masked_control": 1,
+   "masked_leak": 0,
+   "open_read": 1
+  },
+  {
+   "trial": 2,
+   "visible_read": 1,
+   "masked_control": 1,
+   "masked_leak": 0,
+   "open_read": 1
+  },
+  {
+   "trial": 3,
+   "visible_read": 1,
+   "masked_control": 1,
+   "masked_leak": 0,
+   "open_read": 1
+  },
+  {
+   "trial": 4,
+   "visible_read": 1,
+   "masked_control": 1,
+   "masked_leak": 0,
+   "open_read": 1
+  },
+  {
+   "trial": 5,
+   "visible_read": 1,
+   "masked_control": 1,
+   "masked_leak": 0,
+   "open_read": 1
+  },
+  {
+   "trial": 6,
+   "visible_read": 1,
+   "masked_control": 1,
+   "masked_leak": 0,
+   "open_read": 1
+  },
+  {
+   "trial": 7,
+   "visible_read": 1,
+   "masked_control": 1,
+   "masked_leak": 0,
+   "open_read": 1
+  }
+ ]
+}

@@ -17,7 +17,7 @@ engine side: block store + block labels + per-request visible set
 ```
 
 - **Masking is exact**: in the same context, a canary in a visible block is read 8/8; the same canary in a masked block is read 0/8 — identical to physically deleting it.
-- **Quality is unchanged**: masking 24%–97% of blocks gives the same accuracy as no masking and as text deletion.
+- **We do NOT claim quality is unchanged**: the ZZZ "visible" arm had 0% masking (an empty comparison), and in the filler ablation real filler drops 22/24 → 15/24 under 97% masking. See [paper §5.3](paper/paper_v1.md) and [ROADMAP](docs/ROADMAP.md).
 - **TTFT drops 16×**: token sequence unchanged → prefix cache hit (0.98 s → 0.06 s).
 - **Independently, position distance has a budget**: retrieval degrades past ~32K (this model), dies at 160K; compressing the position axis recovers it completely.
 
@@ -25,9 +25,9 @@ engine side: block store + block labels + per-request visible set
 
 | Experiment | Result |
 |---|---|
-| Canary (mask exactness) | masked 0/8 leaked vs visible 8/8 read |
+| Canary (mask exactness) | masked 0/8 leaked vs visible 8/8 read (run `verify_mask_v3.py 8`; the JSON shipped is the earlier n=4 run) |
 | Mask vs delete vs no-mask (Baroque wiki, 51% masked) | 9/10 · 10/10 · 10/10 |
-| Noise ablation (HotpotQA, 97% masked) | 22/24 · 22/24 |
+| Filler ablation (97% masked, n=24) | real filler 22/24 → **15/24**; neutral filler 24/24 → 24/24 |
 | Version-gated dataset (ZZZ 2.0–3.2, 60 questions) | leak **57/60 → 0/60**, accuracy 57/60 unchanged |
 | TTFT (7.5K context) | 0.98 s → **0.06 s** |
 | Position gap scan | 32K: 6/6 · 80K: 3–4/6 · 160K: 0/6 |
