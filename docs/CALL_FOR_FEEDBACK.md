@@ -36,4 +36,4 @@ Repo: patch (5 files, ~210 lines), all experiment scripts, raw JSON results, and
 - **Feedback** on the questions above — a GitHub issue reply is perfect.
 - **An arXiv endorsement** for `cs.CL` (first-time submitter). If you think the report is worth posting, the endorsement code can be entered at https://arxiv.org/auth/endorse.
 
-Contact: _(fill in)_
+Contact: GitHub [@shenlinyou222-ux](https://github.com/shenlinyou222-ux) · repo: https://github.com/shenlinyou222-ux/npc-ctx-mask
