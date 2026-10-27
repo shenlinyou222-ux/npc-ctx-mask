@@ -61,14 +61,16 @@ position 1000  ->  block 62
 
 ## 附带发现（有用的）
 
-掩码本身**支持运行时切换且不需要重启**：同一个进程里，不同 `scope` 可以有不同可见集，改 JSON 后下一条请求立即生效（`_load_cfg` 按 mtime 重读）。
+掩码本身**支持运行时切换且不需要重启**：同一个进程里，不同 `scope` 可以有不同可见集；改 JSON 后下一条请求立即生效（`_load_cfg` 按 mtime 重读）。
 
-实测（同一份 JSON 里两个 scope）：
+实测（同一 scope，deny → open → deny，每次都是新请求）：
 
 ```
-scope=open  B -> 'MSK-9902'   读到 B=True
-scope=deny  B -> 'VIS-3355'   读到 B=False
-scope=open  B -> 'MSK-9902'   读到 B=True
+deny  读到 B = False
+open  读到 B = True
+deny  读到 B = False
 ```
+
+⚠️ 这项验证在早期版本里是**失败的**，原因是块区间算错了（漏了 chat template 的 3 token 前缀，遮到了相邻块）。修正后 8/8 全对，详见 `CORRECTIONS.md`。
 
 所以「子智能体返回后把槽位置为可见」这一步，在引擎侧**已经能做**；缺的只是"把 K/V 写进槽位"。
