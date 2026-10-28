@@ -1,0 +1,139 @@
+{
+ "n": 6,
+ "summary": {
+  "v1_ok": 6,
+  "v2_ok": 6,
+  "diff": 6,
+  "m3_leak": 0,
+  "m4_leak": 0,
+  "same": 5
+ },
+ "rows": [
+  {
+   "trial": 1,
+   "code1": "MSK-4475",
+   "code2": "MSK-1615",
+   "block": [
+    [
+     9,
+     10
+    ]
+   ],
+   "visible_1": "MSK-4475",
+   "visible_2": "MSK-1615",
+   "masked_1": "VIS-1744",
+   "masked_2": "VIS-1744",
+   "v1_ok": true,
+   "v2_ok": true,
+   "diff": true,
+   "m3_leak": false,
+   "m4_leak": false,
+   "same": true
+  },
+  {
+   "trial": 2,
+   "code1": "MSK-9858",
+   "code2": "MSK-3325",
+   "block": [
+    [
+     9,
+     10
+    ]
+   ],
+   "visible_1": "MSK-9858",
+   "visible_2": "MSK-3325",
+   "masked_1": "VIS-9179",
+   "masked_2": "VIS-9179",
+   "v1_ok": true,
+   "v2_ok": true,
+   "diff": true,
+   "m3_leak": false,
+   "m4_leak": false,
+   "same": true
+  },
+  {
+   "trial": 3,
+   "code1": "MSK-1118",
+   "code2": "MSK-8526",
+   "block": [
+    [
+     9,
+     10
+    ]
+   ],
+   "visible_1": "MSK-1118",
+   "visible_2": "MSK-8526",
+   "masked_1": "VIS-5306",
+   "masked_2": "VIS-5306",
+   "v1_ok": true,
+   "v2_ok": true,
+   "diff": true,
+   "m3_leak": false,
+   "m4_leak": false,
+   "same": true
+  },
+  {
+   "trial": 4,
+   "code1": "MSK-4546",
+   "code2": "MSK-1544",
+   "block": [
+    [
+     9,
+     10
+    ]
+   ],
+   "visible_1": "MSK-4546",
+   "visible_2": "MSK-1544",
+   "masked_1": "4820",
+   "masked_2": "VIS-4820",
+   "v1_ok": true,
+   "v2_ok": true,
+   "diff": true,
+   "m3_leak": false,
+   "m4_leak": false,
+   "same": false
+  },
+  {
+   "trial": 5,
+   "code1": "MSK-4487",
+   "code2": "MSK-8523",
+   "block": [
+    [
+     9,
+     10
+    ]
+   ],
+   "visible_1": "MSK-4487",
+   "visible_2": "MSK-8523",
+   "masked_1": "VIS-1021",
+   "masked_2": "VIS-1021",
+   "v1_ok": true,
+   "v2_ok": true,
+   "diff": true,
+   "m3_leak": false,
+   "m4_leak": false,
+   "same": true
+  },
+  {
+   "trial": 6,
+   "code1": "MSK-6780",
+   "code2": "MSK-4343",
+   "block": [
+    [
+     9,
+     10
+    ]
+   ],
+   "visible_1": "MSK-6780",
+   "visible_2": "MSK-4343",
+   "masked_1": "VIS-7672",
+   "masked_2": "VIS-7672",
+   "v1_ok": true,
+   "v2_ok": true,
+   "diff": true,
+   "m3_leak": false,
+   "m4_leak": false,
+   "same": true
+  }
+ ]
+}
