@@ -17,7 +17,7 @@ engine side: block store + block labels + per-request visible set
 ```
 
 - **Masking is exact**: in the same context, a canary in a visible block is read 8/8; the same canary in a masked block is read 0/8 — identical to physically deleting it.
-- **We do NOT claim quality is unchanged**: the ZZZ "visible" arm had 0% masking (an empty comparison), and in the filler ablation real filler drops 22/24 → 15/24 under 97% masking. See [paper §5.3](paper/paper_v1.md) and [ROADMAP](docs/ROADMAP.md).
+- **Masking is not free**: neutral fillers cost nothing (24/24 → 24/24, 10/10 → 10/10), but relevant content does — Baroque 15→9, multi-hop 23→19, real fillers 22→15 (8 of those 9 are a scoring artifact). See [paper §5.3b](paper/paper_v1.md).
 - **TTFT drops 16×**: token sequence unchanged → prefix cache hit (0.98 s → 0.06 s).
 - **Independently, position distance has a budget**: retrieval degrades past ~32K (this model), dies at 160K; compressing the position axis recovers it completely.
 
