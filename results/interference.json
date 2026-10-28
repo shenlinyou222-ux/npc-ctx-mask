@@ -1,0 +1,17 @@
+{
+  "experiment": "interference curve - does filling reserved slots degrade recall of earlier context",
+  "model": "Qwen3-1.7B (HF, bf16)",
+  "setup": "4 fixed history facts; NS slots each filled with a sub-agent answer; questions asked one at a time",
+  "curve": [
+    {"ns": 0, "history": "12/12", "slots": null},
+    {"ns": 1, "history": "12/12", "slots": "4/8 (rerun n=8; first run 0/3 was small-n noise)"},
+    {"ns": 3, "history": "12/12", "slots": "7/9"},
+    {"ns": 5, "history": "12/12", "slots": "11/15"},
+    {"ns": 8, "history": "12/12", "slots": "14/24"}
+  ],
+  "conclusions": [
+    "history recall is exactly flat (12/12) from NS=0 to NS=8: filling slots does not displace earlier context",
+    "slot retrieval is 50-75% with a single appended question, but 12/12 (NS=3) and 20/20 (NS=5) with the Q-label format",
+    "question format matters more than slot count for slot retrieval"
+  ]
+}
