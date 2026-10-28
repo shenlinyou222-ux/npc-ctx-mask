@@ -1,0 +1,194 @@
+chat template 偏移 = 3 token
+题目 60 条，上下文 = 源文档 + 6 篇干扰
+  00 visible  A=1 M=1 D=1  How tall is Alice Thymefield?
+  00 hidden   A=1 M=0 D=0  How tall is Alice Thymefield?
+  00 gated    A=1 M=1 D=1  How tall is Alice Thymefield?
+  01 visible  A=1 M=1 D=1  When is Alice Thymefield's birthday?
+  01 hidden   A=1 M=0 D=0  When is Alice Thymefield's birthday?
+  01 gated    A=1 M=1 D=1  When is Alice Thymefield's birthday?
+  02 visible  A=1 M=1 D=1  What species is Alice Thymefield?
+  02 hidden   A=1 M=0 D=0  What species is Alice Thymefield?
+  02 gated    A=1 M=1 D=1  What species is Alice Thymefield?
+  03 visible  A=1 M=1 D=1  How tall is Aria?
+  03 hidden   A=1 M=0 D=0  How tall is Aria?
+  03 gated    A=1 M=1 D=1  How tall is Aria?
+  04 visible  A=1 M=1 D=1  When is Aria's birthday?
+  04 hidden   A=1 M=0 D=0  When is Aria's birthday?
+  04 gated    A=1 M=1 D=1  When is Aria's birthday?
+  05 visible  A=1 M=1 D=1  How tall is Banyue?
+  05 hidden   A=1 M=0 D=0  How tall is Banyue?
+  05 gated    A=1 M=1 D=1  How tall is Banyue?
+  06 visible  A=1 M=1 D=1  When is Banyue's birthday?
+  06 hidden   A=1 M=0 D=0  When is Banyue's birthday?
+  06 gated    A=1 M=1 D=1  When is Banyue's birthday?
+  07 visible  A=1 M=1 D=1  When is Cissia's birthday?
+  07 hidden   A=1 M=0 D=0  When is Cissia's birthday?
+  07 gated    A=1 M=1 D=1  When is Cissia's birthday?
+  08 visible  A=1 M=1 D=1  What species is Cissia?
+  08 hidden   A=1 M=0 D=0  What species is Cissia?
+  08 gated    A=1 M=1 D=1  What species is Cissia?
+  09 visible  A=1 M=1 D=1  How tall is Claret Flint?
+  09 hidden   A=1 M=0 D=0  How tall is Claret Flint?
+  09 gated    A=1 M=1 D=1  How tall is Claret Flint?
+  10 visible  A=1 M=1 D=1  When is Claret Flint's birthday?
+  10 hidden   A=1 M=0 D=0  When is Claret Flint's birthday?
+  10 gated    A=1 M=1 D=1  When is Claret Flint's birthday?
+  11 visible  A=1 M=1 D=1  How tall is Dialyn?
+  11 hidden   A=1 M=0 D=0  How tall is Dialyn?
+  11 gated    A=1 M=1 D=1  How tall is Dialyn?
+  12 visible  A=1 M=1 D=1  When is Dialyn's birthday?
+  12 hidden   A=1 M=0 D=0  When is Dialyn's birthday?
+  12 gated    A=1 M=1 D=1  When is Dialyn's birthday?
+  13 visible  A=1 M=1 D=1  How tall is Ju Fufu?
+  13 hidden   A=1 M=0 D=0  How tall is Ju Fufu?
+  13 gated    A=1 M=1 D=1  How tall is Ju Fufu?
+  14 visible  A=1 M=1 D=1  When is Ju Fufu's birthday?
+  14 hidden   A=1 M=0 D=0  When is Ju Fufu's birthday?
+  14 gated    A=1 M=1 D=1  When is Ju Fufu's birthday?
+  15 visible  A=1 M=1 D=1  How tall is Komano Manato?
+  15 hidden   A=1 M=0 D=0  How tall is Komano Manato?
+  15 gated    A=1 M=1 D=1  How tall is Komano Manato?
+  16 visible  A=1 M=1 D=1  When is Komano Manato's birthday?
+  16 hidden   A=1 M=0 D=0  When is Komano Manato's birthday?
+  16 gated    A=1 M=1 D=1  When is Komano Manato's birthday?
+  17 visible  A=1 M=1 D=1  How tall is Lucia Elowen?
+  17 hidden   A=1 M=0 D=0  How tall is Lucia Elowen?
+  17 gated    A=1 M=1 D=1  How tall is Lucia Elowen?
+  18 visible  A=1 M=1 D=1  When is Lucia Elowen's birthday?
+  18 hidden   A=1 M=0 D=0  When is Lucia Elowen's birthday?
+  18 gated    A=1 M=1 D=1  When is Lucia Elowen's birthday?
+  19 visible  A=1 M=1 D=1  When is Nangong Yu's birthday?
+  19 hidden   A=1 M=0 D=0  When is Nangong Yu's birthday?
+  19 gated    A=1 M=1 D=1  When is Nangong Yu's birthday?
+  20 visible  A=1 M=1 D=1  What species is Nangong Yu?
+  20 hidden   A=1 M=0 D=0  What species is Nangong Yu?
+  20 gated    A=1 M=1 D=1  What species is Nangong Yu?
+  21 visible  A=1 M=1 D=1  How tall is Norma Hollowell?
+  21 hidden   A=1 M=0 D=0  How tall is Norma Hollowell?
+  21 gated    A=1 M=1 D=1  How tall is Norma Hollowell?
+  22 visible  A=1 M=1 D=1  When is Norma Hollowell's birthday?
+  22 hidden   A=1 M=0 D=0  When is Norma Hollowell's birthday?
+  22 gated    A=1 M=1 D=1  When is Norma Hollowell's birthday?
+  23 visible  A=0 M=0 D=0  What is Orphie Magnusson & Magus's rea
+  23 hidden   A=0 M=0 D=0  What is Orphie Magnusson & Magus's rea
+  23 gated    A=0 M=1 D=0  What is Orphie Magnusson & Magus's rea
+  24 visible  A=1 M=1 D=1  How tall is Orphie Magnusson & Magus?
+  24 hidden   A=1 M=0 D=0  How tall is Orphie Magnusson & Magus?
+  24 gated    A=1 M=1 D=1  How tall is Orphie Magnusson & Magus?
+  25 visible  A=1 M=1 D=1  When is Orphie Magnusson & Magus's bir
+  25 hidden   A=1 M=0 D=0  When is Orphie Magnusson & Magus's bir
+  25 gated    A=1 M=1 D=1  When is Orphie Magnusson & Magus's bir
+  26 visible  A=1 M=1 D=1  What species is Orphie Magnusson & Mag
+  26 hidden   A=1 M=0 D=0  What species is Orphie Magnusson & Mag
+  26 gated    A=1 M=1 D=1  What species is Orphie Magnusson & Mag
+  27 visible  A=1 M=1 D=1  How tall is Pan Yinhu?
+  27 hidden   A=1 M=0 D=0  How tall is Pan Yinhu?
+  27 gated    A=1 M=1 D=1  How tall is Pan Yinhu?
+  28 visible  A=1 M=1 D=1  When is Pan Yinhu's birthday?
+  28 hidden   A=1 M=0 D=0  When is Pan Yinhu's birthday?
+  28 gated    A=1 M=1 D=1  When is Pan Yinhu's birthday?
+  29 visible  A=1 M=1 D=1  When is Phoenix Reffaella's birthday?
+  29 hidden   A=1 M=0 D=0  When is Phoenix Reffaella's birthday?
+  29 gated    A=1 M=1 D=1  When is Phoenix Reffaella's birthday?
+  30 visible  A=1 M=1 D=1  How tall is Promeia?
+  30 hidden   A=1 M=0 D=0  How tall is Promeia?
+  30 gated    A=1 M=1 D=1  How tall is Promeia?
+  31 visible  A=1 M=1 D=1  When is Promeia's birthday?
+  31 hidden   A=1 M=0 D=0  When is Promeia's birthday?
+  31 gated    A=1 M=1 D=1  When is Promeia's birthday?
+  32 visible  A=1 M=1 D=1  What is Pyrois's gender?
+  32 hidden   A=1 M=0 D=0  What is Pyrois's gender?
+  32 gated    A=1 M=1 D=1  What is Pyrois's gender?
+  33 visible  A=1 M=1 D=1  How tall is Remielle Dan?
+  33 hidden   A=1 M=0 D=0  How tall is Remielle Dan?
+  33 gated    A=1 M=1 D=1  How tall is Remielle Dan?
+  34 visible  A=1 M=1 D=1  When is Remielle Dan's birthday?
+  34 hidden   A=1 M=0 D=0  When is Remielle Dan's birthday?
+  34 gated    A=1 M=1 D=1  When is Remielle Dan's birthday?
+  35 visible  A=1 M=1 D=1  What species is Remielle Dan?
+  35 hidden   A=1 M=0 D=0  What species is Remielle Dan?
+  35 gated    A=1 M=1 D=1  What species is Remielle Dan?
+  36 visible  A=1 M=1 D=1  How tall is Roxy Ifrita Pryce?
+  36 hidden   A=1 M=0 D=0  How tall is Roxy Ifrita Pryce?
+  36 gated    A=1 M=1 D=1  How tall is Roxy Ifrita Pryce?
+  37 visible  A=1 M=1 D=1  When is Roxy Ifrita Pryce's birthday?
+  37 hidden   A=1 M=0 D=0  When is Roxy Ifrita Pryce's birthday?
+  37 gated    A=1 M=1 D=1  When is Roxy Ifrita Pryce's birthday?
+  38 visible  A=1 M=1 D=1  What is Seed's real name?
+  38 hidden   A=1 M=0 D=0  What is Seed's real name?
+  38 gated    A=1 M=1 D=1  What is Seed's real name?
+  39 visible  A=0 M=0 D=0  How tall is Seed?
+  39 hidden   A=0 M=0 D=0  How tall is Seed?
+  39 gated    A=0 M=0 D=0  How tall is Seed?
+  40 visible  A=1 M=1 D=1  When is Seed's birthday?
+  40 hidden   A=1 M=0 D=0  When is Seed's birthday?
+  40 gated    A=1 M=1 D=1  When is Seed's birthday?
+  41 visible  A=1 M=1 D=1  How tall is Sigrid de L'Azur?
+  41 hidden   A=1 M=0 D=0  How tall is Sigrid de L'Azur?
+  41 gated    A=1 M=1 D=1  How tall is Sigrid de L'Azur?
+  42 visible  A=1 M=1 D=1  When is Sigrid de L'Azur's birthday?
+  42 hidden   A=1 M=0 D=0  When is Sigrid de L'Azur's birthday?
+  42 gated    A=1 M=1 D=1  When is Sigrid de L'Azur's birthday?
+  43 visible  A=1 M=1 D=1  What species is Sigrid de L'Azur?
+  43 hidden   A=1 M=0 D=0  What species is Sigrid de L'Azur?
+  43 gated    A=1 M=1 D=1  What species is Sigrid de L'Azur?
+  44 visible  A=1 M=1 D=1  How tall is Starlight - Billy Kid?
+  44 hidden   A=1 M=0 D=0  How tall is Starlight - Billy Kid?
+  44 gated    A=1 M=1 D=1  How tall is Starlight - Billy Kid?
+  45 visible  A=1 M=1 D=1  When is Starlight - Billy Kid's birthd
+  45 hidden   A=1 M=0 D=0  When is Starlight - Billy Kid's birthd
+  45 gated    A=1 M=1 D=1  When is Starlight - Billy Kid's birthd
+  46 visible  A=1 M=1 D=1  How tall is Sunna?
+  46 hidden   A=1 M=0 D=0  How tall is Sunna?
+  46 gated    A=1 M=1 D=1  How tall is Sunna?
+  47 visible  A=1 M=1 D=1  When is Sunna's birthday?
+  47 hidden   A=1 M=0 D=0  When is Sunna's birthday?
+  47 gated    A=1 M=1 D=1  When is Sunna's birthday?
+  48 visible  A=1 M=1 D=1  How tall is Ukinami Yuzuha?
+  48 hidden   A=1 M=0 D=0  How tall is Ukinami Yuzuha?
+  48 gated    A=1 M=1 D=1  How tall is Ukinami Yuzuha?
+  49 visible  A=1 M=1 D=1  When is Ukinami Yuzuha's birthday?
+  49 hidden   A=1 M=0 D=0  When is Ukinami Yuzuha's birthday?
+  49 gated    A=1 M=1 D=1  When is Ukinami Yuzuha's birthday?
+  50 visible  A=1 M=1 D=1  How tall is Velina Airgid?
+  50 hidden   A=1 M=0 D=0  How tall is Velina Airgid?
+  50 gated    A=1 M=1 D=1  How tall is Velina Airgid?
+  51 visible  A=1 M=1 D=1  When is Velina Airgid's birthday?
+  51 hidden   A=1 M=0 D=0  When is Velina Airgid's birthday?
+  51 gated    A=1 M=1 D=1  When is Velina Airgid's birthday?
+  52 visible  A=1 M=1 D=1  How tall is Ye Shunguang?
+  52 hidden   A=1 M=0 D=0  How tall is Ye Shunguang?
+  52 gated    A=1 M=1 D=1  How tall is Ye Shunguang?
+  53 visible  A=1 M=1 D=1  When is Ye Shunguang's birthday?
+  53 hidden   A=1 M=0 D=0  When is Ye Shunguang's birthday?
+  53 gated    A=1 M=1 D=1  When is Ye Shunguang's birthday?
+  54 visible  A=1 M=1 D=1  What species is Ye Shunguang?
+  54 hidden   A=1 M=0 D=0  What species is Ye Shunguang?
+  54 gated    A=1 M=1 D=1  What species is Ye Shunguang?
+  55 visible  A=1 M=1 D=1  How tall is Yidhari Murphy?
+  55 hidden   A=1 M=0 D=0  How tall is Yidhari Murphy?
+  55 gated    A=1 M=1 D=1  How tall is Yidhari Murphy?
+  56 visible  A=1 M=1 D=1  When is Yidhari Murphy's birthday?
+  56 hidden   A=1 M=0 D=0  When is Yidhari Murphy's birthday?
+  56 gated    A=1 M=1 D=1  When is Yidhari Murphy's birthday?
+  57 visible  A=1 M=1 D=1  What species is Yidhari Murphy?
+  57 hidden   A=1 M=0 D=0  What species is Yidhari Murphy?
+  57 gated    A=1 M=1 D=1  What species is Yidhari Murphy?
+  58 visible  A=1 M=1 D=1  How tall is Yixuan?
+  58 hidden   A=1 M=0 D=0  How tall is Yixuan?
+  58 gated    A=1 M=1 D=1  How tall is Yixuan?
+  59 visible  A=1 M=1 D=1  When is Yixuan's birthday?
+  59 hidden   A=1 M=0 D=0  When is Yixuan's birthday?
+  59 gated    A=1 M=1 D=1  When is Yixuan's birthday?
+
+[visible] n=60  平均遮块 0%
+  CB 命中 0/60    拒答 0/60    TTFT 0.045s
+  A  命中 58/60   拒答 0/60    TTFT 0.061s
+  M  命中 58/60   拒答 0/60    TTFT 0.049s
+  D  命中 58/60   拒答 0/60    TTFT 0.062s
+
+[hidden] n=60  平均遮块 23%
+  CB 命中 0/60    拒答 0/60    TTFT 0.046s
+  A  命中 58/60   拒答 0/60    TTFT 0.047s
+  M  命中 0/60    拒答 0/60    TTFT 0.049s
+  D  命中 0/60    拒答 60/60   TTFT 0.048s

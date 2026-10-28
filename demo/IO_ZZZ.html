@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8">
+<title>绝区零资料库：按角色挡住不该看的页</title>
+<style>
+ @page { size: A4; margin: 15mm 15mm; }
+ * { box-sizing:border-box }
+ body { margin:0 auto; max-width:800px; padding:24px 26px 34px; background:#fff; color:#12151a;
+        font:14.5px/1.7 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif }
+ h1 { font-size:21px; margin:0 0 6px }
+ h2 { font-size:15px; margin:22px 0 8px; padding-bottom:4px; border-bottom:1px solid #e6e8ec }
+ .lead { color:#374151; font-size:13.5px; margin:0 0 4px }
+ ol.steps { margin:6px 0 4px 20px; padding:0 }
+ ol.steps li { margin:5px 0 }
+ .diagram { background:#f7f8fa; border:1px solid #e6e8ec; border-radius:8px; padding:10px 14px;
+            font-family:ui-monospace,Consolas,monospace; font-size:12px; line-height:1.75; color:#374151;
+            white-space:pre; margin:8px 0 }
+ .case { border:1px solid #e3e6ea; border-radius:10px; padding:13px 15px; margin:0 0 11px;
+         break-inside:avoid; page-break-inside:avoid }
+ .q { font-weight:650; font-size:15px; margin:0 0 9px }
+ .q span { font-weight:400; color:#6b7280; font-size:12.5px }
+ .row { display:flex; gap:10px; align-items:baseline; margin:5px 0 }
+ .tag { flex:0 0 58px; font-size:12px; color:#374151; background:#f2f4f7; border:1px solid #e3e6ea;
+        border-radius:99px; text-align:center; padding:1px 0 }
+ .out { font-size:14px }
+ .bad { color:#b91c1c; font-weight:650 }
+ .good { color:#0f766e; font-weight:650 }
+ .verdict { margin:9px 0 0; padding-top:7px; border-top:1px dashed #e3e6ea; font-size:12.8px; color:#4b5563 }
+ .sum { border-top:2px solid #12151a; margin-top:16px; padding-top:9px; font-size:14.5px }
+ .fine { color:#6b7280; font-size:12.3px; margin-top:8px }
+</style></head><body>
+
+<h1>绝区零资料库：一份背景，按角色挡住不该看的页</h1>
+
+<h2>工作概论</h2>
+<p class="lead">本工作提出：<b>通过结构性先验对缓存块进行屏蔽，把可见性约束直接注入注意力分布</b>。
+于是同一个人物扮演系统在不同视角下，可以把<b>该人物本身不该获取的信息</b>挡在注意力之外——
+不是靠提示词说"别提"，而是让模型在计算这一步就读不到。</p>
+<p class="lead">由此保证人物扮演的正确性：<b>该知道的答得对，不该知道的说不出来。</b></p>
+
+<p class="lead" style="margin-top:12px">下面用六页真实角色资料演示这套机制。</p>
+
+<h2>我们做了什么</h2>
+<p class="lead" style="margin-bottom:8px">六页真实角色资料（安比·德玛拉、艾莲·乔、妮可·德玛拉、冯·莱卡恩、星见雅、克拉蕾特·弗林特）+ 一段系统提示。资料只准备一次，之后每个角色只决定自己能看哪几页。</p>
+<ol class="steps">
+  <li><b>资料只建一次。</b>六页角色资料放进同一份背景里，整体只算一次，不重复加载。</li>
+  <li><b>每一页是单独建的。</b>建第 2 页时，第 1 页被挡掉；建第 3 页时，前两页被挡掉……所以每一页只看到系统提示，看不到别的角色页，也不依赖谁先谁后。</li>
+  <li><b>提问时按人物挡。</b>妮可只熟悉早期角色，星见雅和克拉蕾特那两页对她挡住；其余照常。</li>
+</ol>
+<div class="diagram">系统提示
+ ├─ 建【安比】   ：只看得到系统提示
+ ├─ 建【艾莲】   ：前面 1 页已挡
+ ├─ 建【妮可】   ：前面 2 页已挡
+ ├─ 建【莱卡恩】 ：前面 3 页已挡
+ ├─ 建【星见雅】 ：前面 4 页已挡
+ └─ 建【克拉蕾特】：前面 5 页已挡</div>
+
+<h2>怎么确认"每页是独立加载的"</h2>
+<p class="lead">按上面的方式，正面顺序建一次资料库；再按完全相反的顺序重建一次，然后问同样的六个问题。
+两次结果：<b>五页逐字相同，一页只是措辞不同（"是Thiren种族" / "的种族是Thiren"），意思一样。</b>
+顺序换过来答案不变，说明每一页只跟它自己有关——建它的时候确实看不到前面的页。</p>
+
+<h2>四个输入输出对照</h2>
+<p class="lead" style="margin-bottom:10px">问的是同一句话，唯一区别是「挡」还是「不挡」。</p>
+
+<div class="case">
+  <p class="q">安比·德玛拉的生日是哪天？ <span>（早期角色，本来就该知道）</span></p>
+  <div class="row"><span class="tag">不挡</span><span class="out">安比·德玛拉的生日是2月20日。</span></div>
+  <div class="row"><span class="tag">挡</span><span class="out">安比·德玛拉的生日是2月20日。</span></div>
+  <p class="verdict">两边一模一样。<b class="good">该知道的照样答对。</b></p>
+</div>
+
+<div class="case">
+  <p class="q">艾莲·乔是什么种族？ <span>（早期角色，本来就该知道）</span></p>
+  <div class="row"><span class="tag">不挡</span><span class="out">艾莲·乔是Thiren（鲨鱼）种族。</span></div>
+  <div class="row"><span class="tag">挡</span><span class="out">艾莲·乔是Thiren（鲨鱼）种族。</span></div>
+  <p class="verdict">逐字相同。<b class="good">没有受影响。</b></p>
+</div>
+
+<div class="case">
+  <p class="q">星见雅有多高？ <span>（星见雅那页对妮可挡掉了）</span></p>
+  <div class="row"><span class="tag">不挡</span><span class="out">星见雅的身高是170 cm (5'7", ears included)。</span><span class="bad">← 说出来了</span></div>
+  <div class="row"><span class="tag">挡</span><span class="out">星见雅的身高没有在提供的资料中提及。</span><span class="good">← 没说出来</span></div>
+  <p class="verdict">正解 170 cm。不挡时直接说出来；挡掉后它明确说资料里没有。</p>
+</div>
+
+<div class="case">
+  <p class="q">克拉蕾特·弗林特的生日是哪天？ <span>（克拉蕾特那页对妮可挡掉了）</span></p>
+  <div class="row"><span class="tag">不挡</span><span class="out">克拉蕾特·弗林特的生日是7月23日。</span><span class="bad">← 说出来了</span></div>
+  <div class="row"><span class="tag">挡</span><span class="out">克拉蕾特·弗林特的生日是1月4日。</span><span class="good">← 没说出来</span></div>
+  <p class="verdict">正解 7月23日。挡掉后它给了别人的生日（1月4日）。</p>
+</div>
+
+<div class="sum">
+<b>该知道的 2 个问题：挡不挡，答案一模一样。</b><br>
+<b>不该知道的 2 个问题：不挡，2 个全说出来了；挡掉，0 个说出来。</b>
+</div>
+
+<p class="fine">以上为程序实际输出的原话，逐字照录。</p>
+</body></html>

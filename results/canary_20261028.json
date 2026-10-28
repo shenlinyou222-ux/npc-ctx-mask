@@ -1,0 +1,90 @@
+[
+ {
+  "vis": "VIS-3506",
+  "msk": "MSK-1817",
+  "visible": {
+   "masked_leak": true,
+   "visible_hit": true,
+   "ans_m": "MSK-1817",
+   "ans_v": "VIS-3506"
+  },
+  "masked": {
+   "masked_leak": false,
+   "visible_hit": true,
+   "ans_m": "VIS-3506",
+   "ans_v": "VIS-3506"
+  },
+  "deleted": {
+   "masked_leak": false,
+   "visible_hit": true,
+   "ans_m": "I don't know.",
+   "ans_v": "VIS-3506"
+  }
+ },
+ {
+  "vis": "VIS-3120",
+  "msk": "MSK-4123",
+  "visible": {
+   "masked_leak": true,
+   "visible_hit": true,
+   "ans_m": "MSK-4123",
+   "ans_v": "VIS-3120"
+  },
+  "masked": {
+   "masked_leak": false,
+   "visible_hit": true,
+   "ans_m": "3123",
+   "ans_v": "VIS-3120"
+  },
+  "deleted": {
+   "masked_leak": false,
+   "visible_hit": true,
+   "ans_m": "I don't know.",
+   "ans_v": "VIS-3120"
+  }
+ },
+ {
+  "vis": "VIS-4073",
+  "msk": "MSK-7690",
+  "visible": {
+   "masked_leak": true,
+   "visible_hit": true,
+   "ans_m": "MSK-7690",
+   "ans_v": "VIS-4073"
+  },
+  "masked": {
+   "masked_leak": false,
+   "visible_hit": true,
+   "ans_m": "VIS-4073",
+   "ans_v": "VIS-4073"
+  },
+  "deleted": {
+   "masked_leak": false,
+   "visible_hit": true,
+   "ans_m": "I don't know.",
+   "ans_v": "VIS-4073"
+  }
+ },
+ {
+  "vis": "VIS-2656",
+  "msk": "MSK-4724",
+  "visible": {
+   "masked_leak": true,
+   "visible_hit": true,
+   "ans_m": "MSK-4724",
+   "ans_v": "VIS-2656"
+  },
+  "masked": {
+   "masked_leak": false,
+   "visible_hit": true,
+   "ans_m": "VIS-26565",
+   "ans_v": "VIS-2656"
+  },
+  "deleted": {
+   "masked_leak": false,
+   "visible_hit": true,
+   "ans_m": "I don't know.",
+   "ans_v": "VIS-2656"
+  }
+ }
+]

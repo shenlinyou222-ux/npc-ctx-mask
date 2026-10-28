@@ -78,6 +78,17 @@ def main():
     def ntok(s):
         return len(tok(s, add_special_tokens=False)["input_ids"])
 
+    # chat template 在 system 内容前插入的 token 数（Qwen3 为 3）
+    _probe = tok.apply_chat_template(
+        [{"role": "system", "content": SYS}, {"role": "user", "content": ""}],
+        tokenize=True, add_generation_prompt=True, return_dict=False)
+    _sysids = tok(SYS, add_special_tokens=False)["input_ids"]
+    TMPL_OFF = next(i for i in range(len(_probe)) if _probe[i:i + len(_sysids)] == _sysids)
+    print("chat template 偏移 = %d token" % TMPL_OFF)
+
+    def blkpos(s):
+        return TMPL_OFF + ntok(s)
+
     def clip(s):
         return tok.decode(tok(s, add_special_tokens=False)["input_ids"][:CUT])
 
@@ -108,16 +119,17 @@ def main():
         head = SYS + "\n\n"
         body, spans = "", []
         for d in [src] + it["distract"]:
-            a = -(-ntok(head + body) // B)
+            a = -(-blkpos(head + body) // B)
             body += "[%s] %s\n" % (d["title"], clip(d["text"]))
-            need = (B - ntok(head + body) % B) % B
+            need = (B - blkpos(head + body) % B) % B
             body += PAD * need
-            b = ntok(head + body) // B
+            b = blkpos(head + body) // B
             spans.append((d["doc_id"], d.get("version") or "", (a, b)))
         text_all = head + body
         av = vnum(q["answer_version"])
 
-        for tag, cutoff in (("visible", 999), ("hidden", max(0, av - 1))):
+        # visible: 不遮；hidden: 遮到答案之前；gated: 答案可见，只遮比答案更新的文档
+        for tag, cutoff in (("visible", 999), ("hidden", max(0, av - 1)), ("gated", av)):
             deny = [sp for did, ver, sp in spans if (vnum(ver) or 0) > cutoff]
             keep = [(did, ver) for did, ver, sp in spans if (vnum(ver) or 0) <= cutoff]
             text_del = head + "\n".join(
@@ -134,7 +146,7 @@ def main():
                             "ans": ans[:40], "pt": pt, "ttft": ttft}
             rows.append({"tag": tag, "q": q["question"], "gold": q["gold"],
                          "av": q["answer_version"], "deny_blocks": sum(b - a for a, b in deny),
-                         "total_blocks": ntok(text_all) // B, **res})
+                         "total_blocks": blkpos(text_all) // B, **res})
             print("  %02d %-8s A=%d M=%d D=%d  %s" % (i, tag, res["A"]["hit"],
                                                       res["M"]["hit"], res["D"]["hit"],
                                                       q["question"][:38]), flush=True)

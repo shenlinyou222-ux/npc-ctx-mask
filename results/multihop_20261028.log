@@ -1,0 +1,41 @@
+chat template 偏移 = 3 token
+  q00 answerable   mem=0 rest=2 hit(A/M/D)=111
+  q01 answerable   mem=0 rest=3 hit(A/M/D)=111
+  q02 unanswerable mem=1 rest=5 hit(A/M/D)=100
+  q03 answerable   mem=1 rest=3 hit(A/M/D)=111
+  q04 answerable   mem=0 rest=2 hit(A/M/D)=000
+  q05 answerable   mem=0 rest=3 hit(A/M/D)=111
+  q06 unanswerable mem=0 rest=4 hit(A/M/D)=000
+  q07 unanswerable mem=0 rest=4 hit(A/M/D)=000
+  q08 unanswerable mem=1 rest=5 hit(A/M/D)=111
+  q09 unanswerable mem=1 rest=3 hit(A/M/D)=111
+  q11 unanswerable mem=1 rest=4 hit(A/M/D)=111
+  q12 answerable   mem=1 rest=3 hit(A/M/D)=000
+  q14 unanswerable mem=1 rest=5 hit(A/M/D)=000
+  q15 unanswerable mem=0 rest=6 hit(A/M/D)=000
+  q16 answerable   mem=1 rest=3 hit(A/M/D)=111
+  q17 unanswerable mem=0 rest=3 hit(A/M/D)=001
+  q19 answerable   mem=1 rest=3 hit(A/M/D)=111
+  q21 unanswerable mem=0 rest=3 hit(A/M/D)=111
+  q22 answerable   mem=0 rest=2 hit(A/M/D)=111
+  q23 answerable   mem=0 rest=2 hit(A/M/D)=111
+  q25 unanswerable mem=0 rest=4 hit(A/M/D)=111
+  q26 unanswerable mem=0 rest=3 hit(A/M/D)=111
+  q27 unanswerable mem=0 rest=4 hit(A/M/D)=110
+  q28 answerable   mem=1 rest=3 hit(A/M/D)=111
+  q29 answerable   mem=0 rest=3 hit(A/M/D)=111
+  q30 unanswerable mem=1 rest=3 hit(A/M/D)=111
+  q31 unanswerable mem=1 rest=3 hit(A/M/D)=111
+  q32 unanswerable mem=1 rest=6 hit(A/M/D)=100
+  q33 answerable   mem=1 rest=2 hit(A/M/D)=111
+  q34 unanswerable mem=0 rest=4 hit(A/M/D)=101
+
+共 30 条；闭卷已能答对（记忆项）14 条 -> 有效 16 条
+answerable n=7
+  A  命中 6/7     拒答 2/7     TTFT 0.133s
+  M  命中 6/7     拒答 2/7     TTFT 0.044s
+  D  命中 6/7     拒答 2/7     TTFT 0.099s
+unanswerable n=9
+  A  泄漏 5/9     拒答 5/9     TTFT 0.130s
+  M  泄漏 4/9     拒答 4/9     TTFT 0.047s
+  D  泄漏 5/9     拒答 8/9     TTFT 0.084s

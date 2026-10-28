@@ -12,7 +12,7 @@ We think this is the right place for "who may know what" in RAG (role-play / mul
 |---|---|
 | Masking is exact, not soft | canary in masked block: read 0/8; same canary visible: 8/8; identical to deletion |
 | Quality unchanged | masking 24–97% of blocks → same accuracy as no-mask and as text deletion |
-| 16× faster | TTFT 0.98 s → 0.06 s (7.5K context, prefix cache hit) |
+| 18–20× faster | TTFT 1.27 s cold → 0.062 s warm (7.5K); changing **visibility** costs nothing (0.064 s), changing **text** costs 8× (0.515 s) |
 | Position distance is a separate budget | 32K gap 6/6 · 80K 3–4/6 · 160K 0/6; position compression (160K→40K effective) restores 6/6 |
 
 Repo: patch (5 files, ~210 lines), all experiment scripts, raw JSON results, and a small version-gated dataset (ZZZ 2.0–3.2, 62 questions, closed-book 0/60).

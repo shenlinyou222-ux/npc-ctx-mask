@@ -1,0 +1,27 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:05<29:07,  5.64s/it]Loading weights:   1%|▏         | 4/311 [00:05<05:44,  1.12s/it]Loading weights:   2%|▏         | 6/311 [00:05<03:20,  1.52it/s]Loading weights:   5%|▍         | 14/311 [00:06<01:01,  4.83it/s]Loading weights:   5%|▌         | 17/311 [00:06<00:49,  5.94it/s]Loading weights:   8%|▊         | 24/311 [00:06<00:27, 10.48it/s]Loading weights:   9%|▉         | 28/311 [00:06<00:25, 10.91it/s]Loading weights:  23%|██▎       | 70/311 [00:06<00:04, 50.96it/s]Loading weights:  27%|██▋       | 85/311 [00:07<00:05, 39.62it/s]Loading weights:  31%|███       | 96/311 [00:07<00:06, 34.82it/s]Loading weights:  34%|███▍      | 105/311 [00:08<00:06, 31.95it/s]Loading weights:  36%|███▌      | 112/311 [00:08<00:05, 34.55it/s]Loading weights:  38%|███▊      | 119/311 [00:08<00:06, 31.00it/s]Loading weights:  40%|███▉      | 124/311 [00:08<00:06, 30.57it/s]Loading weights:  41%|████▏     | 129/311 [00:09<00:06, 29.85it/s]Loading weights:  44%|████▎     | 136/311 [00:09<00:05, 30.60it/s]Loading weights:  45%|████▌     | 140/311 [00:09<00:05, 29.03it/s]Loading weights:  47%|████▋     | 147/311 [00:09<00:05, 31.33it/s]Loading weights:  49%|████▊     | 151/311 [00:09<00:05, 28.66it/s]Loading weights:  51%|█████     | 158/311 [00:10<00:05, 30.51it/s]Loading weights:  52%|█████▏    | 162/311 [00:10<00:05, 25.65it/s]Loading weights:  53%|█████▎    | 165/311 [00:10<00:05, 26.03it/s]Loading weights:  54%|█████▍    | 169/311 [00:10<00:05, 27.51it/s]Loading weights:  55%|█████▌    | 172/311 [00:10<00:05, 23.59it/s]Loading weights:  57%|█████▋    | 176/311 [00:10<00:05, 26.54it/s]Loading weights:  58%|█████▊    | 181/311 [00:11<00:04, 26.77it/s]Loading weights:  60%|█████▉    | 186/311 [00:11<00:04, 30.28it/s]Loading weights:  61%|██████    | 190/311 [00:11<00:03, 30.67it/s]Loading weights:  62%|██████▏   | 194/311 [00:11<00:04, 25.59it/s]Loading weights:  64%|██████▍   | 200/311 [00:11<00:03, 31.86it/s]Loading weights:  66%|██████▌   | 204/311 [00:11<00:04, 22.44it/s]Loading weights:  68%|██████▊   | 212/311 [00:12<00:03, 28.31it/s]Loading weights:  69%|██████▉   | 216/311 [00:12<00:03, 26.98it/s]Loading weights:  72%|███████▏  | 224/311 [00:12<00:02, 31.86it/s]Loading weights:  73%|███████▎  | 228/311 [00:12<00:02, 27.79it/s]Loading weights:  76%|███████▌  | 235/311 [00:12<00:02, 31.44it/s]Loading weights:  77%|███████▋  | 239/311 [00:13<00:02, 26.92it/s]Loading weights:  79%|███████▉  | 245/311 [00:13<00:02, 29.20it/s]Loading weights:  80%|████████  | 249/311 [00:13<00:02, 27.11it/s]Loading weights:  83%|████████▎ | 257/311 [00:13<00:01, 30.50it/s]Loading weights:  84%|████████▍ | 261/311 [00:13<00:01, 27.11it/s]Loading weights:  86%|████████▌ | 268/311 [00:14<00:01, 30.23it/s]Loading weights:  87%|████████▋ | 272/311 [00:14<00:01, 23.92it/s]Loading weights:  89%|████████▉ | 277/311 [00:14<00:01, 28.02it/s]Loading weights:  90%|█████████ | 281/311 [00:14<00:01, 22.28it/s]Loading weights:  93%|█████████▎| 288/311 [00:14<00:00, 29.72it/s]Loading weights:  94%|█████████▍| 292/311 [00:15<00:00, 21.60it/s]Loading weights:  96%|█████████▌| 298/311 [00:15<00:00, 26.56it/s]Loading weights:  97%|█████████▋| 302/311 [00:15<00:00, 23.50it/s]Loading weights:  98%|█████████▊| 306/311 [00:15<00:00, 26.26it/s]Loading weights: 100%|██████████| 311/311 [00:15<00:00, 19.84it/s]
+  01 swap=1 noswap=0 full=1 | gold=VELDAN-5735 | swap_out=' The turbine code for the sens'
+  02 swap=1 noswap=0 full=1 | gold=VELKAR-8932 | swap_out=' The turbine code for the turb'
+  03 swap=1 noswap=0 full=1 | gold=RYAVEL-3959 | swap_out=' The pump code for the coolant'
+  04 swap=1 noswap=0 full=1 | gold=RYABRA-1778 | swap_out=' The sensor code for the senso'
+  05 swap=1 noswap=0 full=1 | gold=DANVEL-5477 | swap_out=' The valve code for the valve '
+  06 swap=1 noswap=0 full=1 | gold=BRADAN-8715 | swap_out=' The pump code for the turbine'
+  07 swap=1 noswap=0 full=1 | gold=THAOSK-4069 | swap_out=' The valve code for the sensor'
+  08 swap=1 noswap=0 full=1 | gold=ZIRZIR-2925 | swap_out=' The turbine code for the turb'
+  09 swap=1 noswap=0 full=1 | gold=MORVEL-1789 | swap_out=' The turbine code for the sens'
+  10 swap=1 noswap=0 full=1 | gold=MORMOR-9189 | swap_out=' The pump code for the valve M'
+  11 swap=1 noswap=0 full=1 | gold=MORTHA-3097 | swap_out=' The pump code for the coolant'
+  12 swap=1 noswap=0 full=1 | gold=NYMDAN-6888 | swap_out=' The sensor code for the valve'
+  13 swap=1 noswap=0 full=1 | gold=VELMOR-1151 | swap_out=' The pump code for the valve O'
+  14 swap=1 noswap=0 full=1 | gold=MORZIR-6723 | swap_out=' The pump code for the coolant'
+  15 swap=1 noswap=0 full=1 | gold=BRAVEL-4384 | swap_out=' The valve code for the pump Z'
+  16 swap=1 noswap=0 full=1 | gold=DANBRA-2400 | swap_out=' The sensor code for the valve'
+  17 swap=1 noswap=0 full=1 | gold=VELRYA-2589 | swap_out=' The sensor code for the senso'
+  18 swap=1 noswap=0 full=1 | gold=NYMRYA-8629 | swap_out=' The valve code for the turbin'
+  19 swap=1 noswap=0 full=1 | gold=DANDAN-1040 | swap_out=' The valve code for the valve '
+  20 swap=1 noswap=0 full=1 | gold=KARBRA-4964 | swap_out=' The coolant code for the pump'
+
+n=20
+  reprefill   20/20
+  wait_swap   20/20
+  wait_noswap 0/20
+  wait_full   20/20

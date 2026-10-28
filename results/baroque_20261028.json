@@ -1,0 +1,502 @@
+{
+ "rows": [
+  {
+   "q": "What is the world-altering cataclysm in Baroque called?",
+   "gold": "Blaze",
+   "kind": "in",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The world-altering cataclysm in Baroque ",
+    "pt": 42,
+    "ttft": 0.07822898599988548
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The world-altering cataclysm in Baroque ",
+    "pt": 2940,
+    "ttft": 0.5070788630000607
+   },
+   "M": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The world-altering cataclysm in Baroque ",
+    "pt": 2940,
+    "ttft": 0.05327661100000114
+   },
+   "D": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The world-altering cataclysm in Baroque ",
+    "pt": 1399,
+    "ttft": 0.18752835299983417
+   }
+  },
+  {
+   "q": "When did the Blaze take place?",
+   "gold": "May 14, 2032",
+   "kind": "in",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The Blaze took place on April 1, 1999.",
+    "pt": 35,
+    "ttft": 0.046910195000236854
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "May 14, 2032.",
+    "pt": 2933,
+    "ttft": 0.04715148200011754
+   },
+   "M": {
+    "hit": true,
+    "abstain": false,
+    "ans": "May 14, 2032.",
+    "pt": 2933,
+    "ttft": 0.046949678000601125
+   },
+   "D": {
+    "hit": true,
+    "abstain": false,
+    "ans": "May 14, 2032",
+    "pt": 1392,
+    "ttft": 0.06170886200015957
+   }
+  },
+  {
+   "q": "What are the once-human creatures the protagonist must purify called?",
+   "gold": "Meta-Beings",
+   "kind": "in",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The once-human creatures the protagonist",
+    "pt": 41,
+    "ttft": 0.046562618000280054
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The once-human creatures the protagonist",
+    "pt": 2939,
+    "ttft": 0.05048033999992185
+   },
+   "M": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The once-human creatures the protagonist",
+    "pt": 2939,
+    "ttft": 0.04999878800026636
+   },
+   "D": {
+    "hit": true,
+    "abstain": false,
+    "ans": "Meta-Beings",
+    "pt": 1398,
+    "ttft": 0.06408544700025232
+   }
+  },
+  {
+   "q": "Which order discovered that the Absolute God had returned?",
+   "gold": "Malkuth",
+   "kind": "in",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The question is not answerable based on ",
+    "pt": 38,
+    "ttft": 0.04303724799956399
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The order that discovered that the Absol",
+    "pt": 2936,
+    "ttft": 0.04973114499989606
+   },
+   "M": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The Order of Malkuth discovered that the",
+    "pt": 2936,
+    "ttft": 0.06264144200031296
+   },
+   "D": {
+    "hit": true,
+    "abstain": false,
+    "ans": "Order of Malkuth",
+    "pt": 1395,
+    "ttft": 0.044818962999670475
+   }
+  },
+  {
+   "q": "Who can read an Idea Sephirah?",
+   "gold": "Baroquemonger",
+   "kind": "in",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "Only those who are spiritually prepared ",
+    "pt": 37,
+    "ttft": 0.05448852399968018
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The answer is: Baroquemonger.",
+    "pt": 2935,
+    "ttft": 0.052702522000799945
+   },
+   "M": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The Horned Girl can read an Idea Sephira",
+    "pt": 2935,
+    "ttft": 0.05879616799938958
+   },
+   "D": {
+    "hit": true,
+    "abstain": false,
+    "ans": "Baroquemonger",
+    "pt": 1394,
+    "ttft": 0.04954461800025456
+   }
+  },
+  {
+   "q": "Who lost her identity to shield herself and can voice others' thoughts?",
+   "gold": "Horned Girl",
+   "kind": "in",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The answer is: **Morgan Freeman**.",
+    "pt": 42,
+    "ttft": 0.05396193599972321
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The Horned Girl.",
+    "pt": 2940,
+    "ttft": 0.05043380799997976
+   },
+   "M": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The Horned Girl.",
+    "pt": 2940,
+    "ttft": 0.05514280300030805
+   },
+   "D": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The Horned Girl.",
+    "pt": 1399,
+    "ttft": 0.049810189000709215
+   }
+  },
+  {
+   "q": "What are the embodiments of pain called?",
+   "gold": "Littles",
+   "kind": "in",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The embodiments of pain are called **pai",
+    "pt": 36,
+    "ttft": 0.04217785399941931
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The embodiments of pain are called Littl",
+    "pt": 2934,
+    "ttft": 0.048551087000305415
+   },
+   "M": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The embodiments of pain are called Littl",
+    "pt": 2934,
+    "ttft": 0.05336520999935601
+   },
+   "D": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The embodiments of pain are called Littl",
+    "pt": 1393,
+    "ttft": 0.056747980999716674
+   }
+  },
+  {
+   "q": "Who cultivated the Littles?",
+   "gold": "Angelicus",
+   "kind": "in",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The Littles were cultivated by the Littl",
+    "pt": 35,
+    "ttft": 0.04997274299967103
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "Doctor Angelicus.",
+    "pt": 2933,
+    "ttft": 0.05707478800013632
+   },
+   "M": {
+    "hit": true,
+    "abstain": false,
+    "ans": "Doctor Angelicus.",
+    "pt": 2933,
+    "ttft": 0.04792884399921604
+   },
+   "D": {
+    "hit": true,
+    "abstain": false,
+    "ans": "Doctor Angelicus",
+    "pt": 1392,
+    "ttft": 0.04511557099976926
+   }
+  },
+  {
+   "q": "What weapon uses the Littles as bullets?",
+   "gold": "Angelic Rifle",
+   "kind": "in",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The Littles are a type of bullet used in",
+    "pt": 38,
+    "ttft": 0.0433165390004433
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The weapon that uses the Littles as bull",
+    "pt": 2936,
+    "ttft": 0.05482962900077837
+   },
+   "M": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The Angelic Rifle.",
+    "pt": 2936,
+    "ttft": 0.048469879000549554
+   },
+   "D": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The Angelic Rifle",
+    "pt": 1395,
+    "ttft": 0.05346784499943169
+   }
+  },
+  {
+   "q": "Who lies impaled on a Consciousness Orb at the tower's bottom floor?",
+   "gold": "Archangel",
+   "kind": "in",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The answer is: **Kael**.",
+    "pt": 44,
+    "ttft": 0.04531465699983528
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The Archangel lies impaled on a Consciou",
+    "pt": 2942,
+    "ttft": 0.04896521299997403
+   },
+   "M": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The Archangel.",
+    "pt": 2942,
+    "ttft": 0.052571736000572855
+   },
+   "D": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The Archangel.",
+    "pt": 1401,
+    "ttft": 0.05176770699927147
+   }
+  },
+  {
+   "q": "Who composed the music of Baroque?",
+   "gold": "Iwata",
+   "kind": "out",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The music of the Baroque period was comp",
+    "pt": 36,
+    "ttft": 0.044310928000413696
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "Masaharu Iwata",
+    "pt": 2934,
+    "ttft": 0.05502500099919416
+   },
+   "M": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The music of Baroque was composed by the",
+    "pt": 2934,
+    "ttft": 0.04424990000006801
+   },
+   "D": {
+    "hit": false,
+    "abstain": true,
+    "ans": "I don't know.",
+    "pt": 1393,
+    "ttft": 0.050032846000249265
+   }
+  },
+  {
+   "q": "Who created the concept and directed Baroque?",
+   "gold": "Yonemitsu",
+   "kind": "out",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The concept of Baroque was created by th",
+    "pt": 37,
+    "ttft": 0.05256366899993736
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "Kazunari Yonemitsu.",
+    "pt": 2935,
+    "ttft": 0.06461297099940566
+   },
+   "M": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The concept and direction of Baroque was",
+    "pt": 2935,
+    "ttft": 0.05546388100083277
+   },
+   "D": {
+    "hit": false,
+    "abstain": true,
+    "ans": "I don't know.",
+    "pt": 1394,
+    "ttft": 0.04229251699962333
+   }
+  },
+  {
+   "q": "What was the first song created for the soundtrack?",
+   "gold": "Sanctuary",
+   "kind": "out",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The first song created for the soundtrac",
+    "pt": 38,
+    "ttft": 0.04009870199934085
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The first song created for the soundtrac",
+    "pt": 2936,
+    "ttft": 0.04782386700026109
+   },
+   "M": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The first song created for the soundtrac",
+    "pt": 2936,
+    "ttft": 0.04960594400017726
+   },
+   "D": {
+    "hit": false,
+    "abstain": true,
+    "ans": "I don't know.",
+    "pt": 1395,
+    "ttft": 0.05317371899946011
+   }
+  },
+  {
+   "q": "What platform was the early prototype developed for?",
+   "gold": "PC-9800",
+   "kind": "out",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The early prototype was developed for th",
+    "pt": 37,
+    "ttft": 0.051317218999429315
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "The early prototype was developed for th",
+    "pt": 2935,
+    "ttft": 0.04595259800044005
+   },
+   "M": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The early prototype was developed for a ",
+    "pt": 2935,
+    "ttft": 0.05487119600002188
+   },
+   "D": {
+    "hit": false,
+    "abstain": true,
+    "ans": "I don't know.",
+    "pt": 1394,
+    "ttft": 0.0429850210002769
+   }
+  },
+  {
+   "q": "Which studio created the CGI?",
+   "gold": "Inertia Pictures",
+   "kind": "out",
+   "CB": {
+    "hit": false,
+    "abstain": false,
+    "ans": "Pixar.",
+    "pt": 34,
+    "ttft": 0.05262044499977492
+   },
+   "A": {
+    "hit": true,
+    "abstain": false,
+    "ans": "Inertia Pictures",
+    "pt": 2932,
+    "ttft": 0.07032228100069915
+   },
+   "M": {
+    "hit": false,
+    "abstain": false,
+    "ans": "The CGI was created by Longneck.",
+    "pt": 2932,
+    "ttft": 0.04881235500033654
+   },
+   "D": {
+    "hit": false,
+    "abstain": true,
+    "ans": "I don't know.",
+    "pt": 1391,
+    "ttft": 0.05323102700003801
+   }
+  }
+ ],
+ "coverage": 0.5054945054945055,
+ "tokens": 2912,
+ "tmpl_offset": 3
+}

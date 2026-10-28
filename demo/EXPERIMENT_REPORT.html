@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8">
+<title>实验报告：一份缓存，四种可见性</title>
+<style>
+ @page { size: A4; margin: 14mm 14mm 12mm; }
+ :root { --ink:#15181d; --dim:#6b7280; --line:#e6e8ec; --red:#b91c1c; --green:#0f766e; --blue:#1d4ed8; }
+ * { box-sizing:border-box }
+ body { margin:0 auto; padding:26px 30px 40px; max-width:900px;
+        font:14px/1.62 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; color:var(--ink); background:#fff }
+ h1 { font-size:22px; margin:0 0 4px; letter-spacing:-.3px }
+ .meta { color:var(--dim); font-size:12px; margin-bottom:16px }
+ h2 { font-size:14.5px; margin:20px 0 8px; padding-bottom:4px; border-bottom:1px solid var(--line) }
+ p { margin:6px 0 }
+ table { width:100%; border-collapse:collapse; font-size:12.5px; margin:8px 0 4px }
+ th { background:#f6f7f9; text-align:left; font-weight:600; color:#374151; padding:6px 8px;
+      border:1px solid var(--line); font-size:12px }
+ td { padding:6px 8px; border:1px solid var(--line); vertical-align:top; font-size:12.2px }
+ .gold { white-space:nowrap }
+ .num { font-variant-numeric:tabular-nums; white-space:nowrap }
+ .leak { color:var(--red); font-weight:600 }
+ .safe { color:var(--green); font-weight:600 }
+ .dim { color:var(--dim) }
+ code, pre { font-family:ui-monospace,Consolas,"Cascadia Mono",monospace }
+ pre { background:#f7f8fa; border:1px solid var(--line); border-radius:6px;
+       padding:9px 11px; font-size:11.5px; line-height:1.5; margin:6px 0; overflow:hidden; white-space:pre-wrap }
+ .kicker { background:#f7f9ff; border-left:3px solid var(--blue); padding:9px 12px; border-radius:6px; margin:10px 0 4px; font-size:13px }
+ .two { display:grid; grid-template-columns:1fr 1fr; gap:12px }
+ .foot { color:var(--dim); font-size:11.5px; margin-top:16px; border-top:1px solid var(--line); padding-top:8px }
+ ol { margin:6px 0 0 18px; padding:0 }
+ li { margin:3px 0 }
+ @media print {
+   body { padding:0; max-width:none }
+   table, pre, .kicker, .foot { break-inside:avoid }
+   tr, li { break-inside:avoid }
+   h2 { break-after:avoid }
+ }
+</style></head><body>
+
+<h1>一份缓存，四种可见性</h1>
+<div class="meta">ZZZ 剧情进度 × KV 块级可见性 ｜ 2026-10-28 ｜ Qwen3-1.7B · vLLM 0.30 · FlexAttention · 单卡 8 GB</div>
+
+<div class="kicker">
+<b>改动前</b>：每个角色一份 prompt，可见集合一变，整段上下文重新 prefill。<br>
+<b>改动后</b>：世界观只 prefill 一次，每个请求只声明"哪些 KV 块我不可读"，引擎在注意力层把块剔除。<br>
+token 序列一个字不改 → 前缀缓存照常命中；被遮块在 kernel 之前就从 KV 索引里剔掉，模型物理上读不到。
+</div>
+
+<h2>1. 实验设置</h2>
+<table>
+<tr><th style="width:96px">项</th><th>值</th></tr>
+<tr><td>模型 / 引擎</td><td>Qwen3-1.7B；vLLM 0.30，<code>FLEX_ATTENTION</code>，<code>--enable-prefix-caching --enforce-eager</code></td></tr>
+<tr><td>语料</td><td>21 篇 ZZZ 角色页 = <b>3,405 token = 213 个 16-token 块</b>，只 prefill 一次</td></tr>
+<tr><td>人物</td><td>Banyue（进度 2.4）· Aria（2.6）· Promeia（2.8）· Claret Flint（3.2）</td></tr>
+<tr><td>可见性</td><td>按剧情进度遮掉"晚于该进度"的角色页：<b>76% / 56% / 38% / 5%</b> 的块</td></tr>
+<tr><td>对照</td><td>同一问题、同一段 token 序列，<b>唯一变量是可见性位图</b>；每格 3 次，答案一致率 100%</td></tr>
+</table>
+
+<h2>2. 输入长什么样</h2>
+<pre><b>system</b>（21 页语料，3,405 token，只算一次）
+You answer questions about the world using only the records below.
+Each record is one character page, bracketed by its title.
+If the records do not contain the answer, say exactly: I don't know.
+
+[Aria]          ... Height 150cm (4'11")  Birthday June 7th ...
+[Banyue]        ... Height 200cm (6'7")   Birthday July 24th ...
+[Claret Flint]  ... Height 166cm (5'5")   Birthday July 23rd ...
+...（共 21 页，每页补齐到 16-token 块边界）
+
+<b>user</b>（Banyue，进度 2.4）
+【Banyue 的提问】When is Roxy Ifrita Pryce's birthday?
+（简短回答。）
+
+<b>随请求附带</b>
+request_id : scope=banyue
+位图        : deny = [(23,33),(33,43),(53,63),(63,73), ...]     # 161 / 213 块不可读</pre>
+<p class="dim" style="font-size:12px">不遮的那一组只有 <code>request_id = scope=all</code> 与 <code>deny = []</code> 不同——<b>prompt 逐 token 相同</b>。</p>
+
+<h2>3. 四条对比（输入相同，只换位图）</h2>
+<table>
+<tr><th style="width:26px">#</th><th>提问</th><th style="width:56px">该不该答</th><th style="width:96px">正解</th><th>不遮的输出</th><th>遮蔽的输出</th></tr>
+<tr><td>1</td><td>Banyue 问自己生日</td><td>该答</td><td class="gold">July 24th</td><td class="safe">July 24th</td><td class="safe">July 24th</td></tr>
+<tr><td>2</td><td>Banyue 问 Roxy 生日</td><td>不该答</td><td class="gold">December 29th</td><td class="leak">December 29th ← 越界</td><td>July 24th（答成了自己的生日）</td></tr>
+<tr><td>3</td><td>Aria 问 Claret 生日</td><td>不该答</td><td class="gold">July 23rd</td><td class="leak">July 23rd ← 越界</td><td>July 24th（读不到）</td></tr>
+<tr><td>4</td><td>Claret 问 Phoenix 生日</td><td>不该答</td><td class="gold">October 31st</td><td class="leak">October 31st ← 越界</td><td>March 17th（读不到）</td></tr>
+</table>
+<p>第 1 行是"该知道的照样知道"，第 2–4 行是"不该知道的说不出来"——<b>同一个模型、同一段上下文、同一个 prompt</b>。</p>
+
+<h2>4. 汇总指标</h2>
+<table>
+<tr><th style="width:38%">指标</th><th>不遮</th><th>遮蔽</th></tr>
+<tr><td>越界（复现受限版本正解）</td><td class="num leak">7 / 8</td><td class="num safe">0 / 8</td></tr>
+<tr><td>该答的题（4 题）</td><td class="num">4 / 4</td><td class="num">4 / 4（答案逐字一致 4/4）</td></tr>
+<tr><td>TTFT 中位数（首 token）</td><td class="num">58 ms</td><td class="num">58 ms</td></tr>
+<tr><td>TTOT 中位数（末 token，端到端）</td><td class="num">176 ms</td><td class="num">174 ms</td></tr>
+<tr><td>prompt token</td><td class="num">3,441–3,447</td><td class="num">3,441–3,447（完全相同）</td></tr>
+</table>
+
+<h2>5. 前后对比：快在哪</h2>
+<table>
+<tr><th style="width:86px"></th><th>做法</th><th style="width:220px">TTFT（同一份 3,405 token 语料）</th></tr>
+<tr><td><b>改动前</b></td><td>换角色 = 重拼 prompt = 整段重新 prefill</td><td class="num">2.04 s　<span class="dim">（n=3：1.16 / 2.04 / 4.35）</span></td></tr>
+<tr><td><b>改动后</b></td><td>序列不变，只换位图 = 前缀缓存命中</td><td class="num safe">0.20 s　<span class="dim">（n=3：0.16 / 0.20 / 0.22）</span></td></tr>
+</table>
+<p>约 <b>10×</b>；而且<b>换可见性的那一下是 0 成本</b>（遮蔽 58 ms vs 不遮 58 ms），因为"能读什么"只改位图，不改 token 序列。</p>
+
+<h2>6. 边界（主动说，反而加分）</h2>
+<ol>
+<li><b>遮蔽只保证"读不到"，不保证"说不知道"</b>。第 2–4 行遮蔽臂照样开口，只是编了个别的日期；要它承认不知道，是提示层/后训练层的问题。</li>
+<li><b>1.7B 本身定位弱</b>：21 页里有个别行不遮也答错（Sigrid），那几行不作越界证据。</li>
+<li><b>样本小</b>：4 人 × 2–4 题 × 3 次，机制演示，不是 benchmark。</li>
+<li>16-token 块粒度以下管不了；块边界要按<b>渲染后</b>的序列算（踩过 3-token 偏移的坑）。</li>
+</ol>
+
+<div class="foot">
+原始数据 <code>demo_persona_20261028.json</code>（逐请求 72 条）｜复现 <code>scripts/demo_persona.py --pages 21 --reps 3</code>｜可视化 <code>demo_report.html</code>
+</div>
+</body></html>

@@ -1,0 +1,3276 @@
+{
+ "corpus": {
+  "pages": 21,
+  "tokens": 3405,
+  "blocks": 213
+ },
+ "cast": [
+  {
+   "pid": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "line": "你是个头很高、话不多的护卫，回答简短克制。"
+  },
+  {
+   "pid": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "line": "你是机敏的少女，说话轻快，喜欢用短句。"
+  },
+  {
+   "pid": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "line": "你冷静克制，习惯先确认事实再回答。"
+  },
+  {
+   "pid": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "line": "你就是克拉蕾特·弗林特本人，语气从容自信。"
+  }
+ ],
+ "spans": [
+  {
+   "doc_id": "st-010",
+   "title": "Aria",
+   "version": "2.6",
+   "blk": [
+    2,
+    13
+   ]
+  },
+  {
+   "doc_id": "st-015",
+   "title": "Banyue",
+   "version": "2.4",
+   "blk": [
+    13,
+    23
+   ]
+  },
+  {
+   "doc_id": "st-025",
+   "title": "Cissia",
+   "version": "2.7",
+   "blk": [
+    23,
+    33
+   ]
+  },
+  {
+   "doc_id": "st-026",
+   "title": "Claret Flint",
+   "version": "3.2",
+   "blk": [
+    33,
+    43
+   ]
+  },
+  {
+   "doc_id": "st-035",
+   "title": "Dialyn",
+   "version": "2.4",
+   "blk": [
+    43,
+    53
+   ]
+  },
+  {
+   "doc_id": "st-081",
+   "title": "Komano Manato",
+   "version": "2.3",
+   "blk": [
+    53,
+    63
+   ]
+  },
+  {
+   "doc_id": "st-085",
+   "title": "Lucia Elowen",
+   "version": "2.3",
+   "blk": [
+    63,
+    73
+   ]
+  },
+  {
+   "doc_id": "st-096",
+   "title": "Nangong Yu",
+   "version": "2.7",
+   "blk": [
+    73,
+    83
+   ]
+  },
+  {
+   "doc_id": "st-106",
+   "title": "Norma Hollowell",
+   "version": "3.0",
+   "blk": [
+    83,
+    93
+   ]
+  },
+  {
+   "doc_id": "st-117",
+   "title": "Phoenix Reffaella",
+   "version": "3.3",
+   "blk": [
+    93,
+    103
+   ]
+  },
+  {
+   "doc_id": "st-122",
+   "title": "Promeia",
+   "version": "2.8",
+   "blk": [
+    103,
+    113
+   ]
+  },
+  {
+   "doc_id": "st-125",
+   "title": "Pyrois",
+   "version": "3.0",
+   "blk": [
+    113,
+    123
+   ]
+  },
+  {
+   "doc_id": "st-130",
+   "title": "Remielle Dan",
+   "version": "3.1",
+   "blk": [
+    123,
+    133
+   ]
+  },
+  {
+   "doc_id": "st-135",
+   "title": "Roxy Ifrita Pryce",
+   "version": "3.2",
+   "blk": [
+    133,
+    143
+   ]
+  },
+  {
+   "doc_id": "st-143",
+   "title": "Sigrid de L'Azur",
+   "version": "3.1",
+   "blk": [
+    143,
+    153
+   ]
+  },
+  {
+   "doc_id": "st-150",
+   "title": "Starlight - Billy Kid",
+   "version": "2.8",
+   "blk": [
+    153,
+    163
+   ]
+  },
+  {
+   "doc_id": "st-152",
+   "title": "Sunna",
+   "version": "2.6",
+   "blk": [
+    163,
+    173
+   ]
+  },
+  {
+   "doc_id": "st-174",
+   "title": "Velina Airgid",
+   "version": "3.0",
+   "blk": [
+    173,
+    183
+   ]
+  },
+  {
+   "doc_id": "st-185",
+   "title": "Ye Shunguang",
+   "version": "2.5",
+   "blk": [
+    183,
+    193
+   ]
+  },
+  {
+   "doc_id": "st-186",
+   "title": "Yidhari Murphy",
+   "version": "2.3",
+   "blk": [
+    193,
+    203
+   ]
+  },
+  {
+   "doc_id": "st-190",
+   "title": "Zhao",
+   "version": "2.5",
+   "blk": [
+    203,
+    213
+   ]
+  }
+ ],
+ "rows": [
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "rep": 0,
+   "qid": "Q0013@2.0",
+   "question": "When is Banyue's birthday?",
+   "gold": "July 24th",
+   "answer_version": "2.4",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0681,
+   "ttot": 0.1893,
+   "ans": "July 24th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "rep": 1,
+   "qid": "Q0013@2.0",
+   "question": "When is Banyue's birthday?",
+   "gold": "July 24th",
+   "answer_version": "2.4",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.054,
+   "ttot": 0.1762,
+   "ans": "July 24th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "rep": 2,
+   "qid": "Q0013@2.0",
+   "question": "When is Banyue's birthday?",
+   "gold": "July 24th",
+   "answer_version": "2.4",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0554,
+   "ttot": 0.1747,
+   "ans": "July 24th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "rep": 0,
+   "qid": "Q0013@2.0",
+   "question": "When is Banyue's birthday?",
+   "gold": "July 24th",
+   "answer_version": "2.4",
+   "should_answer": true,
+   "deny_blocks": 161,
+   "deny_ranges": [
+    [
+     2,
+     13
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     193
+    ],
+    [
+     203,
+     213
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0586,
+   "ttot": 0.1642,
+   "ans": "July 24th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "rep": 1,
+   "qid": "Q0013@2.0",
+   "question": "When is Banyue's birthday?",
+   "gold": "July 24th",
+   "answer_version": "2.4",
+   "should_answer": true,
+   "deny_blocks": 161,
+   "deny_ranges": [
+    [
+     2,
+     13
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     193
+    ],
+    [
+     203,
+     213
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0624,
+   "ttot": 0.167,
+   "ans": "July 24th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "rep": 2,
+   "qid": "Q0013@2.0",
+   "question": "When is Banyue's birthday?",
+   "gold": "July 24th",
+   "answer_version": "2.4",
+   "should_answer": true,
+   "deny_blocks": 161,
+   "deny_ranges": [
+    [
+     2,
+     13
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     193
+    ],
+    [
+     203,
+     213
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0508,
+   "ttot": 0.1549,
+   "ans": "July 24th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "rep": 0,
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0674,
+   "ttot": 0.1775,
+   "ans": "December 29th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "rep": 1,
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0658,
+   "ttot": 0.1923,
+   "ans": "December 29th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "rep": 2,
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0518,
+   "ttot": 0.1761,
+   "ans": "December 29th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "rep": 0,
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 161,
+   "deny_ranges": [
+    [
+     2,
+     13
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     193
+    ],
+    [
+     203,
+     213
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0497,
+   "ttot": 0.1631,
+   "ans": "July 24th",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "rep": 1,
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 161,
+   "deny_ranges": [
+    [
+     2,
+     13
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     193
+    ],
+    [
+     203,
+     213
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0541,
+   "ttot": 0.1596,
+   "ans": "July 24th",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "rep": 2,
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 161,
+   "deny_ranges": [
+    [
+     2,
+     13
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     193
+    ],
+    [
+     203,
+     213
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0508,
+   "ttot": 0.1756,
+   "ans": "July 24th",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "rep": 0,
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3442,
+   "cached": 0,
+   "out_tokens": 5,
+   "ttft": 0.0628,
+   "ttot": 0.1627,
+   "ans": "June 7th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3442,
+    "total_tokens": 3447,
+    "completion_tokens": 5
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "rep": 1,
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3442,
+   "cached": 0,
+   "out_tokens": 5,
+   "ttft": 0.0577,
+   "ttot": 0.1516,
+   "ans": "June 7th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3442,
+    "total_tokens": 3447,
+    "completion_tokens": 5
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "rep": 2,
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3442,
+   "cached": 0,
+   "out_tokens": 5,
+   "ttft": 0.0563,
+   "ttot": 0.1577,
+   "ans": "June 7th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3442,
+    "total_tokens": 3447,
+    "completion_tokens": 5
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "rep": 0,
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": false,
+   "deny_blocks": 161,
+   "deny_ranges": [
+    [
+     2,
+     13
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     193
+    ],
+    [
+     203,
+     213
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3442,
+   "cached": 0,
+   "out_tokens": 12,
+   "ttft": 0.0507,
+   "ttot": 0.2738,
+   "ans": "Aria's birthday is July 24th.",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3442,
+    "total_tokens": 3454,
+    "completion_tokens": 12
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "rep": 1,
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": false,
+   "deny_blocks": 161,
+   "deny_ranges": [
+    [
+     2,
+     13
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     193
+    ],
+    [
+     203,
+     213
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3442,
+   "cached": 0,
+   "out_tokens": 12,
+   "ttft": 0.0631,
+   "ttot": 0.3202,
+   "ans": "Aria's birthday is July 24th.",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3442,
+    "total_tokens": 3454,
+    "completion_tokens": 12
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "rep": 2,
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": false,
+   "deny_blocks": 161,
+   "deny_ranges": [
+    [
+     2,
+     13
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     193
+    ],
+    [
+     203,
+     213
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3442,
+   "cached": 0,
+   "out_tokens": 12,
+   "ttft": 0.0785,
+   "ttot": 0.308,
+   "ans": "Aria's birthday is July 24th.",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3442,
+    "total_tokens": 3454,
+    "completion_tokens": 12
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "rep": 0,
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3447,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0582,
+   "ttot": 0.1661,
+   "ans": "July 23rd",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3447,
+    "total_tokens": 3453,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "rep": 1,
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3447,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0553,
+   "ttot": 0.163,
+   "ans": "July 23rd",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3447,
+    "total_tokens": 3453,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "rep": 2,
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3447,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0733,
+   "ttot": 0.1863,
+   "ans": "July 23rd",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3447,
+    "total_tokens": 3453,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "rep": 0,
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 161,
+   "deny_ranges": [
+    [
+     2,
+     13
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     193
+    ],
+    [
+     203,
+     213
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3447,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.066,
+   "ttot": 0.1869,
+   "ans": "July 24th",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3447,
+    "total_tokens": 3453,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "rep": 1,
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 161,
+   "deny_ranges": [
+    [
+     2,
+     13
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     193
+    ],
+    [
+     203,
+     213
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3447,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0558,
+   "ttot": 0.1716,
+   "ans": "July 24th",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3447,
+    "total_tokens": 3453,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "rep": 2,
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 161,
+   "deny_ranges": [
+    [
+     2,
+     13
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     193
+    ],
+    [
+     203,
+     213
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3447,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0636,
+   "ttot": 0.1691,
+   "ans": "July 24th",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3447,
+    "total_tokens": 3453,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "A",
+   "rep": 0,
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3441,
+   "cached": 0,
+   "out_tokens": 5,
+   "ttft": 0.0525,
+   "ttot": 0.1354,
+   "ans": "June 7th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3441,
+    "total_tokens": 3446,
+    "completion_tokens": 5
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "A",
+   "rep": 1,
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3441,
+   "cached": 0,
+   "out_tokens": 5,
+   "ttft": 0.047,
+   "ttot": 0.1373,
+   "ans": "June 7th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3441,
+    "total_tokens": 3446,
+    "completion_tokens": 5
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "A",
+   "rep": 2,
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3441,
+   "cached": 0,
+   "out_tokens": 5,
+   "ttft": 0.0495,
+   "ttot": 0.1304,
+   "ans": "June 7th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3441,
+    "total_tokens": 3446,
+    "completion_tokens": 5
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "M",
+   "rep": 0,
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": true,
+   "deny_blocks": 120,
+   "deny_ranges": [
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     163
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3441,
+   "cached": 0,
+   "out_tokens": 5,
+   "ttft": 0.0614,
+   "ttot": 0.1385,
+   "ans": "June 7th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3441,
+    "total_tokens": 3446,
+    "completion_tokens": 5
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "M",
+   "rep": 1,
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": true,
+   "deny_blocks": 120,
+   "deny_ranges": [
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     163
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3441,
+   "cached": 0,
+   "out_tokens": 5,
+   "ttft": 0.0547,
+   "ttot": 0.1484,
+   "ans": "June 7th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3441,
+    "total_tokens": 3446,
+    "completion_tokens": 5
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "M",
+   "rep": 2,
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": true,
+   "deny_blocks": 120,
+   "deny_ranges": [
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     163
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3441,
+   "cached": 0,
+   "out_tokens": 5,
+   "ttft": 0.0605,
+   "ttot": 0.1329,
+   "ans": "June 7th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3441,
+    "total_tokens": 3446,
+    "completion_tokens": 5
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "A",
+   "rep": 0,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3442,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0501,
+   "ttot": 0.1597,
+   "ans": "July 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3442,
+    "total_tokens": 3448,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "A",
+   "rep": 1,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3442,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0504,
+   "ttot": 0.1788,
+   "ans": "July 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3442,
+    "total_tokens": 3448,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "A",
+   "rep": 2,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3442,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0529,
+   "ttot": 0.1665,
+   "ans": "July 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3442,
+    "total_tokens": 3448,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "M",
+   "rep": 0,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 120,
+   "deny_ranges": [
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     163
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3442,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0599,
+   "ttot": 0.1529,
+   "ans": "July 24th",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3442,
+    "total_tokens": 3448,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "M",
+   "rep": 1,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 120,
+   "deny_ranges": [
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     163
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3442,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.064,
+   "ttot": 0.1701,
+   "ans": "July 24th",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3442,
+    "total_tokens": 3448,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "M",
+   "rep": 2,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 120,
+   "deny_ranges": [
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     163
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3442,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.054,
+   "ttot": 0.1643,
+   "ans": "July 24th",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3442,
+    "total_tokens": 3448,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "A",
+   "rep": 0,
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0569,
+   "ttot": 0.1694,
+   "ans": "April 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "A",
+   "rep": 1,
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0672,
+   "ttot": 0.1811,
+   "ans": "April 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "A",
+   "rep": 2,
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0611,
+   "ttot": 0.2015,
+   "ans": "April 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "M",
+   "rep": 0,
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 120,
+   "deny_ranges": [
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     163
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0624,
+   "ttot": 0.1708,
+   "ans": "I don't know.",
+   "hit": false,
+   "abstain": true,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "M",
+   "rep": 1,
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 120,
+   "deny_ranges": [
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     163
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.054,
+   "ttot": 0.1618,
+   "ans": "I don't know.",
+   "hit": false,
+   "abstain": true,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "M",
+   "rep": 2,
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 120,
+   "deny_ranges": [
+    [
+     23,
+     43
+    ],
+    [
+     73,
+     163
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0658,
+   "ttot": 0.1897,
+   "ans": "I don't know.",
+   "hit": false,
+   "abstain": true,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "A",
+   "rep": 0,
+   "qid": "Q0073@2.0",
+   "question": "When is Promeia's birthday?",
+   "gold": "December 23rd",
+   "answer_version": "2.8",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0662,
+   "ttot": 0.1993,
+   "ans": "December 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "A",
+   "rep": 1,
+   "qid": "Q0073@2.0",
+   "question": "When is Promeia's birthday?",
+   "gold": "December 23rd",
+   "answer_version": "2.8",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0741,
+   "ttot": 0.1979,
+   "ans": "December 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "A",
+   "rep": 2,
+   "qid": "Q0073@2.0",
+   "question": "When is Promeia's birthday?",
+   "gold": "December 23rd",
+   "answer_version": "2.8",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0554,
+   "ttot": 0.1699,
+   "ans": "December 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "M",
+   "rep": 0,
+   "qid": "Q0073@2.0",
+   "question": "When is Promeia's birthday?",
+   "gold": "December 23rd",
+   "answer_version": "2.8",
+   "should_answer": true,
+   "deny_blocks": 80,
+   "deny_ranges": [
+    [
+     33,
+     43
+    ],
+    [
+     83,
+     103
+    ],
+    [
+     113,
+     153
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0566,
+   "ttot": 0.156,
+   "ans": "December 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "M",
+   "rep": 1,
+   "qid": "Q0073@2.0",
+   "question": "When is Promeia's birthday?",
+   "gold": "December 23rd",
+   "answer_version": "2.8",
+   "should_answer": true,
+   "deny_blocks": 80,
+   "deny_ranges": [
+    [
+     33,
+     43
+    ],
+    [
+     83,
+     103
+    ],
+    [
+     113,
+     153
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0758,
+   "ttot": 0.2071,
+   "ans": "December 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "M",
+   "rep": 2,
+   "qid": "Q0073@2.0",
+   "question": "When is Promeia's birthday?",
+   "gold": "December 23rd",
+   "answer_version": "2.8",
+   "should_answer": true,
+   "deny_blocks": 80,
+   "deny_ranges": [
+    [
+     33,
+     43
+    ],
+    [
+     83,
+     103
+    ],
+    [
+     113,
+     153
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0688,
+   "ttot": 0.1885,
+   "ans": "December 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "A",
+   "rep": 0,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 13,
+   "ttft": 0.0615,
+   "ttot": 0.3375,
+   "ans": "Claret Flint's birthday is July 23rd.",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3456,
+    "completion_tokens": 13
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "A",
+   "rep": 1,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 13,
+   "ttft": 0.0588,
+   "ttot": 0.3233,
+   "ans": "Claret Flint's birthday is July 23rd.",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3456,
+    "completion_tokens": 13
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "A",
+   "rep": 2,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 13,
+   "ttft": 0.059,
+   "ttot": 0.3312,
+   "ans": "Claret Flint's birthday is July 23rd.",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3456,
+    "completion_tokens": 13
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "M",
+   "rep": 0,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 80,
+   "deny_ranges": [
+    [
+     33,
+     43
+    ],
+    [
+     83,
+     103
+    ],
+    [
+     113,
+     153
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 13,
+   "ttft": 0.0512,
+   "ttot": 0.3286,
+   "ans": "Claret Flint's birthday is July 24th.",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3456,
+    "completion_tokens": 13
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "M",
+   "rep": 1,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 80,
+   "deny_ranges": [
+    [
+     33,
+     43
+    ],
+    [
+     83,
+     103
+    ],
+    [
+     113,
+     153
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 13,
+   "ttft": 0.0585,
+   "ttot": 0.3175,
+   "ans": "Claret Flint's birthday is July 24th.",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3456,
+    "completion_tokens": 13
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "M",
+   "rep": 2,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 80,
+   "deny_ranges": [
+    [
+     33,
+     43
+    ],
+    [
+     83,
+     103
+    ],
+    [
+     113,
+     153
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 13,
+   "ttft": 0.0789,
+   "ttot": 0.3456,
+   "ans": "Claret Flint's birthday is July 24th.",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3456,
+    "completion_tokens": 13
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "A",
+   "rep": 0,
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0595,
+   "ttot": 0.1642,
+   "ans": "December 29th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "A",
+   "rep": 1,
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0534,
+   "ttot": 0.1621,
+   "ans": "December 29th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "A",
+   "rep": 2,
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.056,
+   "ttot": 0.1743,
+   "ans": "December 29th",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "M",
+   "rep": 0,
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 80,
+   "deny_ranges": [
+    [
+     33,
+     43
+    ],
+    [
+     83,
+     103
+    ],
+    [
+     113,
+     153
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.053,
+   "ttot": 0.17,
+   "ans": "I don't know.",
+   "hit": false,
+   "abstain": true,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "M",
+   "rep": 1,
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 80,
+   "deny_ranges": [
+    [
+     33,
+     43
+    ],
+    [
+     83,
+     103
+    ],
+    [
+     113,
+     153
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0651,
+   "ttot": 0.161,
+   "ans": "I don't know.",
+   "hit": false,
+   "abstain": true,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "M",
+   "rep": 2,
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 80,
+   "deny_ranges": [
+    [
+     33,
+     43
+    ],
+    [
+     83,
+     103
+    ],
+    [
+     113,
+     153
+    ],
+    [
+     173,
+     183
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3446,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0524,
+   "ttot": 0.1835,
+   "ans": "I don't know.",
+   "hit": false,
+   "abstain": true,
+   "usage": {
+    "prompt_tokens": 3446,
+    "total_tokens": 3452,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "A",
+   "rep": 0,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0582,
+   "ttot": 0.1839,
+   "ans": "July 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "A",
+   "rep": 1,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0568,
+   "ttot": 0.1679,
+   "ans": "July 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "A",
+   "rep": 2,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0554,
+   "ttot": 0.1823,
+   "ans": "July 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "M",
+   "rep": 0,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": true,
+   "deny_blocks": 10,
+   "deny_ranges": [
+    [
+     93,
+     103
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.051,
+   "ttot": 0.1782,
+   "ans": "July 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "M",
+   "rep": 1,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": true,
+   "deny_blocks": 10,
+   "deny_ranges": [
+    [
+     93,
+     103
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0539,
+   "ttot": 0.18,
+   "ans": "July 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "M",
+   "rep": 2,
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": true,
+   "deny_blocks": 10,
+   "deny_ranges": [
+    [
+     93,
+     103
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3443,
+   "cached": 0,
+   "out_tokens": 6,
+   "ttft": 0.0528,
+   "ttot": 0.1905,
+   "ans": "July 23rd",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3443,
+    "total_tokens": 3449,
+    "completion_tokens": 6
+   }
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "A",
+   "rep": 0,
+   "qid": "Q0069@2.0",
+   "question": "When is Phoenix Reffaella's birthday?",
+   "gold": "October 31st",
+   "answer_version": "3.3",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3444,
+   "cached": 0,
+   "out_tokens": 14,
+   "ttft": 0.0749,
+   "ttot": 0.3978,
+   "ans": "Phoenix Reffaella's birthday is October 31st.",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3444,
+    "total_tokens": 3458,
+    "completion_tokens": 14
+   }
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "A",
+   "rep": 1,
+   "qid": "Q0069@2.0",
+   "question": "When is Phoenix Reffaella's birthday?",
+   "gold": "October 31st",
+   "answer_version": "3.3",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3444,
+   "cached": 0,
+   "out_tokens": 14,
+   "ttft": 0.0759,
+   "ttot": 0.3817,
+   "ans": "Phoenix Reffaella's birthday is October 31st.",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3444,
+    "total_tokens": 3458,
+    "completion_tokens": 14
+   }
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "A",
+   "rep": 2,
+   "qid": "Q0069@2.0",
+   "question": "When is Phoenix Reffaella's birthday?",
+   "gold": "October 31st",
+   "answer_version": "3.3",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "deny_ranges": [],
+   "total_blocks": 213,
+   "pt": 3444,
+   "cached": 0,
+   "out_tokens": 14,
+   "ttft": 0.0698,
+   "ttot": 0.376,
+   "ans": "Phoenix Reffaella's birthday is October 31st.",
+   "hit": true,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3444,
+    "total_tokens": 3458,
+    "completion_tokens": 14
+   }
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "M",
+   "rep": 0,
+   "qid": "Q0069@2.0",
+   "question": "When is Phoenix Reffaella's birthday?",
+   "gold": "October 31st",
+   "answer_version": "3.3",
+   "should_answer": false,
+   "deny_blocks": 10,
+   "deny_ranges": [
+    [
+     93,
+     103
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3444,
+   "cached": 0,
+   "out_tokens": 14,
+   "ttft": 0.0702,
+   "ttot": 0.3855,
+   "ans": "Phoenix Reffaella's birthday is March 17th.",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3444,
+    "total_tokens": 3458,
+    "completion_tokens": 14
+   }
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "M",
+   "rep": 1,
+   "qid": "Q0069@2.0",
+   "question": "When is Phoenix Reffaella's birthday?",
+   "gold": "October 31st",
+   "answer_version": "3.3",
+   "should_answer": false,
+   "deny_blocks": 10,
+   "deny_ranges": [
+    [
+     93,
+     103
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3444,
+   "cached": 0,
+   "out_tokens": 14,
+   "ttft": 0.054,
+   "ttot": 0.3564,
+   "ans": "Phoenix Reffaella's birthday is March 17th.",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3444,
+    "total_tokens": 3458,
+    "completion_tokens": 14
+   }
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "M",
+   "rep": 2,
+   "qid": "Q0069@2.0",
+   "question": "When is Phoenix Reffaella's birthday?",
+   "gold": "October 31st",
+   "answer_version": "3.3",
+   "should_answer": false,
+   "deny_blocks": 10,
+   "deny_ranges": [
+    [
+     93,
+     103
+    ]
+   ],
+   "total_blocks": 213,
+   "pt": 3444,
+   "cached": 0,
+   "out_tokens": 14,
+   "ttft": 0.054,
+   "ttot": 0.3693,
+   "ans": "Phoenix Reffaella's birthday is March 17th.",
+   "hit": false,
+   "abstain": false,
+   "usage": {
+    "prompt_tokens": 3444,
+    "total_tokens": 3458,
+    "completion_tokens": 14
+   }
+  }
+ ],
+ "cells": [
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "qid": "Q0013@2.0",
+   "question": "When is Banyue's birthday?",
+   "gold": "July 24th",
+   "answer_version": "2.4",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "July 24th",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0554,
+   "ttot_med": 0.1762,
+   "out_tokens": 6,
+   "pt": 3443
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "qid": "Q0013@2.0",
+   "question": "When is Banyue's birthday?",
+   "gold": "July 24th",
+   "answer_version": "2.4",
+   "should_answer": true,
+   "deny_blocks": 161,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "July 24th",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0586,
+   "ttot_med": 0.1642,
+   "out_tokens": 6,
+   "pt": 3443
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "December 29th",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0658,
+   "ttot_med": 0.1775,
+   "out_tokens": 6,
+   "pt": 3446
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 161,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "July 24th",
+   "hit": false,
+   "abstain": false,
+   "ttft_med": 0.0508,
+   "ttot_med": 0.1631,
+   "out_tokens": 6,
+   "pt": 3446
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "June 7th",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0577,
+   "ttot_med": 0.1577,
+   "out_tokens": 5,
+   "pt": 3442
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": false,
+   "deny_blocks": 161,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "Aria's birthday is July 24th.",
+   "hit": false,
+   "abstain": false,
+   "ttft_med": 0.0631,
+   "ttot_med": 0.308,
+   "out_tokens": 12,
+   "pt": 3442
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "A",
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "July 23rd",
+   "hit": false,
+   "abstain": false,
+   "ttft_med": 0.0582,
+   "ttot_med": 0.1661,
+   "out_tokens": 6,
+   "pt": 3447
+  },
+  {
+   "persona": "banyue",
+   "name": "Banyue",
+   "cutoff": "2.4",
+   "arm": "M",
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 161,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "July 24th",
+   "hit": false,
+   "abstain": false,
+   "ttft_med": 0.0636,
+   "ttot_med": 0.1716,
+   "out_tokens": 6,
+   "pt": 3447
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "A",
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "June 7th",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0495,
+   "ttot_med": 0.1354,
+   "out_tokens": 5,
+   "pt": 3441
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "M",
+   "qid": "Q0008@2.0",
+   "question": "When is Aria's birthday?",
+   "gold": "June 7th",
+   "answer_version": "2.6",
+   "should_answer": true,
+   "deny_blocks": 120,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "June 7th",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0605,
+   "ttot_med": 0.1385,
+   "out_tokens": 5,
+   "pt": 3441
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "A",
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "July 23rd",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0504,
+   "ttot_med": 0.1665,
+   "out_tokens": 6,
+   "pt": 3442
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "M",
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 120,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "July 24th",
+   "hit": false,
+   "abstain": false,
+   "ttft_med": 0.0599,
+   "ttot_med": 0.1643,
+   "out_tokens": 6,
+   "pt": 3442
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "A",
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "April 23rd",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0611,
+   "ttot_med": 0.1811,
+   "out_tokens": 6,
+   "pt": 3446
+  },
+  {
+   "persona": "aria",
+   "name": "Aria",
+   "cutoff": "2.6",
+   "arm": "M",
+   "qid": "Q0097@2.0",
+   "question": "When is Sigrid de L'Azur's birthday?",
+   "gold": "April 23rd",
+   "answer_version": "3.1",
+   "should_answer": false,
+   "deny_blocks": 120,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "I don't know.",
+   "hit": false,
+   "abstain": true,
+   "ttft_med": 0.0624,
+   "ttot_med": 0.1708,
+   "out_tokens": 6,
+   "pt": 3446
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "A",
+   "qid": "Q0073@2.0",
+   "question": "When is Promeia's birthday?",
+   "gold": "December 23rd",
+   "answer_version": "2.8",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "December 23rd",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0662,
+   "ttot_med": 0.1979,
+   "out_tokens": 6,
+   "pt": 3443
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "M",
+   "qid": "Q0073@2.0",
+   "question": "When is Promeia's birthday?",
+   "gold": "December 23rd",
+   "answer_version": "2.8",
+   "should_answer": true,
+   "deny_blocks": 80,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "December 23rd",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0688,
+   "ttot_med": 0.1885,
+   "out_tokens": 6,
+   "pt": 3443
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "A",
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "Claret Flint's birthday is July 23rd.",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.059,
+   "ttot_med": 0.3312,
+   "out_tokens": 13,
+   "pt": 3443
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "M",
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 80,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "Claret Flint's birthday is July 24th.",
+   "hit": false,
+   "abstain": false,
+   "ttft_med": 0.0585,
+   "ttot_med": 0.3286,
+   "out_tokens": 13,
+   "pt": 3443
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "A",
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "December 29th",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.056,
+   "ttot_med": 0.1642,
+   "out_tokens": 6,
+   "pt": 3446
+  },
+  {
+   "persona": "promeia",
+   "name": "Promeia",
+   "cutoff": "2.8",
+   "arm": "M",
+   "qid": "Q0086@2.0",
+   "question": "When is Roxy Ifrita Pryce's birthday?",
+   "gold": "December 29th",
+   "answer_version": "3.2",
+   "should_answer": false,
+   "deny_blocks": 80,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "I don't know.",
+   "hit": false,
+   "abstain": true,
+   "ttft_med": 0.053,
+   "ttot_med": 0.17,
+   "out_tokens": 6,
+   "pt": 3446
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "A",
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": true,
+   "deny_blocks": 0,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "July 23rd",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0568,
+   "ttot_med": 0.1823,
+   "out_tokens": 6,
+   "pt": 3443
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "M",
+   "qid": "Q0023@2.0",
+   "question": "When is Claret Flint's birthday?",
+   "gold": "July 23rd",
+   "answer_version": "3.2",
+   "should_answer": true,
+   "deny_blocks": 10,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "July 23rd",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0528,
+   "ttot_med": 0.18,
+   "out_tokens": 6,
+   "pt": 3443
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "A",
+   "qid": "Q0069@2.0",
+   "question": "When is Phoenix Reffaella's birthday?",
+   "gold": "October 31st",
+   "answer_version": "3.3",
+   "should_answer": false,
+   "deny_blocks": 0,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "Phoenix Reffaella's birthday is October 31st.",
+   "hit": true,
+   "abstain": false,
+   "ttft_med": 0.0749,
+   "ttot_med": 0.3817,
+   "out_tokens": 14,
+   "pt": 3444
+  },
+  {
+   "persona": "claret",
+   "name": "Claret Flint",
+   "cutoff": "3.2",
+   "arm": "M",
+   "qid": "Q0069@2.0",
+   "question": "When is Phoenix Reffaella's birthday?",
+   "gold": "October 31st",
+   "answer_version": "3.3",
+   "should_answer": false,
+   "deny_blocks": 10,
+   "total_blocks": 213,
+   "n": 3,
+   "agree": 1.0,
+   "ans": "Phoenix Reffaella's birthday is March 17th.",
+   "hit": false,
+   "abstain": false,
+   "ttft_med": 0.054,
+   "ttot_med": 0.3693,
+   "out_tokens": 14,
+   "pt": 3444
+  }
+ ]
+}

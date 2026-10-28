@@ -1,4 +1,4 @@
-﻿# Context-Mask: request-level KV block visibility for RAG
+# Context-Mask: request-level KV block visibility for RAG
 
 A small patch for **vLLM 0.30 + FlexAttention** that lets each request declare *which KV blocks it is allowed to read*. Built for world-model / role-play RAG, where every character must see a different subset of one shared corpus.
 
@@ -18,7 +18,7 @@ engine side: block store + block labels + per-request visible set
 
 - **Masking is exact**: in the same context, a canary in a visible block is read 8/8; the same canary in a masked block is read 0/8 — identical to physically deleting it.
 - **Masking irrelevant distractors costs nothing** (after fixing a 3-token block-offset bug that had made it look harmful): Baroque 9/10 = 9/10, multi-hop 6/7 = 6/7, neutral fillers 24/24 = 24/24. See [paper §5.3b](paper/paper_v1.md).
-- **TTFT drops 16×**: token sequence unchanged → prefix cache hit (0.98 s → 0.06 s).
+- **TTFT drops 18–20×**: token sequence unchanged → prefix cache hit (cold 1.27 s → warm 0.062 s at 7.5K). Changing *visibility* costs nothing (0.064 s); changing *text* costs 8× (0.515 s).
 - **Independently, position distance has a budget**: retrieval degrades past ~32K (this model), dies at 160K; compressing the position axis recovers it completely.
 
 ## Results at a glance
@@ -28,8 +28,8 @@ engine side: block store + block labels + per-request visible set
 | Canary (mask exactness) | masked 0/8 leaked vs visible 8/8 read (run `verify_mask_v3.py 8`; the JSON shipped is the earlier n=4 run) |
 | Mask vs delete vs no-mask (Baroque wiki, 51% masked) | 9/10 · 10/10 · 10/10 |
 | Filler ablation (97% masked, n=24) | real filler 22/24 → **15/24**; neutral filler 24/24 → 24/24 |
-| Version-gated dataset (ZZZ 2.0–3.2, 60 questions) | leak **57/60 → 0/60**, accuracy 57/60 unchanged |
-| TTFT (7.5K context) | 0.98 s → **0.06 s** |
+| Version-gated dataset (ZZZ 2.0–3.2, 60 questions) | leak **58/60 → 0/60**; with the answer's own version visible (gated) masked **59/60** vs full-context 58/60 |
+| TTFT (7.5K context) | cold 1.27 s → warm **0.062 s** (18–20×); masked-warm 0.064 s; text-deleted-cold 0.515 s |
 | Position gap scan | 32K: 6/6 · 80K: 3–4/6 · 160K: 0/6 |
 | Position compression (160K → 40K effective) | 0/6 → **6/6** |
 

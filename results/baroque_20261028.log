@@ -1,0 +1,30 @@
+chat template 偏移 = 3 token
+语料：14 段 / 2909 token / 182 块；受限 92 块（51%）
+受限段落来自： Development, Music
+  00 in  CB=0 A=1 M=1 D=1  What is the world-altering cataclysm in Baro
+  01 in  CB=0 A=1 M=1 D=1  When did the Blaze take place?
+  02 in  CB=0 A=1 M=1 D=1  What are the once-human creatures the protag
+  03 in  CB=0 A=1 M=1 D=1  Which order discovered that the Absolute God
+  04 in  CB=0 A=1 M=0 D=1  Who can read an Idea Sephirah?
+  05 in  CB=0 A=1 M=1 D=1  Who lost her identity to shield herself and 
+  06 in  CB=0 A=1 M=1 D=1  What are the embodiments of pain called?
+  07 in  CB=0 A=1 M=1 D=1  Who cultivated the Littles?
+  08 in  CB=0 A=1 M=1 D=1  What weapon uses the Littles as bullets?
+  09 in  CB=0 A=1 M=1 D=1  Who lies impaled on a Consciousness Orb at t
+  10 out CB=0 A=1 M=0 D=0  Who composed the music of Baroque?
+  11 out CB=0 A=1 M=0 D=0  Who created the concept and directed Baroque
+  12 out CB=0 A=1 M=0 D=0  What was the first song created for the soun
+  13 out CB=0 A=1 M=0 D=0  What platform was the early prototype develo
+  14 out CB=0 A=1 M=0 D=0  Which studio created the CGI?
+
+世界观（该答） n=10
+  CB 命中/泄漏 0/10   拒答 0/10   TTFT 0.047s
+  A  命中/泄漏 10/10  拒答 0/10   TTFT 0.050s
+  M  命中/泄漏 9/10   拒答 0/10   TTFT 0.053s
+  D  命中/泄漏 10/10  拒答 0/10   TTFT 0.053s
+
+制作信息（该拒答） n=5
+  CB 命中/泄漏 0/5    拒答 0/5    TTFT 0.051s
+  A  命中/泄漏 5/5    拒答 0/5    TTFT 0.055s
+  M  命中/泄漏 0/5    拒答 0/5    TTFT 0.050s
+  D  命中/泄漏 0/5    拒答 5/5    TTFT 0.050s
