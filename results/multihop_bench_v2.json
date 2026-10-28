@@ -1,0 +1,842 @@
+[
+ {
+  "q": "Who is the individual associated with the cryptocurrency industry facing a criminal trial on fraud and conspiracy charges, as reported by both The Verge and TechCrunch, and is accused by prosecutors of committing fraud for personal gain?",
+  "gold": "Sam Bankman-Fried",
+  "answerable": true,
+  "memory": false,
+  "n_restricted": 2,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Sam Bankman-Fried",
+   "ttft": 0.14373756200001253,
+   "pt": 1033
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Sam Bankman-Fried",
+   "ttft": 0.044068780999964474,
+   "pt": 1033
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Sam Bankman-Fried",
+   "ttft": 0.10171396499998764,
+   "pt": 837
+  }
+ },
+ {
+  "q": "Which individual is implicated in both inflating the value of a Manhattan apartment to a figure not yet achieved in New York City's real estate history, according to 'Fortune', and is also accused of adjusting this apartment's valuation to compensate for a loss in another asset's worth, as reported by 'The Age'?",
+  "gold": "Donald Trump",
+  "answerable": true,
+  "memory": false,
+  "n_restricted": 3,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Donald Trump",
+   "ttft": 0.13063263999998753,
+   "pt": 1005
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Donald Trump",
+   "ttft": 0.0447731879999651,
+   "pt": 1005
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Donald Trump",
+   "ttft": 0.08959811599999057,
+   "pt": 715
+  }
+ },
+ {
+  "q": "Who is the figure associated with generative AI technology whose departure from OpenAI was considered shocking according to Fortune, and is also the subject of a prevailing theory suggesting a lack of full truthfulness with the board as reported by TechCrunch?",
+  "gold": "Sam Altman",
+  "answerable": false,
+  "memory": true,
+  "n_restricted": 5,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Sam Altman",
+   "ttft": 0.12237736499997709,
+   "pt": 990
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "OpenAI's ex-chairman",
+   "ttft": 0.05368872700000793,
+   "pt": 990
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.0701292349999676,
+   "pt": 475
+  }
+ },
+ {
+  "q": "Do the TechCrunch article on software companies and the Hacker News article on The Epoch Times both report an increase in revenue related to payment and subscription models, respectively?",
+  "gold": "Yes",
+  "answerable": true,
+  "memory": true,
+  "n_restricted": 3,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.11938284899997598,
+   "pt": 959
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.06677310800000669,
+   "pt": 959
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.09529303600004368,
+   "pt": 683
+  }
+ },
+ {
+  "q": "Which online betting platform provides a welcome bonus of up to $1000 in bonus bets for new customers' first losses, runs NBA betting promotions, and is anticipated to extend the same sign-up offer to new users in Vermont, as reported by both CBSSports.com and Sporting News?",
+  "gold": "Caesars Sportsbook",
+  "answerable": true,
+  "memory": false,
+  "n_restricted": 2,
+  "A": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Betashares",
+   "ttft": 0.13769841900000301,
+   "pt": 1033
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Betashares",
+   "ttft": 0.051305409999997664,
+   "pt": 1033
+  },
+  "D": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Vermont Sportsbook",
+   "ttft": 0.11309109900003023,
+   "pt": 830
+  }
+ },
+ {
+  "q": "Who is the individual alleged to have built a thriving crypto exchange on falsehoods and is accused by the prosecution of committing fraud for personal gain, as reported by both Fortune and TechCrunch?",
+  "gold": "Sam Bankman-Fried",
+  "answerable": true,
+  "memory": false,
+  "n_restricted": 3,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Sam Bankman-Fried",
+   "ttft": 0.13162420699995891,
+   "pt": 996
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Sam Bankman-Fried",
+   "ttft": 0.057856366000009984,
+   "pt": 996
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Sam Bankman-Fried",
+   "ttft": 0.09230401700000357,
+   "pt": 728
+  }
+ },
+ {
+  "q": "Does the TechCrunch article on Twitch's subscription revenue split policy indicate a different monetization strategy compared to the TechCrunch article on Beeper's plans for Beeper Mini subscriptions?",
+  "gold": "Yes",
+  "answerable": false,
+  "memory": false,
+  "n_restricted": 4,
+  "A": {
+   "hit": false,
+   "abstain": false,
+   "ans": "No.",
+   "ttft": 0.11981567200001564,
+   "pt": 963
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "No.",
+   "ttft": 0.04471726099995976,
+   "pt": 963
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.08033770600002299,
+   "pt": 575
+  }
+ },
+ {
+  "q": "Does 'The New York Times' article attribute the success of the Buffalo Bills' defense to the contributions of Jordan Poyer, while the 'Sporting News' article suggests that the Baltimore Ravens' defense needs to improve before their game against the Cincinnati Bengals?",
+  "gold": "Yes",
+  "answerable": false,
+  "memory": false,
+  "n_restricted": 4,
+  "A": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.12579385400005094,
+   "pt": 993
+  },
+  "M": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.05358782399997608,
+   "pt": 993
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.08349871299998313,
+   "pt": 605
+  }
+ },
+ {
+  "q": "What is the name of the organization discussed in TechCrunch articles that, despite its financial instability, is recognized for creating ChatGPT, which is both a priority and a platform for ongoing innovations, and is planning to enhance its capabilities with the release of GPT-4 and associated APIs?",
+  "gold": "OpenAI",
+  "answerable": false,
+  "memory": true,
+  "n_restricted": 5,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "OpenAI",
+   "ttft": 0.13994913199996972,
+   "pt": 1081
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "OpenAI",
+   "ttft": 0.0532326030000263,
+   "pt": 1081
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "OpenAI",
+   "ttft": 0.07547290200000134,
+   "pt": 484
+  }
+ },
+ {
+  "q": "Which company, as reported by both TechCrunch and The Verge, has spent billions to maintain its default search engine status on various platforms and is also accused of harming news publishers’ revenue through its business practices?",
+  "gold": "Google",
+  "answerable": false,
+  "memory": true,
+  "n_restricted": 3,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Google.",
+   "ttft": 0.11923046399999748,
+   "pt": 1001
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Google",
+   "ttft": 0.06550902499998301,
+   "pt": 1001
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Google",
+   "ttft": 0.08381329100001267,
+   "pt": 695
+  }
+ },
+ {
+  "q": "Does 'The Age' article suggest that Australia's Davis Cup team is aiming for an improvement in their performance compared to the previous year, while the 'Sporting News' article indicates that the South Africa national rugby team has already achieved an improvement to reach the Rugby World Cup semi-finals?",
+  "gold": "Yes",
+  "answerable": false,
+  "memory": true,
+  "n_restricted": 4,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.12093219500002306,
+   "pt": 999
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.04554024700001946,
+   "pt": 999
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.08363181300001088,
+   "pt": 616
+  }
+ },
+ {
+  "q": "After the TechCrunch report on October 7, 2023, concerning Dave Clark's comments on Flexport, and the subsequent TechCrunch article on October 30, 2023, regarding Ryan Petersen's actions at Flexport, was there a change in the nature of the events reported?",
+  "gold": "Yes",
+  "answerable": true,
+  "memory": true,
+  "n_restricted": 3,
+  "A": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.12429842500000632,
+   "pt": 993
+  },
+  "M": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.05991195199999311,
+   "pt": 993
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.08113612400001102,
+   "pt": 743
+  }
+ },
+ {
+  "q": "Does 'The Independent - Life and Style' article suggesting Prince William's emotional state regarding Princess Diana's death align with the same publication's depiction of the events leading up to her death in 'The Crown season six'?",
+  "gold": "Yes",
+  "answerable": false,
+  "memory": true,
+  "n_restricted": 5,
+  "A": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.130254768000043,
+   "pt": 969
+  },
+  "M": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.05484760699999924,
+   "pt": 969
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.05175144300000056,
+   "pt": 470
+  }
+ },
+ {
+  "q": "Which entity is currently engaged with Amazon to address competition concerns, facilitating dialogue with consumer groups against Meta, deploying staff within its AI Office for future regulations, and has previously focused on illegal content and disinformation issues related to the Israel-Hamas war, as reported by TechCrunch?",
+  "gold": "European Commission",
+  "answerable": false,
+  "memory": false,
+  "n_restricted": 6,
+  "A": {
+   "hit": false,
+   "abstain": false,
+   "ans": "EU",
+   "ttft": 0.1303386289999935,
+   "pt": 1110
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "iRobot",
+   "ttft": 0.051610399000026064,
+   "pt": 1110
+  },
+  "D": {
+   "hit": false,
+   "abstain": false,
+   "ans": "The entity is not specified in the provided news p",
+   "ttft": 0.04057325999997374,
+   "pt": 361
+  }
+ },
+ {
+  "q": "Which company, known for its dominance in the e-reader space and for offering exclusive invite-only deals during sales events, faced a stock decline due to an antitrust lawsuit reported by 'The Sydney Morning Herald' and discussed by sellers in a 'Cnbc | World Business News Leader' article?",
+  "gold": "Amazon",
+  "answerable": true,
+  "memory": true,
+  "n_restricted": 3,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Amazon",
+   "ttft": 0.12597587499999463,
+   "pt": 1081
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Amazon",
+   "ttft": 0.0496744689999673,
+   "pt": 1081
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Amazon.",
+   "ttft": 0.08430231400001276,
+   "pt": 717
+  }
+ },
+ {
+  "q": "Was there no change in the portrayal of Google's influence on the digital ecosystem between the report from The Verge on Google's impact on the internet's appearance published on November 1, 2023, and the report from TechCrunch on a class action antitrust suit against Google published later?",
+  "gold": "no",
+  "answerable": false,
+  "memory": false,
+  "n_restricted": 3,
+  "A": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.12336904100004631,
+   "pt": 1020
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.048083485000006476,
+   "pt": 1020
+  },
+  "D": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.08298160600003257,
+   "pt": 719
+  }
+ },
+ {
+  "q": "Does the Sporting News article suggest that streaming services do not require a subscription for viewing the Cowboys vs. 49ers game, in contrast to the Polygon article's claim about film availability on streaming platforms without a subscription?",
+  "gold": "no",
+  "answerable": true,
+  "memory": true,
+  "n_restricted": 3,
+  "A": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.11737294599998904,
+   "pt": 970
+  },
+  "M": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.06072921899999528,
+   "pt": 970
+  },
+  "D": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.08449996399997417,
+   "pt": 707
+  }
+ },
+ {
+  "q": "Has the advice provided by Sporting News to bettors regarding the evaluation of betting opportunities and offers involved reading requirements, going with the favored Eagles, and focusing on hype between the reports published on September 28, 2023, and December 18, 2023?",
+  "gold": "no",
+  "answerable": false,
+  "memory": false,
+  "n_restricted": 3,
+  "A": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.1272240330000045,
+   "pt": 1082
+  },
+  "M": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.04771274799998082,
+   "pt": 1082
+  },
+  "D": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.09572983999998996,
+   "pt": 723
+  }
+ },
+ {
+  "q": "Which company, covered by Engadget and Polygon, is set to release an updated gaming hardware with over 300 improvements on November 16, emphasizing a singular performance target for developers?",
+  "gold": "Valve",
+  "answerable": true,
+  "memory": false,
+  "n_restricted": 2,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Valve",
+   "ttft": 0.12709287800004176,
+   "pt": 1061
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Valve",
+   "ttft": 0.045658532999993895,
+   "pt": 1061
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Valve.",
+   "ttft": 0.09754198500002076,
+   "pt": 803
+  }
+ },
+ {
+  "q": "Was there inconsistency in Jada Pinkett Smith's statements regarding what she learned from her children after The Independent - Life and Style's report on her views on self-acceptance published at 13:41:30, and before The Independent - Life and Style's subsequent report on the same topic published at 15:48:10 on the same day?",
+  "gold": "no",
+  "answerable": true,
+  "memory": false,
+  "n_restricted": 2,
+  "A": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.12664472499994872,
+   "pt": 1068
+  },
+  "M": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.05002077400001781,
+   "pt": 1068
+  },
+  "D": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.09446985700003552,
+   "pt": 819
+  }
+ },
+ {
+  "q": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+  "gold": "no",
+  "answerable": false,
+  "memory": false,
+  "n_restricted": 4,
+  "A": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.13126155300000164,
+   "pt": 1009
+  },
+  "M": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.041942270999982156,
+   "pt": 1009
+  },
+  "D": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.08368710099995269,
+   "pt": 580
+  }
+ },
+ {
+  "q": "Has the portrayal of Google's market practices in reports by The Age before October 22, 2023, remained consistent with the depiction in The Verge's coverage of the Epic v. Google case, and with TechCrunch's report on the class action antitrust suit filed against Google?",
+  "gold": "no",
+  "answerable": false,
+  "memory": false,
+  "n_restricted": 3,
+  "A": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.12752073600000813,
+   "pt": 1020
+  },
+  "M": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.04242561600000272,
+   "pt": 1020
+  },
+  "D": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.0818499979999956,
+   "pt": 714
+  }
+ },
+ {
+  "q": "Does the TechCrunch article suggest that Amazon's large language model (LLM) is not trained on kids' responses, while The Age article raises concerns about TikTok's pixel collecting data without consent?",
+  "gold": "Yes",
+  "answerable": false,
+  "memory": false,
+  "n_restricted": 4,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.12027490999997781,
+   "pt": 967
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.06063188699999955,
+   "pt": 967
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.07273660399999926,
+   "pt": 567
+  }
+ },
+ {
+  "q": "Did the report from Cnbc | World Business News Leader on \"Nike's Latin America and Asia Pacific unit\" or the article from Fortune on the \"U.S. home sales price\" both report a decrease in their respective financial figures?",
+  "gold": "no",
+  "answerable": true,
+  "memory": true,
+  "n_restricted": 3,
+  "A": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.11534817099999373,
+   "pt": 990
+  },
+  "M": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.05244781200002535,
+   "pt": 990
+  },
+  "D": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.08544355800000858,
+   "pt": 705
+  }
+ },
+ {
+  "q": "Did the coverage of ski resorts by 'The Independent - Travel' change after their report on the 'Swiss slopes of Zermatt and pistes of Vail in Colorado' on October 13th, 2023, compared to their subsequent report on 'Tremblant Ski Resort' on October 25th, 2023?",
+  "gold": "no",
+  "answerable": true,
+  "memory": false,
+  "n_restricted": 3,
+  "A": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.12087020000001303,
+   "pt": 986
+  },
+  "M": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.048899731000005886,
+   "pt": 986
+  },
+  "D": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.08189070699995682,
+   "pt": 703
+  }
+ },
+ {
+  "q": "Which company, according to articles from TechCrunch and The Verge, not only spent billions to maintain its default search engine status across various devices and platforms but was also considered by a major tech competitor as the only valid option for such services at the time of their deal, and is simultaneously facing a class action lawsuit for allegedly harming news publishers' revenues through its business practices?",
+  "gold": "Google",
+  "answerable": false,
+  "memory": true,
+  "n_restricted": 3,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Google.",
+   "ttft": 0.053359279999995124,
+   "pt": 1033
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Google.",
+   "ttft": 0.055363299000021016,
+   "pt": 1033
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Google",
+   "ttft": 0.04316461100000879,
+   "pt": 727
+  }
+ },
+ {
+  "q": "Do 'The Verge' and 'Engadget' articles both suggest that 'Consumers' have guides or opportunities to make better purchasing decisions, while 'TechCrunch' discusses 'Consumers' desire for a new model in a different sector?",
+  "gold": "Yes",
+  "answerable": false,
+  "memory": true,
+  "n_restricted": 3,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.12964671399998906,
+   "pt": 1024
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.050778686000001017,
+   "pt": 1024
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.08933005200003663,
+   "pt": 694
+  }
+ },
+ {
+  "q": "Who is the individual associated with OpenAI, recognized for both his vision of AI agents and his generosity, and has made headlines in both Fortune and TechCrunch for his controversial departure from the company?",
+  "gold": "Sam Altman",
+  "answerable": false,
+  "memory": true,
+  "n_restricted": 6,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Sam Altman",
+   "ttft": 0.1261084559999972,
+   "pt": 1094
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "OpenAI's ex-chairman is Elon Musk.",
+   "ttft": 0.0539964270000155,
+   "pt": 1094
+  },
+  "D": {
+   "hit": false,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.04748640999997633,
+   "pt": 345
+  }
+ },
+ {
+  "q": "What company, recently reported by TechCrunch to have made significant profitability in the third quarter, has also faced criticism for not adequately preventing incidents and streamlining driver sign-ups, despite being aware of safety concerns since 2014 and introducing new app features to address them?",
+  "gold": "Uber",
+  "answerable": true,
+  "memory": true,
+  "n_restricted": 2,
+  "A": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Uber",
+   "ttft": 0.12724006799999188,
+   "pt": 1078
+  },
+  "M": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Uber",
+   "ttft": 0.05005413500003897,
+   "pt": 1078
+  },
+  "D": {
+   "hit": true,
+   "abstain": false,
+   "ans": "Uber",
+   "ttft": 0.09438746199998604,
+   "pt": 773
+  }
+ },
+ {
+  "q": "After TechCrunch reported on October 31, 2023, about Google's financial strategies to maintain its search engine dominance, and again on December 15, 2023, about a class action antitrust suit filed against Google, was there inconsistency in the portrayal of Google's competitive practices according to TechCrunch?",
+  "gold": "no",
+  "answerable": false,
+  "memory": false,
+  "n_restricted": 4,
+  "A": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.11621809100000746,
+   "pt": 1029
+  },
+  "M": {
+   "hit": false,
+   "abstain": false,
+   "ans": "Yes.",
+   "ttft": 0.04069713100000172,
+   "pt": 1029
+  },
+  "D": {
+   "hit": true,
+   "abstain": true,
+   "ans": "I don't know.",
+   "ttft": 0.08456516699999383,
+   "pt": 604
+  }
+ }
+]

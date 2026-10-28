@@ -17,7 +17,7 @@ engine side: block store + block labels + per-request visible set
 ```
 
 - **Masking is exact**: in the same context, a canary in a visible block is read 8/8; the same canary in a masked block is read 0/8 — identical to physically deleting it.
-- **Masking is not free**: neutral fillers cost nothing (24/24 → 24/24, 10/10 → 10/10), but relevant content does — Baroque 15→9, multi-hop 23→19, real fillers 22→15 (8 of those 9 are a scoring artifact). See [paper §5.3b](paper/paper_v1.md).
+- **Masking irrelevant distractors costs nothing** (after fixing a 3-token block-offset bug that had made it look harmful): Baroque 9/10 = 9/10, multi-hop 6/7 = 6/7, neutral fillers 24/24 = 24/24. See [paper §5.3b](paper/paper_v1.md).
 - **TTFT drops 16×**: token sequence unchanged → prefix cache hit (0.98 s → 0.06 s).
 - **Independently, position distance has a budget**: retrieval degrades past ~32K (this model), dies at 160K; compressing the position axis recovers it completely.
 

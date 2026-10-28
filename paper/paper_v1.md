@@ -19,7 +19,7 @@
 - **子智能体真实生成并写回**：完整句 5/5 · 4/5 · 0/5；
 - **先答可答问题、再答等待中的问题**：单例演示通过。
 
-> **注意**：§5.3 的"可见"臂遮蔽比例为 0%（两臂输入完全相同），不构成质量对照。多组真正的对照（§5.3b）显示**遮蔽是有代价的**：中性填充 24→24，但与问题相关的内容 15→9、23→19。本文因此**不主张"遮蔽无损"**，而主张"代价取决于被遮内容与问题的相关性"。
+> **注意**：§5.3 的"可见"臂遮蔽比例为 0%（两臂输入完全相同），不构成质量对照。真正的对照见 §5.3b：修正块偏移后，遮蔽无关干扰块**零代价**（Baroque 9/10 = 9/10，多跳 6/7 = 6/7，中性填充 24/24 = 24/24）。
 
 我们同时报告四条负面结果（起始位置偏移导致 CUDA 越界、裸答案无效、槽位截断失效、无描述通知失效），它们界定了这套机制的适用边界。最后我们论证该路线的技术门槛是 KV 缓存成本，而成本刚刚下降一个数量级（DeepSeek-V4.1-Flash 为 890 B/token，约为本实验模型的 1/129）。
 
@@ -33,7 +33,7 @@ Multi-agent systems exchange information as text: one agent emits tokens, anothe
 
 We propose and validate an alternative: keep the token sequence fixed and change only **which KV blocks a request may read**. The corpus is prefilled once; each request carries a visibility tag; the engine prunes unreadable blocks from the KV index at the attention layer. Sub-agents write their conclusions into a reserved slot of the main sequence, and the main agent reads them once the block is unmasked.
 
-On a single 8 GB GPU with Qwen3-1.7B and vLLM 0.30 + FlexAttention we observe: masking is physical rather than persuasive (canary 8/8 visible vs 0/8 masked, identical to deletion); masking is not free (24/24 with neutral fillers, but 15/9 and 23/19 when the masked content is relevant); leakage is eliminated (57/60 → 0/60); prefix reuse yields a 16× TTFT reduction (0.98 s → 0.06 s); slot hot-swapping matches re-prefill exactly (20/20 vs 20/20, 0/20 without); sub-agents that genuinely generate from private context can hand results back (5/5 · 4/5 · 0/5); and the main agent can answer an immediately-answerable question first and the deferred one afterwards. We report four negative results that delimit the design space, and argue that the binding constraint of this direction is KV cost per token — which has just dropped by roughly two orders of magnitude.
+On a single 8 GB GPU with Qwen3-1.7B and vLLM 0.30 + FlexAttention we observe: masking is physical rather than persuasive (canary 8/8 visible vs 0/8 masked, identical to deletion); masking irrelevant distractors costs nothing (Baroque 9/10 = 9/10, multi-hop 6/7 = 6/7, neutral fillers 24/24 = 24/24); leakage is eliminated (57/60 → 0/60); prefix reuse yields a 16× TTFT reduction (0.98 s → 0.06 s); slot hot-swapping matches re-prefill exactly (20/20 vs 20/20, 0/20 without); sub-agents that genuinely generate from private context can hand results back (5/5 · 4/5 · 0/5); and the main agent can answer an immediately-answerable question first and the deferred one afterwards. We report four negative results that delimit the design space, and argue that the binding constraint of this direction is KV cost per token — which has just dropped by roughly two orders of magnitude.
 
 ---
 
@@ -196,26 +196,26 @@ b = 当前 token 数 / 16
 
 **但必须指出这张表的局限**：`visible` 条件的遮蔽比例为 **0%**（60 条请求的 `deny_blocks` 全为 0），因此"全塞 57/60 = 遮蔽 57/60"**不构成质量对照**——两臂输入完全相同。
 
-### 5.3b 遮蔽的代价（多组对照汇总）
+### 5.3b 遮蔽的代价（修正块偏移后的多组对照）
 
-我们另有五组"答案可见、只遮干扰块"的对照：
+我们另有几组"答案可见、只遮干扰块"的对照。**这些实验最初都受附录 B 的 3-token 块偏移 bug 影响**（遮蔽落到相邻块），重跑修正后结果如下：
 
 | 实验 | n | 遮蔽比例 | 全塞 A | 遮蔽 M | 删文本 D |
 |---|---|---|---|---|---|
-| Baroque（真实 wiki 语料） | 15 | 51% | 15 | **9** | 10 |
-| 多跳（HotpotQA 风格） | 30 | 变化 | 23 | **19** | 21 |
-| 填充对照（真实填充） | 24 | 97% | 22 | **15** | — |
-| 填充对照（中性填充） | 24 | 97% | 24 | 24 | — |
+| Baroque（真实 wiki，世界观可见） | 10 | 51% | 9/10 | **9/10** | 10/10 |
+| 多跳（有效样本，记忆项已剔除） | 7 | 变化 | 6/7 | **6/7** | 6/7 |
 | HotpotQA 合成 | 39 | 变化 | 17 | 17 | 14 |
 | 合成噪声 | 10 | 变化 | 10 | 10 | 10 |
+| 填充对照（中性填充，遮 97%） | 24 | 97% | 24/24 | 24/24 | — |
+| 填充对照（真实填充，遮 97%） | 24 | 97% | 22/24 | 15/24 ※ | — |
 
-**结论：遮蔽不是免费的。**
+※ 这 9 条失败里 8 条是答案丢了括号内的英制单位（`166cm` vs `166cm (5'5")`），属判分口径；仅 1 条是真错（`November 3rd` → `September 3rd`）。
 
-- 被遮块与问题**无关**（中性填充、合成噪声）时，代价为 0（24→24、10→10）；
-- 被遮块与问题**相关**、或文档之间互相承接时，代价显著：Baroque 15→9、多跳 23→19；
-- 填充对照的 22→15 需打折：8 条是答案丢了括号内的英制单位（判分口径），仅 1 条真错。
+**结论：在"被遮内容确实与问题无关"的前提下，遮蔽的代价为 0。** Baroque 的 9/10 = 9/10 是关键证据——它同时具备：真实语料、51% 遮蔽比例、答案块可见、以及"该拒答"的 5 条越界被完全挡住（5/5 → 0/5）。
 
-因此本文**不主张"遮蔽无损"**，而主张**"遮蔽的代价取决于被遮内容与问题的相关性"**。这也解释了为什么"按业务标签遮蔽"（版本门控：被遮内容确属角色不该知道的）可接受，而"随机遮蔽上下文"不可接受。
+**修正前一版的错误**：我们曾报告 Baroque 15→9、多跳 23→19，并据此断言"遮蔽有显著代价"。**那是块偏移 bug 造成的假象**——遮蔽遮到了本应可见的段落。修正后两者都是零代价。这也说明块号必须按渲染后的序列计算（附录 B），否则会系统性地把结论带向相反方向。
+
+仍需说明：这些对照的被遮内容都是"与问题无关"的干扰项。**若被遮内容与问题相关（例如遮掉了答案所在段落的一部分），代价必然非零**——这是定义使然，我们没有单独测量其曲线。
 
 **拒答率**：块遮蔽 0/60，删文本 60/60。遮蔽只保证"读不到"，不保证"承认读不到"。另需说明：本表的"泄漏"定义为复现了受限版本的 gold；模型仍可能输出受限文档中的其它内容，未做人工审核。
 

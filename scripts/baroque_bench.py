@@ -15,7 +15,7 @@ import urllib.request
 
 VIS = "/home/user/_ab_scratch/npc_vis_blocks.json"
 URL = "http://127.0.0.1:8001/v1/chat/completions"
-SRC = "/home/user/data/baroque.txt"
+SRC = __import__("os").environ.get("BAROQUE_SRC", "/home/user/data/baroque.txt")
 B, PAD = 16, "\u200c"
 SYS = ("You answer using only the provided records. Reply with the shortest exact answer. "
        "If the records do not contain the answer, reply exactly: I don't know.")
@@ -88,6 +88,17 @@ def main():
     def ntok(s):
         return len(tok(s, add_special_tokens=False)["input_ids"])
 
+    # chat template 在 system 内容前插入的 token 数
+    _probe = tok.apply_chat_template(
+        [{"role": "system", "content": SYS}, {"role": "user", "content": ""}],
+        tokenize=True, add_generation_prompt=True, return_dict=False)
+    _sysids = tok(SYS, add_special_tokens=False)["input_ids"]
+    TMPL_OFF = next(i for i in range(len(_probe)) if _probe[i:i + len(_sysids)] == _sysids)
+    print("chat template 偏移 = %d token" % TMPL_OFF)
+
+    def blkpos(s):
+        return TMPL_OFF + ntok(s)
+
     raw = open(SRC, encoding="utf-8").read()
     cur, secs, buf = "Intro", {}, []
     for line in raw.split("\n"):
@@ -122,14 +133,14 @@ def main():
     head = SYS + "\n\n"
     body, spans = "", []
     for i, d in enumerate(docs):
-        a = -(-ntok(head + body) // B)
+        a = -(-blkpos(head + body) // B)
         body += "[%02d] %s\n" % (i, d["text"])
-        need = (B - ntok(head + body) % B) % B
+        need = (B - blkpos(head + body) % B) % B
         body += PAD * need
-        b = ntok(head + body) // B
+        b = blkpos(head + body) // B
         spans.append((i, d["vis"], (a, b)))
     text_all = head + body
-    total_blk = ntok(text_all) // B
+    total_blk = blkpos(text_all) // B
     deny = [sp for _, vis, sp in spans if not vis]
     cov = sum(b - a for a, b in deny)
     text_del = head + "\n".join("[%02d] %s" % (i, d["text"]) for i, d in enumerate(docs) if d["vis"])
@@ -163,7 +174,7 @@ def main():
             tt = st.median([r[arm]["ttft"] for r in sub])
             print("  %-2s 命中/泄漏 %-6s 拒答 %-6s TTFT %.3fs"
                   % (arm, "%d/%d" % (hits, len(sub)), "%d/%d" % (ab, len(sub)), tt))
-    json.dump({"rows": rows, "coverage": cov / total_blk, "tokens": ntok(text_all)},
+    json.dump({"rows": rows, "coverage": cov / total_blk, "tokens": blkpos(text_all), "tmpl_offset": TMPL_OFF},
               open("/home/user/_ab_scratch/baroque.json", "w"), ensure_ascii=False, indent=1)
     return 0
 
