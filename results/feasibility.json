@@ -1,0 +1,27 @@
+{
+  "experiment": "feasibility: long-context pool + block-sparse decode + recompaction",
+  "model": "Qwen3-1.7B bf16, single 8GB GPU",
+  "context_tokens": 1673,
+  "checks": {
+    "rope_reexact": {"max_abs_err": 0.0, "verdict": "exact"},
+    "translation_invariance_fp32": {"max_abs_diff": 9.4e-4, "verdict": "pass"},
+    "translation_invariance_bf16": {"abs_diff": 1.34, "rel_diff": 0.324, "verdict": "fail - must rotate in fp32"},
+    "extract_plus_recompact": {"max_delta_logits": 0.125, "verdict": "lossless within bf16 noise"}
+  },
+  "lookup": {
+    "full": {"hit": "12/12", "sec_per_req": 0.400},
+    "pool_select": {"hit": "12/12", "sec_per_req": 0.073,
+                    "note": "must include the system prompt S0 in the selection; omitting it gives 6/12"},
+    "pool_wrong_block": {"hit": "1/12", "sec_per_req": 0.073},
+    "pool_build_sec": 0.342
+  },
+  "reasoning_comparison": {
+    "full": {"hit": "7/12", "sec_per_req": 0.372},
+    "fresh": {"hit": "10/12", "sec_per_req": 0.081},
+    "gapped_pool": {"hit": "3/12", "sec_per_req": 0.082},
+    "compact_pool": {"hit": "2/12", "sec_per_req": 0.065},
+    "conclusion": "recompaction fixes positions but not cross-block conditioning; selected blocks must be jointly prefilled"
+  },
+  "peak_memory_gb": 4.7,
+  "verdict": "feasible for lookup queries via the pool; reasoning queries require joint prefill of the selection"
+}
