@@ -1,0 +1,23 @@
+{
+  "experiment": "reserved slots filled by sub-agent answers (prefill at slot position)",
+  "model": "Qwen3-1.7B (HF, bf16)",
+  "slot_len": 32,
+  "arms": {
+    "filled": "every slot prefilled with the corresponding sub-agent's answer",
+    "empty": "no slot filled (block stays masked / placeholder)",
+    "only2": "only slot 2 filled"
+  },
+  "results": [
+    {"ns": 3, "n": 4, "filled": "12/12", "empty": "0/12", "only2": "4/12", "tries": 4},
+    {"ns": 5, "n": 4, "filled": "20/20", "empty": "0/20", "only2": "4/20", "tries": 4}
+  ],
+  "notes": [
+    "empty arm shows the masked state: model hallucinates ('1234') or says it cannot find it",
+    "only2 shows partial unfill: exactly one slot correct per trial; other slots get the same code (gap-filling)",
+    "gap-filling is eliminated by the protocol sentence 'answer Qk only, reply I don't know for the others' (vLLM arms: contamination 10 -> 0)"
+  ],
+  "failed_paths": [
+    {"what": "splice the sub-agent's K/V computed at slot positions via position_ids override", "result": "swap 0/5 vs full 5/5", "cause": "explicit position_ids with HF KV cache breaks the splice"},
+    {"what": "pad the sub-agent's prefix to equal the slot start, then generate", "result": "n=0/160", "cause": "padding before the instruction makes the model summarize the shared prefix"}
+  ]
+}
