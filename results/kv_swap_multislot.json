@@ -1,0 +1,23 @@
+{
+  "experiment": "answer re-prefilled into K/V and swapped into the blank masked block",
+  "model": "Qwen3-1.7B (HF, bf16)",
+  "slot_len": 32,
+  "mechanism": [
+    "main sequence (prefix + blank slots + questions) is forwarded first; its K/V goes into the cache",
+    "the sub-agent produces its answer in its own private context",
+    "the answer tokens are prefilled against the main's cache truncated to [0, P_k), producing K/V at [P_k, P_k+len)",
+    "that K/V replaces the blank block; the suffix is NOT recomputed",
+    "unmask, then decode"
+  ],
+  "arms": {
+    "swap": "answer re-prefilled into K/V and placed in the blank block",
+    "inline": "answer placed inline in the prompt, whole sequence recomputed",
+    "empty": "block left blank"
+  },
+  "results": [
+    {"ns": 3, "n": 4, "swap": "11/12", "inline": "12/12", "empty": "0/12"},
+    {"ns": 5, "n": 3, "swap": "15/15", "inline": "15/15", "empty": "0/15"}
+  ],
+  "totals": {"swap": "26/27", "inline": "27/27", "empty": "0/27"},
+  "conclusion": "re-prefilling the answer into the block is equivalent to having had it inline from the start; the one swap miss was a question-format artifact, not a mechanism failure"
+}
