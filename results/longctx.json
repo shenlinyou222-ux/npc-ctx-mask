@@ -1,0 +1,27 @@
+{
+  "experiment": "long-context curve - history and slot recall vs context length",
+  "model": "Qwen3-1.7B (HF, bf16)",
+  "slots_filled": 3,
+  "with_slots": [
+    {"history_facts": 4, "tokens": 192, "history": "8/8", "slots": "6/6"},
+    {"history_facts": 16, "tokens": 372, "history": "12/12", "slots": "5/6"},
+    {"history_facts": 32, "tokens": 616, "history": "10/12", "slots": "4/6"},
+    {"history_facts": 64, "tokens": 1110, "history": "9/12", "slots": "1/6"},
+    {"history_facts": 128, "tokens": 2110, "history": "9/12", "slots": "3/6"},
+    {"history_facts": 256, "tokens": 4195, "history": "8/12", "slots": "2/6"}
+  ],
+  "control_no_slots": [
+    {"history_facts": 64, "tokens": 979, "history": "11/12"},
+    {"history_facts": 128, "tokens": 1978, "history": "11/12"},
+    {"history_facts": 256, "tokens": 4063, "history": "10/12"}
+  ],
+  "conclusions": [
+    "short context (<=616 tokens): zero interference, history flat at 12/12 for 0..8 slots",
+    "long context (>=1K tokens): with slots history is 1-2 questions lower than the no-slot control (92->75, 83->67)",
+    "slot retrieval degrades faster than history: 100% at 192 tokens, 17-50% at 1.1K-4.2K tokens"
+  ],
+  "limitations": [
+    "n=2 trials, 12 questions per cell - the 1-2 question gap is within noise, direction consistent but magnitude unreliable",
+    "needs n>=8 to claim long-context interference"
+  ]
+}
