@@ -2,6 +2,10 @@
 
 A small patch for **vLLM 0.30 + FlexAttention** that lets each request declare *which KV blocks it is allowed to read*. Built for world-model / role-play RAG, where every character must see a different subset of one shared corpus.
 
+> **New: the full pipeline doc — [docs/PIPELINE.md](docs/PIPELINE.md).**
+> 已知知识库上的「标签匹配 + 重旋转」：按标签选块 → 用紧凑坐标重旋转 → 正常 decode。
+> 含全部脚本入口、实测数字（Qwen3-1.7B）和踩过的四个坑。
+
 > Status: **engineering report / work in progress**. Numbers below are reproducible on a single 8 GB GPU.
 > We are looking for an arXiv endorser and for feedback from engine maintainers — see [CALL_FOR_FEEDBACK.md](docs/CALL_FOR_FEEDBACK.md).
 
