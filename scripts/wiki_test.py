@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """长上下文 + wiki 角色资料（约 4.8K token），bf16 存 K_pre。
 
 题目：
@@ -23,7 +23,7 @@ MODEL = "/mnt/c/Users/user/npc-models-qwen3-1.7b"
 DTYPE_KPRE = sys.argv[1] if len(sys.argv) > 1 else "bf16"
 N = int(sys.argv[2]) if len(sys.argv) > 2 else 1
 TRIAL = int(sys.argv[3]) if len(sys.argv) > 3 else 0
-FILL_BETWEEN = 400
+FILL_BETWEEN = 700
 rnd = random.Random(20261107 + TRIAL)
 
 NAMES = ["Aurelia Vane", "Bram Hollow", "Cyrus Pell", "Dara Quill",
@@ -58,7 +58,7 @@ def main():
     tok = AutoTokenizer.from_pretrained(MODEL)
     model = AutoModelForCausalLM.from_pretrained(
         MODEL, dtype=torch.bfloat16, device_map="cuda",
-        attn_implementation="eager").eval()
+        attn_implementation="sdpa").eval()
     enc = lambda t: tok(t, add_special_tokens=False)["input_ids"]  # noqa: E731
     letters = [enc(" A")[0], enc(" B")[0], enc(" C")[0], enc(" D")[0]]
     d_head = model.config.head_dim
@@ -77,7 +77,8 @@ def main():
     @torch.no_grad()
     def pool_of(ids):
         with rc.capture_rope() as cap:
-            out = model(input_ids=torch.tensor([ids], device="cuda"), use_cache=True)
+            out = model(input_ids=torch.tensor([ids], device="cuda"), use_cache=True,
+                        logits_to_keep=1)
         cache = out.past_key_values
         kpre = [k.clone() if DTYPE_KPRE == "bf16" else k.float() for k in cap.pre]
         vals = [cache.layers[li].values.clone() for li in range(len(cache.layers))]
@@ -100,7 +101,8 @@ def main():
     @torch.no_grad()
     def ask(cache, W, q_ids):
         o = model(input_ids=torch.tensor([q_ids], device="cuda"), past_key_values=cache,
-                  attention_mask=torch.ones((1, W + len(q_ids)), device="cuda", dtype=torch.long))
+                  attention_mask=torch.ones((1, W + len(q_ids)), device="cuda", dtype=torch.long),
+                  logits_to_keep=1)
         v = pick(o.logits[0, -1])
         del o, cache
         torch.cuda.empty_cache()
@@ -108,7 +110,7 @@ def main():
 
     @torch.no_grad()
     def plain(ids):
-        o = model(input_ids=torch.tensor([ids], device="cuda"))
+        o = model(input_ids=torch.tensor([ids], device="cuda"), logits_to_keep=1)
         v = pick(o.logits[0, -1])
         del o
         torch.cuda.empty_cache()
